@@ -1,3 +1,3 @@
-# pixelgalaxies.github.io
+# www.dustinclark.info
 
-This is simply a portfolio site to upload projects to.
+This is simply a portfolio site.

@@ -12,6 +12,10 @@ html, body {
 	font-family: 'Ubuntu', sans-serif;
 }
 
+p {
+	font-size: 1.6rem;
+}
+
 .construction { 
 	position: fixed; 
 	min-height: 100%;
@@ -28,15 +32,17 @@ html, body {
 ------------------------------ Navigation
 */
 .nav-absolute {
-	background-color: #050505;
+	background-color: #14080e;
 }
+
+
 
 .nav-links {
 	padding: 1.5rem;
 }
 
 nav a {
-	color: white;
+	color: #eaeaea;
 	font-size: 2rem;
 	padding: 1.5rem;
 }
@@ -46,26 +52,53 @@ nav a {
 }
 
 .dropdown {
-	background-color: black;
+	background-color: #14080e;
 }
 
 
-
-
-
-
-/* Home Jumbotron
-----------------------------------------------------
+/*
+------------------------------------------- splash
 */
 
-#home.jumbo{
+#home{
 	background-image: url(images/bushes-dark.jpg);
 	background-position: center;
 	background-attachment: fixed;
 	background-size: cover; 
-	color: #fafafa;
+	color: #eaeaea;
 	min-height: 100%;
-	padding: 1rem 0 0 2rem
+}
+
+.arrow-down {
+	position: absolute;
+	bottom: 5px;
+}
+
+
+/* 
+--------------------------------------------- projects
+*/
+#projects h2{
+	padding: .5rem;
+	color: #14080e;
+	border-left: 3px solid;
+	border-bottom: 3px solid;
+}
+
+
+/*
+----------------------------------------------- skills
+*/
+#skills-head {
+	min-height: 30%;
+	background-color: #14080e;
+}
+
+#skills-head h2 {
+	color: #eaeaea;
+	padding: .5rem;
+	border-left: 3px solid;
+	border-bottom: 3px solid;
 }
 
 
@@ -73,71 +106,30 @@ nav a {
 
 
 
-/* About Me Grid
-----------------------------------------------------
+/* 
+----------------------------------------------- about
 */
-
 #about {
-	background-color: #ffffff;;
+	background-color: #;
 }
 
-#about h1 {
-	border: 5px #00000 solid;
+#about h2{
+	padding: .5rem;
+	color: #14080e;
+	border-left: 3px solid;
+	border-bottom: 3px solid;
 }
 
-.about-text {
-	
-}
 
-
-
-
-
-/* Education Grid
-----------------------------------------------------
+/* 
+----------------------------------------------- contact
 */
-
-#ed {
-	background-color: #838383;
-}
-
-
-
-
-
-/* Porjects Grid
-----------------------------------------------------
-*/
-
-#projects {
-	background-color: #737373;
-}
-
-
-
-
-
-/* Contact Jumobo
-----------------------------------------------------
-*/
-
-#contact.jumbo{
-	background-color: #636363;
-	min-height: 100%
-}
-
-.white {
-	background-color: #ffffff;
-	border-radius: 10px;
-}
-
-
 
 
 footer {
 	text-align: center;
-	padding: 20px 0px;
-	background: #050505;
+	padding: 40px 0px;
+	background-color: #14080e;  
 	color: #fafafa;
 }
 

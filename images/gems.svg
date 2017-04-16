@@ -1,0 +1,256 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg viewBox="126 38 1920 1080" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="gr0" x1="0" x2="1" y1="0" y2="1" spreadMethod="pad">
+      <stop offset="0" stop-color="rgb(127,136,48)"/>
+      <stop offset="1" stop-color="rgb(62,42,80)"/>
+    </linearGradient>
+    <linearGradient id="gr1" x1="0" x2="1" y1="0" y2="1" spreadMethod="pad">
+      <stop offset="0" stop-color="rgb(40,40,40)"/>
+      <stop offset="1" stop-color="rgb(65,41,85)"/>
+    </linearGradient>
+    <linearGradient id="gr2" x1="0" x2="1" y1="0" y2="1" spreadMethod="pad">
+      <stop offset="0" stop-color="rgb(108,47,160)"/>
+      <stop offset="1" stop-color="rgb(88,44,125)"/>
+    </linearGradient>
+    <linearGradient id="gr3" x1="0" x2="1" y1="0" y2="1" spreadMethod="pad">
+      <stop offset="0" stop-color="rgb(214,233,56)"/>
+      <stop offset="1" stop-color="rgb(98,104,45)"/>
+    </linearGradient>
+    <linearGradient id="gr4" x1="0" x2="1" y1="0" y2="1" spreadMethod="pad">
+      <stop offset="0" stop-color="rgb(40,40,40)"/>
+      <stop offset="1" stop-color="rgb(106,110,72)"/>
+    </linearGradient>
+    <linearGradient id="gr5" x1="0" x2="1" y1="0" y2="1" spreadMethod="pad">
+      <stop offset="0" stop-color="rgb(239,252,138)"/>
+      <stop offset="1" stop-color="rgb(106,110,72)"/>
+    </linearGradient>
+    <linearGradient id="gr6" x1="0" x2="1" y1="0" y2="1" spreadMethod="pad">
+      <stop offset="0" stop-color="rgb(40,40,40)"/>
+      <stop offset="1" stop-color="rgb(40,40,40)"/>
+    </linearGradient>
+    <linearGradient id="gr7" x1="0" x2="1" y1="0" y2="1" spreadMethod="pad">
+      <stop offset="0" stop-color="rgb(119,61,168)"/>
+      <stop offset="1" stop-color="rgb(114,77,146)"/>
+    </linearGradient>
+    <linearGradient id="gr8" x1="0" x2="1" y1="0" y2="1" spreadMethod="pad">
+      <stop offset="0" stop-color="rgb(89,56,117)"/>
+      <stop offset="1" stop-color="rgb(111,77,140)"/>
+    </linearGradient>
+    <linearGradient id="gr9" x1="0" x2="1" y1="0" y2="1" spreadMethod="pad">
+      <stop offset="0" stop-color="rgb(51,51,50)"/>
+      <stop offset="1" stop-color="rgb(89,73,101)"/>
+    </linearGradient>
+    <linearGradient id="gr10" x1="0" x2="1" y1="0" y2="1" spreadMethod="pad">
+      <stop offset="0" stop-color="rgb(102,79,122)"/>
+      <stop offset="1" stop-color="rgb(122,92,149)"/>
+    </linearGradient>
+    <linearGradient id="gr11" x1="0" x2="1" y1="0" y2="1" spreadMethod="pad">
+      <stop offset="0" stop-color="rgb(127,136,48)"/>
+      <stop offset="1" stop-color="rgb(162,174,63)"/>
+    </linearGradient>
+    <linearGradient id="gr12" x1="0" x2="1" y1="0" y2="1" spreadMethod="pad">
+      <stop offset="0" stop-color="rgb(40,40,40)"/>
+      <stop offset="1" stop-color="rgb(107,109,64)"/>
+    </linearGradient>
+    <linearGradient id="gr13" x1="0" x2="1" y1="0" y2="1" spreadMethod="pad">
+      <stop offset="0" stop-color="rgb(44,39,48)"/>
+      <stop offset="1" stop-color="rgb(104,110,58)"/>
+    </linearGradient>
+    <linearGradient id="gr14" x1="0" x2="1" y1="0" y2="1" spreadMethod="pad">
+      <stop offset="0" stop-color="rgb(121,127,76)"/>
+      <stop offset="1" stop-color="rgb(224,238,115)"/>
+    </linearGradient>
+    <linearGradient id="gr15" x1="0" x2="1" y1="0" y2="1" spreadMethod="pad">
+      <stop offset="0" stop-color="rgb(38,89,92)"/>
+      <stop offset="1" stop-color="rgb(45,79,80)"/>
+    </linearGradient>
+    <linearGradient id="gr16" x1="0" x2="1" y1="0" y2="1" spreadMethod="pad">
+      <stop offset="0" stop-color="rgb(40,40,40)"/>
+      <stop offset="1" stop-color="rgb(69,48,85)"/>
+    </linearGradient>
+    <linearGradient id="gr17" x1="0" x2="1" y1="0" y2="1" spreadMethod="pad">
+      <stop offset="0" stop-color="rgb(144,156,69)"/>
+      <stop offset="1" stop-color="rgb(97,57,134)"/>
+    </linearGradient>
+    <linearGradient id="gr18" x1="0" x2="1" y1="0" y2="1" spreadMethod="pad">
+      <stop offset="0" stop-color="rgb(52,25,75)"/>
+      <stop offset="1" stop-color="rgb(35,48,83)"/>
+    </linearGradient>
+    <linearGradient id="gr19" x1="0" x2="1" y1="0" y2="1" spreadMethod="pad">
+      <stop offset="0" stop-color="rgb(39,58,110)"/>
+      <stop offset="1" stop-color="rgb(74,36,107)"/>
+    </linearGradient>
+    <linearGradient id="gr20" x1="0" x2="1" y1="0" y2="1" spreadMethod="pad">
+      <stop offset="0" stop-color="rgb(164,182,11)"/>
+      <stop offset="1" stop-color="rgb(146,159,38)"/>
+    </linearGradient>
+    <linearGradient id="gr21" x1="0" x2="1" y1="0" y2="1" spreadMethod="pad">
+      <stop offset="0" stop-color="rgb(74,43,100)"/>
+      <stop offset="1" stop-color="rgb(98,104,45)"/>
+    </linearGradient>
+    <linearGradient id="gr22" x1="0" x2="1" y1="0" y2="1" spreadMethod="pad">
+      <stop offset="0" stop-color="rgb(74,43,100)"/>
+      <stop offset="1" stop-color="rgb(46,46,45)"/>
+    </linearGradient>
+    <linearGradient id="gr23" x1="0" x2="1" y1="0" y2="1" spreadMethod="pad">
+      <stop offset="0" stop-color="rgb(108,47,160)"/>
+      <stop offset="1" stop-color="rgb(85,44,120)"/>
+    </linearGradient>
+    <linearGradient id="gr24" x1="0" x2="1" y1="0" y2="1" spreadMethod="pad">
+      <stop offset="0" stop-color="rgb(50,49,48)"/>
+      <stop offset="1" stop-color="rgb(62,42,80)"/>
+    </linearGradient>
+    <linearGradient id="gr25" x1="0" x2="1" y1="0" y2="1" spreadMethod="pad">
+      <stop offset="0" stop-color="rgb(108,47,160)"/>
+      <stop offset="1" stop-color="rgb(85,44,120)"/>
+    </linearGradient>
+    <linearGradient id="gr26" x1="0" x2="1" y1="0" y2="1" spreadMethod="pad">
+      <stop offset="0" stop-color="rgb(48,98,100)"/>
+      <stop offset="1" stop-color="rgb(46,111,114)"/>
+    </linearGradient>
+    <linearGradient id="gr27" x1="0" x2="1" y1="0" y2="1" spreadMethod="pad">
+      <stop offset="0" stop-color="rgb(50,49,48)"/>
+      <stop offset="1" stop-color="rgb(70,81,120)"/>
+    </linearGradient>
+    <linearGradient id="gr28" x1="0" x2="1" y1="0" y2="1" spreadMethod="pad">
+      <stop offset="0" stop-color="rgb(40,40,40)"/>
+      <stop offset="1" stop-color="rgb(47,78,80)"/>
+    </linearGradient>
+    <linearGradient id="gr29" x1="0" x2="1" y1="0" y2="1" spreadMethod="pad">
+      <stop offset="0" stop-color="rgb(74,43,100)"/>
+      <stop offset="1" stop-color="rgb(88,104,134)"/>
+    </linearGradient>
+    <linearGradient id="gr30" x1="0" x2="1" y1="0" y2="1" spreadMethod="pad">
+      <stop offset="0" stop-color="rgb(119,97,139)"/>
+      <stop offset="1" stop-color="rgb(59,90,91)"/>
+    </linearGradient>
+    <linearGradient id="gr31" x1="0" x2="1" y1="0" y2="1" spreadMethod="pad">
+      <stop offset="0" stop-color="rgb(73,115,117)"/>
+      <stop offset="1" stop-color="rgb(69,128,131)"/>
+    </linearGradient>
+    <linearGradient id="gr32" x1="0" x2="1" y1="0" y2="1" spreadMethod="pad">
+      <stop offset="0" stop-color="rgb(40,40,40)"/>
+      <stop offset="1" stop-color="rgb(104,110,58)"/>
+    </linearGradient>
+    <linearGradient id="gr33" x1="0" x2="1" y1="0" y2="1" spreadMethod="pad">
+      <stop offset="0" stop-color="rgb(233,250,95)"/>
+      <stop offset="1" stop-color="rgb(170,180,91)"/>
+    </linearGradient>
+    <linearGradient id="gr34" x1="0" x2="1" y1="0" y2="1" spreadMethod="pad">
+      <stop offset="0" stop-color="rgb(165,172,113)"/>
+      <stop offset="1" stop-color="rgb(57,57,56)"/>
+    </linearGradient>
+    <linearGradient id="gr35" x1="0" x2="1" y1="0" y2="1" spreadMethod="pad">
+      <stop offset="0" stop-color="rgb(56,58,32)"/>
+      <stop offset="1" stop-color="rgb(85,92,23)"/>
+    </linearGradient>
+    <linearGradient id="gr36" x1="0" x2="1" y1="0" y2="1" spreadMethod="pad">
+      <stop offset="0" stop-color="rgb(49,49,49)"/>
+      <stop offset="1" stop-color="rgb(80,86,34)"/>
+    </linearGradient>
+    <linearGradient id="gr37" x1="0" x2="1" y1="0" y2="1" spreadMethod="pad">
+      <stop offset="0" stop-color="rgb(92,100,22)"/>
+      <stop offset="1" stop-color="rgb(144,160,4)"/>
+    </linearGradient>
+    <linearGradient id="gr38" x1="0" x2="1" y1="0" y2="1" spreadMethod="pad">
+      <stop offset="0" stop-color="rgb(144,160,4)"/>
+      <stop offset="1" stop-color="rgb(109,120,16)"/>
+    </linearGradient>
+    <linearGradient id="gr39" x1="0" x2="1" y1="0" y2="1" spreadMethod="pad">
+      <stop offset="0" stop-color="rgb(46,45,45)"/>
+      <stop offset="1" stop-color="rgb(78,83,31)"/>
+    </linearGradient>
+    <linearGradient id="gr40" x1="0" x2="1" y1="0" y2="1" spreadMethod="pad">
+      <stop offset="0" stop-color="rgb(40,40,40)"/>
+      <stop offset="1" stop-color="rgb(40,40,40)"/>
+    </linearGradient>
+    <linearGradient id="gr41" x1="0" x2="1" y1="0" y2="1" spreadMethod="pad">
+      <stop offset="0" stop-color="rgb(164,182,11)"/>
+      <stop offset="1" stop-color="rgb(146,159,38)"/>
+    </linearGradient>
+    <linearGradient id="gr42" x1="0" x2="1" y1="0" y2="1" spreadMethod="pad">
+      <stop offset="0" stop-color="rgb(127,136,48)"/>
+      <stop offset="1" stop-color="rgb(40,40,40)"/>
+    </linearGradient>
+    <linearGradient id="gr43" x1="0" x2="1" y1="0" y2="1" spreadMethod="pad">
+      <stop offset="0" stop-color="rgb(46,45,45)"/>
+      <stop offset="1" stop-color="rgb(19,80,82)"/>
+    </linearGradient>
+    <linearGradient id="gr44" x1="0" x2="1" y1="0" y2="1" spreadMethod="pad">
+      <stop offset="0" stop-color="rgb(32,48,48)"/>
+      <stop offset="1" stop-color="rgb(22,63,65)"/>
+    </linearGradient>
+    <linearGradient id="gr45" x1="0" x2="1" y1="0" y2="1" spreadMethod="pad">
+      <stop offset="0" stop-color="rgb(21,67,69)"/>
+      <stop offset="1" stop-color="rgb(3,95,99)"/>
+    </linearGradient>
+    <linearGradient id="gr46" x1="0" x2="1" y1="0" y2="1" spreadMethod="pad">
+      <stop offset="0" stop-color="rgb(7,108,112)"/>
+      <stop offset="1" stop-color="rgb(46,86,127)"/>
+    </linearGradient>
+    <linearGradient id="gr47" x1="0" x2="1" y1="0" y2="1" spreadMethod="pad">
+      <stop offset="0" stop-color="rgb(21,67,69)"/>
+      <stop offset="1" stop-color="rgb(8,93,97)"/>
+    </linearGradient>
+    <linearGradient id="gr48" x1="0" x2="1" y1="0" y2="1" spreadMethod="pad">
+      <stop offset="0" stop-color="rgb(40,40,40)"/>
+      <stop offset="1" stop-color="rgb(33,57,58)"/>
+    </linearGradient>
+    <linearGradient id="gr49" x1="0" x2="1" y1="0" y2="1" spreadMethod="pad">
+      <stop offset="0" stop-color="rgb(38,89,92)"/>
+      <stop offset="1" stop-color="rgb(54,92,133)"/>
+    </linearGradient>
+  </defs>
+  <polygon id="triangle36" points="955.721 872.002 1247.93 805.069 1184.619 634.018" style="fill: url(#gr0); stroke: rgb(0, 0, 0); stroke-width: 0;"/>
+  <polygon id="triangle36" points="1247.93 805.069 1362.379 648.892 1184.619 634.018" style="fill: url(#gr1); stroke: rgb(0, 0, 0); stroke-width: 0;"/>
+  <polygon id="triangle36" points="1184.619 634.018 1362.379 648.892 1323.417 529.9" style="fill: url(#gr2); stroke: rgb(0, 0, 0); stroke-width: 0;"/>
+  <polygon id="triangle36" points="955.721 872.002 1247.93 805.069 1019.032 1136.015" style="fill: url(#gr3); stroke: rgb(0, 0, 0); stroke-width: 0;"/>
+  <polygon id="triangle36" points="1805.563 753.01 1900.531 940.793 2068.55 764.166" style="fill: url(#gr4); stroke: rgb(0, 0, 0); stroke-width: 0;"/>
+  <polygon id="triangle36" points="1900.531 940.793 2066.116 1134.156 2068.55 764.166" style="fill: url(#gr5); stroke: rgb(0, 0, 0); stroke-width: 0;"/>
+  <polygon id="triangle36" points="2061.245 284.479 2063.681 26.043 2068.55 764.166" style="fill: url(#gr6); stroke: rgb(0, 0, 0); stroke-width: 0;"/>
+  <polygon id="triangle36" points="1323.417 529.9 1362.379 648.892 1878.616 477.841" style="fill: url(#gr7); stroke: rgb(0, 0, 0); stroke-width: 0;"/>
+  <polygon id="triangle36" points="1362.379 648.892 1805.563 753.01 1878.616 477.841" style="fill: url(#gr8); stroke: rgb(0, 0, 0); stroke-width: 0;"/>
+  <polygon id="triangle36" points="1805.563 753.01 2068.55 764.166 1878.616 477.841" style="fill: url(#gr9); stroke: rgb(0, 0, 0); stroke-width: 0;"/>
+  <polygon id="triangle36" points="2061.245 284.479 2068.55 764.166 1878.616 477.841" style="fill: url(#gr10); stroke: rgb(0, 0, 0); stroke-width: 0;"/>
+  <polygon id="triangle36" points="1019.032 1136.015 1247.93 805.069 1503.614 916.623" style="fill: url(#gr11); stroke: rgb(0, 0, 0); stroke-width: 0;"/>
+  <polygon id="triangle36" points="1247.93 805.069 1362.379 648.892 1503.614 916.623" style="fill: url(#gr12); stroke: rgb(0, 0, 0); stroke-width: 0;"/>
+  <polygon id="triangle36" points="1362.379 648.892 1805.563 753.01 1503.614 916.623" style="fill: url(#gr13); stroke: rgb(0, 0, 0); stroke-width: 0;"/>
+  <polygon id="triangle36" points="1805.563 753.01 1900.531 940.793 1503.614 916.623" style="fill: url(#gr14); stroke: rgb(0, 0, 0); stroke-width: 0;"/>
+  <polygon id="triangle36" points="870.492 20.466 1194.357 20.466 1155.397 327.241" style="fill: url(#gr15); stroke: rgb(0, 0, 0); stroke-width: 0;"/>
+  <polygon id="triangle36" points="870.492 20.466 1155.397 327.241 894.844 500.151" style="fill: url(#gr16); stroke: rgb(0, 0, 0); stroke-width: 0;"/>
+  <polygon id="triangle36" points="955.721 872.002 1184.619 634.018 894.844 500.151" style="fill: url(#gr17); stroke: rgb(0, 0, 0); stroke-width: 0;"/>
+  <polygon id="triangle36" points="76.657 578.24 383.476 208.25 524.712 682.359" style="fill: url(#gr18); stroke: rgb(0, 0, 0); stroke-width: 0;"/>
+  <polygon id="triangle36" points="383.476 208.25 894.844 500.151 524.712 682.359" style="fill: url(#gr19); stroke: rgb(0, 0, 0); stroke-width: 0;"/>
+  <polygon id="triangle36" points="388.346 974.26 955.721 872.002 524.712 682.359" style="fill: url(#gr20); stroke: rgb(0, 0, 0); stroke-width: 0;"/>
+  <polygon id="triangle36" points="894.844 500.151 955.721 872.002 524.712 682.359" style="fill: url(#gr21); stroke: rgb(0, 0, 0); stroke-width: 0;"/>
+  <polygon id="triangle36" points="894.844 500.151 1155.397 327.241 1157.833 446.234" style="fill: url(#gr22); stroke: rgb(0, 0, 0); stroke-width: 0;"/>
+  <polygon id="triangle36" points="894.844 500.151 1184.619 634.018 1157.833 446.234" style="fill: url(#gr23); stroke: rgb(0, 0, 0); stroke-width: 0;"/>
+  <polygon id="triangle36" points="1155.397 327.241 1323.417 529.9 1157.833 446.234" style="fill: url(#gr24); stroke: rgb(0, 0, 0); stroke-width: 0;"/>
+  <polygon id="triangle36" points="1184.619 634.018 1323.417 529.9 1157.833 446.234" style="fill: url(#gr25); stroke: rgb(0, 0, 0); stroke-width: 0;"/>
+  <polygon id="triangle36" points="1155.397 327.241 1194.357 20.466 1642.413 128.302" style="fill: url(#gr26); stroke: rgb(0, 0, 0); stroke-width: 0;"/>
+  <polygon id="triangle36" points="1155.397 327.241 1323.417 529.9 1642.413 128.302" style="fill: url(#gr27); stroke: rgb(0, 0, 0); stroke-width: 0;"/>
+  <polygon id="triangle36" points="1194.357 20.466 2063.681 26.043 1642.413 128.302" style="fill: url(#gr28); stroke: rgb(0, 0, 0); stroke-width: 0;"/>
+  <polygon id="triangle36" points="1323.417 529.9 1878.616 477.841 1642.413 128.302" style="fill: url(#gr29); stroke: rgb(0, 0, 0); stroke-width: 0;"/>
+  <polygon id="triangle36" points="1878.616 477.841 2061.245 284.479 1642.413 128.302" style="fill: url(#gr30); stroke: rgb(0, 0, 0); stroke-width: 0;"/>
+  <polygon id="triangle36" points="2061.245 284.479 2063.681 26.043 1642.413 128.302" style="fill: url(#gr31); stroke: rgb(0, 0, 0); stroke-width: 0;"/>
+  <polygon id="triangle36" points="1019.032 1136.015 1503.614 916.623 1523.093 1139.732" style="fill: url(#gr32); stroke: rgb(0, 0, 0); stroke-width: 0;"/>
+  <polygon id="triangle36" points="1503.614 916.623 1900.531 940.793 1523.093 1139.732" style="fill: url(#gr33); stroke: rgb(0, 0, 0); stroke-width: 0;"/>
+  <polygon id="triangle36" points="1900.531 940.793 2066.116 1134.156 1523.093 1139.732" style="fill: url(#gr34); stroke: rgb(0, 0, 0); stroke-width: 0;"/>
+  <polygon id="triangle36" points="76.657 578.24 79.091 1134.156 159.45 924.059" style="fill: url(#gr35); stroke: rgb(0, 0, 0); stroke-width: 0;"/>
+  <polygon id="triangle36" points="76.657 578.24 524.712 682.359 159.45 924.059" style="fill: url(#gr36); stroke: rgb(0, 0, 0); stroke-width: 0;"/>
+  <polygon id="triangle36" points="79.091 1134.156 388.346 974.26 159.45 924.059" style="fill: url(#gr37); stroke: rgb(0, 0, 0); stroke-width: 0;"/>
+  <polygon id="triangle36" points="388.346 974.26 524.712 682.359 159.45 924.059" style="fill: url(#gr38); stroke: rgb(0, 0, 0); stroke-width: 0;"/>
+  <polygon id="triangle36" points="79.091 1134.156 388.346 974.26 451.658 1080.237" style="fill: url(#gr39); stroke: rgb(0, 0, 0); stroke-width: 0;"/>
+  <polygon id="triangle36" points="79.091 1134.156 1019.032 1136.015 451.658 1080.237" style="fill: url(#gr40); stroke: rgb(0, 0, 0); stroke-width: 0;"/>
+  <polygon id="triangle36" points="388.346 974.26 955.721 872.002 451.658 1080.237" style="fill: url(#gr41); stroke: rgb(0, 0, 0); stroke-width: 0;"/>
+  <polygon id="triangle36" points="955.721 872.002 1019.032 1136.015 451.658 1080.237" style="fill: url(#gr42); stroke: rgb(0, 0, 0); stroke-width: 0;"/>
+  <polygon id="triangle36" points="76.657 578.24 383.476 208.25 181.364 223.123" style="fill: url(#gr43); stroke: rgb(0, 0, 0); stroke-width: 0;"/>
+  <polygon id="triangle36" points="76.657 578.24 81.528 18.605 181.364 223.123" style="fill: url(#gr44); stroke: rgb(0, 0, 0); stroke-width: 0;"/>
+  <polygon id="triangle36" points="81.528 18.605 383.476 208.25 181.364 223.123" style="fill: url(#gr45); stroke: rgb(0, 0, 0); stroke-width: 0;"/>
+  <polygon id="triangle36" points="383.476 208.25 894.844 500.151 490.621 87.398" style="fill: url(#gr46); stroke: rgb(0, 0, 0); stroke-width: 0;"/>
+  <polygon id="triangle36" points="81.528 18.605 383.476 208.25 490.621 87.398" style="fill: url(#gr47); stroke: rgb(0, 0, 0); stroke-width: 0;"/>
+  <polygon id="triangle36" points="81.528 18.605 870.492 20.466 490.621 87.398" style="fill: url(#gr48); stroke: rgb(0, 0, 0); stroke-width: 0;"/>
+  <polygon id="triangle36" points="870.492 20.466 894.844 500.151 490.621 87.398" style="fill: url(#gr49); stroke: rgb(0, 0, 0); stroke-width: 0;"/>
+  <path d="M 469.626 -62.1 Z" style="stroke: black; fill: none;"/>
+</svg>

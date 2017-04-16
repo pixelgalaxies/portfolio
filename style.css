@@ -16,23 +16,34 @@ p {
 	font-size: 1.6rem;
 }
 
+.section-title {
+	padding: 1.3rem;
+	background-color: #effc8a;
+	border-radius: 0 30px 0 30px;
+	color: #000;
+	border: 1px solid #000;
+}
+
 /* 
 ------------------------------ Navigation
 */
 .nav-absolute {
-	background-color: #14080e;
+	background-color: gray; 
 }
 
-
-
 .nav-links {
-	padding: 1.5rem;
+	padding: 1.5rem 0;
 }
 
 nav a {
-	color: #eaeaea;
-	font-size: 2rem;
+	color: #f8fafa;
+	font-size: 1.5rem;
 	padding: 1.5rem;
+}
+
+.nav-links a:hover {
+	background-color: #f8fafa;
+	color: #2f4446;
 }
 
 .menu-icon, .close-icon {
@@ -40,7 +51,7 @@ nav a {
 }
 
 .dropdown {
-	background-color: #14080e;
+	background-color: #824bb1;
 }
 
 
@@ -49,18 +60,18 @@ nav a {
 */
 
 #home{
-	background-image: url(images/bushes.jpg);
-	background-position: center;
+	background-image: url(images/gems.png);
+	background-position: top;
 	background-attachment: fixed;
 	background-size: cover; 
 	color: #14080e;
 	min-height: 100%;
 }
 
-.box {
-	background-color: rgba(255,255,255,0.7);
-	padding: 40px;
-	border-radius: 50%
+
+
+#home h1, #home p {
+	color: #f8fafa;
 }
 
 .arrow-down {
@@ -72,11 +83,8 @@ nav a {
 /* 
 --------------------------------------------- projects
 */
-#projects h2{
-	padding: .5rem;
-	color: #14080e;
-	border-left: 3px solid;
-	border-bottom: 3px solid;
+#projects {
+	background-color: #fff;
 }
 
 #projects img{
@@ -88,44 +96,26 @@ nav a {
 /*
 ----------------------------------------------- skills
 */
-#skills-head {
-	min-height: 30%;
-	background-color: #14080e;
+#skills {
+	background-color: #a476cc;
 }
-
-#skills-head h2 {
-	color: #eaeaea;
-	padding: .5rem;
-	border-left: 3px solid;
-	border-bottom: 3px solid;
-}
-
-
-
-
 
 
 /* 
 ----------------------------------------------- about
 */
 #about {
-	background-color: #;
-}
-
-#about h2{
-	padding: .5rem;
-	color: #14080e;
-	border-left: 3px solid;
-	border-bottom: 3px solid;
+	background-image: url(images/gems.png);
 }
 
 .me {
 	height: 300px;
-	border: 2px solid #000000;
+	border: 2px solid #fff;
 }
 
 .about-text p{
 	font-size: 2.4rem;
+	color: #fff;
 }
 
 

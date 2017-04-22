@@ -16,19 +16,12 @@ p {
 	font-size: 1.6rem;
 }
 
-.section-title {
-	padding: 1.3rem;
-	background-color: #effc8a;
-	border-radius: 0 30px 0 30px;
-	color: #000;
-	border: 1px solid #000;
-}
 
 /* 
 ------------------------------ Navigation
 */
 .nav-absolute {
-	background-color: gray; 
+	background-color: #282828; 
 }
 
 .nav-links {
@@ -36,14 +29,14 @@ p {
 }
 
 nav a {
-	color: #f8fafa;
+	color: #f0f0f0;
 	font-size: 1.5rem;
 	padding: 1.5rem;
 }
 
 .nav-links a:hover {
-	background-color: #f8fafa;
-	color: #2f4446;
+	background-color: #f0f0f0;
+	color: #282828;
 }
 
 .menu-icon, .close-icon {
@@ -64,14 +57,13 @@ nav a {
 	background-position: top;
 	background-attachment: fixed;
 	background-size: cover; 
-	color: #14080e;
 	min-height: 100%;
 }
 
 
 
 #home h1, #home p {
-	color: #f8fafa;
+	color: #f0f0f0;
 }
 
 .arrow-down {
@@ -84,7 +76,14 @@ nav a {
 --------------------------------------------- projects
 */
 #projects {
-	background-color: #fff;
+	background-color: #f0f0f0;
+}
+
+.projects-head {
+	width: 66%;
+	background: linear-gradient(90deg, rgba(0,0,0,0), rgb(239, 252, 138), rgba(0, 0, 0, 0));
+	padding: 1rem;
+	text-align: center;
 }
 
 #projects img{
@@ -100,6 +99,27 @@ nav a {
 	background-color: #a476cc;
 }
 
+.skills-head {
+	width: 66%;
+	background: linear-gradient(90deg, rgba(0,0,0,0), rgb(239, 252, 138), rgba(0, 0, 0, 0));
+	padding: 1rem;
+	text-align: center;
+}
+
+.skill-box {
+	margin: 1rem;
+	width: 100%;
+	background-color: #f0f0f0;
+	border-radius: 5px;
+}
+
+.skill-box p {
+	display: block;
+	text-align: right;
+	padding: 0 1rem;
+	font-size: 1rem;
+}
+
 
 /* 
 ----------------------------------------------- about
@@ -108,34 +128,105 @@ nav a {
 	background-image: url(images/gems.png);
 }
 
+.about-head {
+	width: 66%;
+	background: linear-gradient(90deg, rgba(0,0,0,0), rgb(239, 252, 138), rgba(0, 0, 0, 0));
+	padding: 1rem;
+	text-align: center;
+}
+
 .me {
 	height: 300px;
-	border: 2px solid #fff;
+	border: 1px solid #f0f0f0;
 }
 
 .about-text p{
 	font-size: 2.4rem;
-	color: #fff;
+	color: #f0f0f0;
 }
 
 
 /* 
 ----------------------------------------------- contact
 */
+#contact {
+	background-color: #f0f0f0;
+}
 
+.contact-head {
+	width: 66%;
+	background: linear-gradient(90deg, rgba(0,0,0,0), rgb(239, 252, 138), rgba(0, 0, 0, 0));
+	padding: 1rem;
+	text-align: center;
+}
+
+.contact-box {
+	background-color: #f0f0f0;
+	border-radius: 5px;
+	text-align: center;
+	padding: 1rem;
+}
 
 footer {
 	text-align: center;
 	padding: 40px 0px;
-	background-color: #14080e;  
-	color: #fafafa;
+	background-color: #282828;  
+	color: #f0f0f0;
 }
 
 
-
-
-
 /* Media Queries
-
-----------------------------------------------------
+--------------------------------------------------
 */
+
+@media (min-width: 300px) {
+	.html-bar,
+	.css-bar,
+	.js-bar,
+	.ucl-bar,
+	.git-bar,
+	.ps-bar {
+		padding: 1.5rem 0;
+		border-radius: 5px;
+		background-color: #248b90;
+	}
+	
+	
+}
+
+@media (min-width: 768px) {
+	.html-bar,
+	.css-bar,
+	.js-bar,
+	.ucl-bar,
+	.git-bar,
+	.ps-bar {
+		width: 0px;
+		transition: width 1s;
+	}
+
+	.skill-box:hover .html-bar{
+		width: 90%;
+	}
+	
+	.skill-box:hover .css-bar{
+		width: 90%;
+	}
+	
+	.skill-box:hover .js-bar{
+		width: 60%;
+	}
+	
+	.skill-box:hover .ucl-bar{
+		width: 50%;
+	}
+	
+	.skill-box:hover .git-bar{
+		width: 50%;
+	}
+	
+	.skill-box:hover .ps-bar{
+		width: 70%;
+	}
+}
+

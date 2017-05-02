@@ -10,10 +10,24 @@
 html, body {
 	height: 100%;
 	font-family: 'Ubuntu', sans-serif;
+	
 }
 
 p {
 	font-size: 1.6rem;
+	line-height: 1.4;
+}
+
+.section-head {
+	width: 60%;
+	background: linear-gradient(90deg, rgba(0,0,0,0), rgb(239, 252, 138), rgba(0, 0, 0, 0));
+	padding: 1rem;
+	text-align: center;
+	transition: width .5s;
+}
+
+.section-head:hover {
+	width: 90%;
 }
 
 
@@ -23,6 +37,10 @@ p {
 .nav-absolute {
 	background-color: #282828; 
 }
+
+.nav-container-fw {
+		padding: 0 .5rem;
+	}
 
 .nav-links {
 	padding: 1.5rem 0;
@@ -40,11 +58,16 @@ nav a {
 }
 
 .menu-icon, .close-icon {
-	padding: 1.5rem;
+	padding: .5rem;
+	fill: #f0f0f0;
 }
 
 .dropdown {
-	background-color: #824bb1;
+	background-color: #282828;
+}
+
+.nav-logo {
+	height: 5rem;
 }
 
 
@@ -66,11 +89,6 @@ nav a {
 	color: #f0f0f0;
 }
 
-.arrow-down {
-	position: absolute;
-	bottom: 5px;
-}
-
 
 /* 
 --------------------------------------------- projects
@@ -79,15 +97,8 @@ nav a {
 	background-color: #f0f0f0;
 }
 
-.projects-head {
-	width: 66%;
-	background: linear-gradient(90deg, rgba(0,0,0,0), rgb(239, 252, 138), rgba(0, 0, 0, 0));
-	padding: 1rem;
-	text-align: center;
-}
-
 #projects img{
-	box-shadow: 0px 5px 10px #000000;
+	box-shadow: 0px 3px 6px #000000;
 	margin-bottom: 10px;
 }
 
@@ -97,13 +108,6 @@ nav a {
 */
 #skills {
 	background-color: #a476cc;
-}
-
-.skills-head {
-	width: 66%;
-	background: linear-gradient(90deg, rgba(0,0,0,0), rgb(239, 252, 138), rgba(0, 0, 0, 0));
-	padding: 1rem;
-	text-align: center;
 }
 
 .skill-box {
@@ -120,6 +124,10 @@ nav a {
 	font-size: 1rem;
 }
 
+.skill-logo {
+	height: 150px;
+}
+
 
 /* 
 ----------------------------------------------- about
@@ -128,12 +136,6 @@ nav a {
 	background-image: url(images/gems.png);
 }
 
-.about-head {
-	width: 66%;
-	background: linear-gradient(90deg, rgba(0,0,0,0), rgb(239, 252, 138), rgba(0, 0, 0, 0));
-	padding: 1rem;
-	text-align: center;
-}
 
 .me {
 	height: 300px;
@@ -153,15 +155,8 @@ nav a {
 	background-color: #f0f0f0;
 }
 
-.contact-head {
-	width: 66%;
-	background: linear-gradient(90deg, rgba(0,0,0,0), rgb(239, 252, 138), rgba(0, 0, 0, 0));
-	padding: 1rem;
-	text-align: center;
-}
-
 .contact-box {
-	background-color: #f0f0f0;
+	background-color: #6bbec2;
 	border-radius: 5px;
 	text-align: center;
 	padding: 1rem;
@@ -188,10 +183,36 @@ footer {
 	.ps-bar {
 		padding: 1.5rem 0;
 		border-radius: 5px;
-		background-color: #248b90;
+		background-color: #6bbec2;
 	}
 	
+	.html-bar{
+		width: 90%;
+	}
 	
+	.css-bar{
+		width: 90%;
+	}
+	
+	.js-bar{
+		width: 60%;
+	}
+	
+	.ucl-bar{
+		width: 40%;
+	}
+	
+	.git-bar{
+		width: 50%;
+	}
+	
+	.ps-bar{
+		width: 50%;
+	}
+	
+	.nav-container-fw {
+		padding: 0 .5rem;
+	}
 }
 
 @media (min-width: 768px) {
@@ -218,7 +239,7 @@ footer {
 	}
 	
 	.skill-box:hover .ucl-bar{
-		width: 50%;
+		width: 40%;
 	}
 	
 	.skill-box:hover .git-bar{
@@ -226,7 +247,7 @@ footer {
 	}
 	
 	.skill-box:hover .ps-bar{
-		width: 70%;
+		width: 50%;
 	}
 }
 

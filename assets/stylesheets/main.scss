@@ -1,0 +1,290 @@
+/*
+------------------------------ Imports and mixins
+*/
+@import "_variables.scss";
+
+/* 
+------------------------------ General
+*/
+body {
+	font-family: "Ubuntu", sans-serif;
+	color: $black;
+}
+
+.section-head {
+	width: 60%;
+	background: linear-gradient(90deg, rgba(0, 0, 0, 0), rgb(255, 253, 216), rgba(0, 0, 0, 0));
+	padding: 1em;
+	text-align: center;
+	transition: width 0.5s;
+
+	&:hover {
+		width: 100%;
+	}
+
+	h2 {
+		font-weight: 300;
+	}
+}
+
+.grid-container {
+	padding: 35px 10px;
+}
+
+.toTop {
+	position: fixed;
+	bottom: 15px;
+	right: 15px;
+}
+
+/* 
+------------------------------ Navigation
+*/
+.nav-absolute {
+	background-color: $pink;
+}
+
+.nav-container-960 {
+	padding: 5px;
+	@media (min-width: 768px) {
+		display: flex;
+		flex-direction: column;
+	}
+}
+
+.nav-links {
+	padding: 0.5em 0;
+}
+
+nav a {
+	color: $black;
+	font-size: 1.5em;
+	padding: 0 10px;
+}
+
+.nav-links a:hover {
+	border-bottom: 3px solid $white;
+}
+
+.menu-icon,
+.close-icon {
+	padding: 0.5em;
+}
+
+.dropdown {
+	background-color: $pink;
+}
+
+.nav-logo {
+	width: 3.5em;
+}
+
+/*
+-------------------------------------- splash
+*/
+
+#home {
+	background-image: url(../images/bg.png);
+	background-position: center;
+	background-attachment: fixed;
+	background-size: cover;
+	min-height: 100%;
+
+	h1 {
+		color: $black;
+		font-size: 4em;
+	}
+
+	h2 {
+		color: $black;
+		font-size: 1.5em;
+	}
+}
+
+.gems {
+	margin-top: 1em;
+	height: 100px;
+	animation: rotateMe 1s infinite alternate-reverse;
+}
+
+@keyframes rotateMe {
+	0% {
+		transform: rotate(-15deg);
+	}
+	100% {
+		transform: rotate(15deg);
+	}
+}
+
+/* 
+---------------------------------------- about
+*/
+#about {
+	background-color: #f0f0f0;
+
+	.me {
+		max-width: 90%;
+		border: 2px solid $black;
+		border-radius: 50%;
+	}
+
+	.about-text {
+		font-size: 1.5em;
+		color: $black;
+	}
+}
+
+/*
+------------------------------------- skills
+*/
+#skills {
+	background-color: $pink;
+}
+
+.skill-box {
+	margin: 1em 0;
+	width: 100%;
+	background-color: #f0f0f0;
+	border-radius: 5px;
+
+	p {
+		text-align: right;
+		padding: 0 1em;
+		font-size: 1em;
+		white-space: nowrap;
+	}
+}
+
+.new-skills {
+	&--header {
+		font-size: 24px;
+	}
+	&--text {
+		font-size: 18px;
+	}
+}
+
+/* 
+----------------------------------- projects
+*/
+#projects {
+	background-image: url(../images/bg.png);
+	background-position: center;
+	background-attachment: fixed;
+	background-size: cover;
+
+	h3 {
+		font-size: 1.3em;
+	}
+
+	img {
+		box-shadow: 0px 3px 6px #000000;
+		margin-bottom: 10px;
+		min-width: 100%;
+	}
+}
+
+/* 
+------------------------------------- contact
+*/
+#contact {
+	background-color: #f0f0f0;
+}
+
+.contact-box {
+	background-color: $cer;
+	border-radius: 5px;
+	text-align: center;
+	padding: 1em;
+
+	&:hover {
+		background-color: $yellow;
+	}
+}
+
+/* 
+------------------------------------- footer
+*/
+footer {
+	text-align: center;
+	padding: 40px 0px;
+	background-color: $pink;
+	color: $black;
+}
+
+/* 
+------------------------------------- Media Queries
+*/
+
+@media (min-width: 300px) {
+	.sbar {
+		padding: 1em 0;
+		border-radius: 5px;
+		background-color: $cer;
+	}
+
+	.html-bar,
+	.css-bar {
+		width: 90%;
+	}
+
+	.bs-bar {
+		width: 60%;
+	}
+
+	.js-bar,
+	.less-bar,
+	.sass-bar {
+		width: 50%;
+	}
+
+	.ps-bar,
+	.ad-bar,
+	.jq-bar {
+		width: 40%;
+	}
+
+	.ucl-bar,
+	.git-bar {
+		width: 30%;
+	}
+
+	.nav-container-fw {
+		padding: 0 0.5em;
+	}
+}
+
+@media (min-width: 768px) {
+	.sbar {
+		width: 0px;
+		transition: width 1s;
+	}
+
+	.skill-box:hover {
+		.html-bar,
+		.css-bar {
+			width: 90%;
+		}
+
+		.bs-bar {
+			width: 60%;
+		}
+
+		.js-bar,
+		.less-bar,
+		.sass-bar {
+			width: 50%;
+		}
+
+		.ps-bar,
+		.ad-bar,
+		.jq-bar {
+			width: 40%;
+		}
+
+		.ucl-bar,
+		.git-bar {
+			width: 30%;
+		}
+	}
+}

@@ -245,12 +245,10 @@ footer {
   .css-bar {
     width: 90%;
   }
-  .bs-bar {
-    width: 60%;
-  }
   .js-bar,
   .less-bar,
-  .sass-bar {
+  .sass-bar,
+  .bs-bar {
     width: 50%;
   }
   .ps-bar,
@@ -277,12 +275,10 @@ footer {
   .skill-box:hover .css-bar {
     width: 90%;
   }
-  .skill-box:hover .bs-bar {
-    width: 60%;
-  }
   .skill-box:hover .js-bar,
   .skill-box:hover .less-bar,
-  .skill-box:hover .sass-bar {
+  .skill-box:hover .sass-bar,
+  .skill-box:hover .bs-bar {
     width: 50%;
   }
   .skill-box:hover .ps-bar,

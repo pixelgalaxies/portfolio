@@ -104,15 +104,25 @@ nav a {
 .gems {
 	margin-top: 1em;
 	height: 100px;
-	animation: rotateMe 1s infinite alternate-reverse;
+	animation: rotateMe 2s infinite linear;
 }
 
 @keyframes rotateMe {
 	0% {
+		transform: rotate(0deg);
+	}
+	25% {
+		transform: rotate(15deg);
+	}
+	50% {
+		transform: rotate(0deg);
+	}
+	75% {
 		transform: rotate(-15deg);
 	}
+
 	100% {
-		transform: rotate(15deg);
+		transform: rotate(0deg);
 	}
 }
 

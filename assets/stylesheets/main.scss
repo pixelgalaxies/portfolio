@@ -53,7 +53,7 @@ body {
 }
 
 .nav-links {
-	padding: 0.5em 0;
+	padding: 15px 0;
 }
 
 nav a {
@@ -262,6 +262,18 @@ footer {
 }
 
 @media (min-width: 768px) {
+	.nav-links li:nth-child(2) {
+		margin-right: 100px;
+	}
+
+	.nav-logo {
+		position: absolute;
+		top: 5px;
+		width: 75px;
+		max-height: 75px;
+		border: 1px solid $black;
+	}
+
 	.sbar {
 		width: 0px;
 		transition: width 1s;

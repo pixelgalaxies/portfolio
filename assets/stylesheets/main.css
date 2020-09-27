@@ -277,7 +277,7 @@ footer {
     width: 50%;
   }
   .ps-bar,
-  .ad-bar,
+  .ade-bar,
   .jq-bar {
     width: 40%;
   }
@@ -317,7 +317,7 @@ footer {
     width: 50%;
   }
   .skill-box:hover .ps-bar,
-  .skill-box:hover .ad-bar,
+  .skill-box:hover .ade-bar,
   .skill-box:hover .jq-bar {
     width: 40%;
   }

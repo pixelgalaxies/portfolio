@@ -15,11 +15,15 @@
 
 		<link rel="shortcut icon" href="assets/images/gems.png" type="image/x-icon" />
 
+		<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
+
 		<title>Dustin Clark - Web Developer</title>
 	</head>
 
 	<body>
-		<a href="#" class="toTop"><img src="/assets/images/chevrons-up.svg" alt="" /></a>
+		<a href="javascript:void(0);" class="toTop">
+			<i class="fas fa-angle-double-up"></i>
+		</a>
 		<nav class="nav-absolute">
 			<div class="nav-container-960 hcenter">
 				<img class="nav-logo circle" src="assets/images/meVector.png" alt="a vector picture of me" />
@@ -31,8 +35,9 @@
 						<li><a href="#contact">contact</a></li>
 					</ul>
 				</div>
-				<img src="/assets/images/menu.svg" alt="" class="menu-icon" onclick="menuOpen()" />
-				<img src="/assets/images/x.svg" alt="" class="close-icon" onclick="menuClose()" />
+				<span class="menu-icon" onclick="menuOpen()"><i class="fas fa-bars"></i></span>
+				<span class="close-icon" onclick="menuClose()"><i class="fas fa-times"></i></span>
+				
 			</div>
 
 			<div class="dropdown">
@@ -48,7 +53,7 @@
 		<div id="home" class="hero true-center">
 			<h1>dustin clark</h1>
 			<h2>front-end web developer</h2>
-			<img class="gems" src="assets/images/gems.png" alt="a rotating gem" />
+			<img class="gems" src="assets/images/gems.png" alt="dancing gem" />
 		</div>
 		<!-- /splash -->
 
@@ -64,7 +69,7 @@
 
 				<div class="row">
 					<div class="cols-12 colm-6 hcenter">
-						<img class="me vecenter" src="assets/images/me.jpg" alt="dustin clark" />
+						<img class="me vecenter" src="assets/images/me.jpg" alt="photo of dustin clark" />
 					</div>
 					<div class="cols-12 colm-6 vcenter">
 						<p class="about-text">
@@ -168,7 +173,7 @@
 				<div class="row">
 					<div class="cols-12 hcenter">
 						<div class="section-head">
-							<h2>my work</h2>
+							<h2>my projects</h2>
 						</div>
 					</div>
 				</div>
@@ -223,18 +228,7 @@
 						<p>this project is a funny one. it shows you how many years you have to live (not really). atropos allowed me to practice some more javascript and jquery</p>
 					</div>
 				</div>
-				<div class="row">
-					<div class="cols-12 colm-6">
-						<a href="https://icsleeward.github.io/ccc2017/">
-							<img src="assets/images/projectPics/ccc17Pic.jpg" alt="Project: CCC'17" />
-						</a>
-					</div>
-					<div class="cols-12 colm-6 true-center">
-						<h3>ccc '17</h3>
-						<p>html, css, javascript, jquery</p>
-						<p>the community coding challenge is a community college hackathon created by and for community college students. i didn't organize the event but i did create the site for it.</p>
-					</div>
-				</div>
+				
 			</div>
 			<!-- /grid-960 -->
 		</div>
@@ -253,37 +247,37 @@
 				<div class="row">
 					<div class="cols-4 colm-2 contact-box vcenter">
 						<a href="mailto:pixel.galaxies@gmail.com">
-							<img src="assets/images/contactIcons/email.png" alt="Email" />
+							<img src="assets/images/contactIcons/email.png" alt="Email icon" />
 						</a>
 					</div>
 
 					<div class="cols-4 colm-2 contact-box">
 						<a href="https://github.com/pixelgalaxies">
-							<img src="assets/images/contactIcons/github.png" alt="GitHub" />
+							<img src="assets/images/contactIcons/github.png" alt="GitHub icon" />
 						</a>
 					</div>
 
 					<div class="cols-4 colm-2 contact-box">
 						<a href="https://www.linkedin.com/in/imdustin/">
-							<img src="assets/images/contactIcons/linkedin.png" alt="LinkedIn" />
+							<img src="assets/images/contactIcons/linkedin.png" alt="LinkedIn icon" />
 						</a>
 					</div>
 
 					<div class="cols-4 colm-2 contact-box">
 						<a href="https://www.instagram.com/pixelgalaxies/">
-							<img src="assets/images/contactIcons/instagram.png" alt="Instgram" />
+							<img src="assets/images/contactIcons/instagram.png" alt="Instgram icon" />
 						</a>
 					</div>
 
 					<div class="cols-4 colm-2 contact-box">
 						<a href="https://codepen.io/pixelgalaxies/">
-							<img src="assets/images/contactIcons/codepen.png" alt="Codepen" />
+							<img src="assets/images/contactIcons/codepen.png" alt="CodePen icon" />
 						</a>
 					</div>
 
 					<div class="cols-4 colm-2 contact-box">
 						<a href="https://www.freecodecamp.com/pixelgalaxies">
-							<img src="assets/images/contactIcons/fcc.png" alt="FreeCodeCamp" />
+							<img src="assets/images/contactIcons/fcc.png" alt="FreeCodeCamp icon" />
 						</a>
 					</div>
 				</div>
@@ -302,5 +296,11 @@
 		</footer>
 
 		<script type="text/javascript" src="https://s3-us-west-2.amazonaws.com/pg-crescendo/crescendo.js"></script>
+
+		<script>
+			document.querySelector('.toTop').addEventListener("click", function() {
+				window.scroll({top: 0, left: 0, behavior: 'smooth'});
+			})
+		</script>
 	</body>
 </html>

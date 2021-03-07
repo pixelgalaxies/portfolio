@@ -35,6 +35,8 @@ body {
   position: fixed;
   bottom: 15px;
   right: 15px;
+  font-size: 48px;
+  color: #394b51;
 }
 
 /* 
@@ -77,6 +79,7 @@ nav a {
 .menu-icon,
 .close-icon {
   padding: 0.5em;
+  font-size: 24px;
 }
 
 .dropdown {

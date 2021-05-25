@@ -11,24 +11,30 @@ body {
 	color: $black;
 }
 
+body.dark {
+	color: $black;
+}
+
 .section-head {
 	width: 60%;
-	background: linear-gradient(90deg, rgba(0, 0, 0, 0), rgb(255, 253, 216), rgba(0, 0, 0, 0));
+	background: linear-gradient(90deg, rgba(0, 0, 0, 0), rgb(255,250,153), rgba(0, 0, 0, 0));
 	padding: 1em;
 	text-align: center;
 	transition: width 0.5s;
+	
 
 	&:hover {
 		width: 100%;
 	}
 
 	h2 {
-		font-weight: 300;
+		
+		font-size: 24px;
 	}
 }
 
 .grid-container {
-	padding: 35px 10px;
+	padding: 37px 10px 75px 10px;
 }
 
 .toTop {
@@ -37,7 +43,7 @@ body {
 	right: 15px;
 	font-size: 48px;
 	color: $black;
-	opacity: 0.4;
+	opacity: 0.5;
 
 	&:hover {
 		opacity: 1;
@@ -48,8 +54,14 @@ body {
 ------------------------------ Navigation
 */
 header {
-	background-color: $pink;
+	background-color: $primary;
 }
+
+// body.dark {
+// 	header {
+// 		background-color: $yellow;
+// 	}
+// }
 
 .navbar {
 	padding: 10px;
@@ -57,7 +69,7 @@ header {
 
 .nav-list a {
 	color: $black;
-	font-size: 1.5em;
+	font-size: 18px;
 	text-decoration: none;
 	
 }
@@ -80,7 +92,7 @@ header {
 }
 
 .nav-list {
-	background-color: $pink;
+	background-color: $primary;
 }
 
 .nav-logo img {
@@ -148,40 +160,12 @@ header {
 	}
 
 	.about-text {
-		font-size: 1.5em;
+		font-size: 22px;
 		color: $black;
 	}
 }
 
-/*
-------------------------------------- skills
-*/
-#skills {
-	background-color: $pink;
-}
 
-.skill-box {
-	margin: 1em 0;
-	width: 100%;
-	background-color: #f0f0f0;
-	border-radius: 5px;
-
-	p {
-		text-align: right;
-		padding: 0 1em;
-		font-size: 1em;
-		white-space: nowrap;
-	}
-}
-
-.new-skills {
-	&--header {
-		font-size: 24px;
-	}
-	&--text {
-		font-size: 18px;
-	}
-}
 
 /* 
 ----------------------------------- projects
@@ -191,33 +175,115 @@ header {
 	background-position: center;
 	background-attachment: fixed;
 	background-size: cover;
+	
+	.project {
+		&:not(:last-of-type) {
+			@media(min-width:768px) {
+				margin-bottom: 50px;
+			}
+		}
+		&:nth-child(even) {
+			@media(max-width: 768px) {
+				flex-direction: column-reverse;
+			}
+		}
+	}
+
+	
 
 	h3 {
-		font-size: 1.3em;
+		font-size: 24px;
+	}
+
+	p {
+		@media(min-width:768px) {
+			font-size: 18px
+		}
 	}
 
 	img {
-		box-shadow: 0px 3px 6px #000000;
+		box-shadow: 0px 3px 6px $black;
 		margin-bottom: 10px;
 		min-width: 100%;
 	}
 }
 
+
+/*
+------------------------------------- skills
+*/
+#skills {
+	background-color: $white;
+}
+
+.resume {
+	div {
+		background-color: $primary-lighten;
+		border-radius: 3px;
+	}
+	h3 {
+		font-size: 20px;
+		background-color: $primary;
+		padding: 10px;
+		border-top-left-radius: 3px;
+		border-top-right-radius: 3px;
+		text-align: right;
+		
+	}
+	p {
+		
+		text-transform: lowercase;
+		letter-spacing: .5px;
+		padding: 15px;
+	}
+	&--heading {
+		font-size: 18px;
+	}
+}
+
+.new-skills {
+	&--header {
+		font-size: 24px;
+		
+	}
+	&--text {
+		font-size: 18px;
+	}
+}
+
+
+
 /* 
 ------------------------------------- contact
 */
 #contact {
-	background-color: #f0f0f0;
+	background-image: url(../images/bg.png);
+	background-position: center;
+	background-attachment: fixed;
+	background-size: cover;
 }
 
 .contact-box {
-	background-color: $cer;
-	border-radius: 5px;
+	// background-color: $primary-darken;
+	border-radius: 3px;
 	text-align: center;
-	padding: 1em;
+	padding: 10px;
+	a {
+		display: flex;
+		flex-direction: column;
+		text-decoration: none;
+		color: $black;
+	}
+	i {
+		font-size: 72px;
+	}
+
+	&--label {
+		margin: 3px 0;
+	}
 
 	&:hover {
-		background-color: $yellow;
+		background-color: rgba(245, 242, 248, 0.6);
 	}
 }
 
@@ -227,7 +293,7 @@ header {
 footer {
 	text-align: center;
 	padding: 40px 0px;
-	background-color: $pink;
+	background-color: $primary;
 	color: $black;
 }
 
@@ -236,34 +302,7 @@ footer {
 */
 
 @media (min-width: 300px) {
-	.sbar {
-		padding: 1em 0;
-		border-radius: 5px;
-		background-color: $cer;
-	}
 
-	.html-bar,
-	.css-bar {
-		width: 90%;
-	}
-
-	.js-bar,
-	.less-bar,
-	.sass-bar,
-	.bs-bar {
-		width: 50%;
-	}
-
-	.ps-bar,
-	.ade-bar,
-	.jq-bar {
-		width: 40%;
-	}
-
-	.ucl-bar,
-	.git-bar {
-		width: 30%;
-	}
 }
 
 @media (min-width: 768px) {
@@ -279,33 +318,7 @@ footer {
 	// 	border: 1px solid $black;
 	// }
 
-	.sbar {
-		width: 0px;
-		transition: width 1s;
-	}
+	
 
-	.skill-box:hover {
-		.html-bar,
-		.css-bar {
-			width: 90%;
-		}
-
-		.js-bar,
-		.less-bar,
-		.sass-bar,
-		.bs-bar {
-			width: 50%;
-		}
-
-		.ps-bar,
-		.ade-bar,
-		.jq-bar {
-			width: 40%;
-		}
-
-		.ucl-bar,
-		.git-bar {
-			width: 30%;
-		}
-	}
+	
 }

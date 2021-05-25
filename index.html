@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<!-- PORTFOLIO www.dustinclark.info -->
+<!-- PORTFOLIO www.dustinclark.ninja -->
 <html>
 
 <head>
@@ -21,7 +21,7 @@
 	<title>Dustin Clark - Web Developer</title>
 </head>
 
-<body>
+<body class="dark">
 	<a href="javascript:void(0);" class="toTop">
 		<i class="fas fa-angle-double-up"></i>
 	</a>
@@ -34,10 +34,10 @@
 				<i class="fas fa-times nav-icon--close"></i>
 			</div>
 			<ul class="nav-list">
-				<li><a href="#projects">projects</a></li>
-				<li><a href="#skills">skills</a></li>
 				<li><a href="#about">about</a></li>
-				<li><a href="#contact">contact</a></li>
+				<li><a href="#projects">projects</a></li>
+				<li><a href="#skills">resume</a></li>
+				<li><a href="#contact">connect</a></li>
 			</ul>
 		</nav>
 	</header>
@@ -55,7 +55,7 @@
 			<div class="row">
 				<div class="col-12 hcenter">
 					<div class="section-head">
-						<h2>me</h2>
+						<h2>about</h2>
 					</div>
 				</div>
 			</div>
@@ -76,118 +76,31 @@
 	</section>
 	<!-- /#about -->
 
-	<section class="grid-container" id="skills">
-		<div class="grid">
-			<div class="row">
-				<div class="col-12 hcenter">
-					<div class="section-head">
-						<h2>my skills</h2>
-					</div>
-				</div>
-			</div>
-
-			<div class="row">
-				<div class="col-sm-12 col-md-6 languages">
-					<div class="skill-box">
-						<div class="html-bar sbar">
-							<p>html</p>
-						</div>
-					</div>
-					<div class="skill-box">
-						<div class="css-bar sbar">
-							<p>css</p>
-						</div>
-					</div>
-					<div class="skill-box">
-						<div class="js-bar sbar">
-							<p>javascript</p>
-						</div>
-					</div>
-					<div class="skill-box">
-						<div class="sass-bar sbar">
-							<p>sass</p>
-						</div>
-					</div>
-					<div class="skill-box">
-						<div class="less-bar sbar">
-							<p>less</p>
-						</div>
-					</div>
-					<div class="skill-box">
-						<div class="jq-bar sbar">
-							<p>jquery</p>
-						</div>
-					</div>
-				</div>
-				<!--/languages-->
-
-				<div class="col-sm-12 col-md-6 tools">
-					<div class="skill-box">
-						<div class="ucl-bar sbar">
-							<p>unix cmd line</p>
-						</div>
-					</div>
-					<div class="skill-box">
-						<div class="git-bar sbar">
-							<p>git</p>
-						</div>
-					</div>
-					<div class="skill-box">
-						<div class="ps-bar sbar">
-							<p>photoshop</p>
-						</div>
-					</div>
-					<div class="skill-box">
-						<div class="ade-bar sbar">
-							<p>affinity designer</p>
-						</div>
-					</div>
-					<div class="skill-box">
-						<div class="bs-bar sbar">
-							<p>bootstrap</p>
-						</div>
-					</div>
-				</div>
-				<!--/tools-->
-			</div>
-			<!-- /row -->
-			<div class="row">
-				<div class="col-12 hcenter">
-					<h3 class="new-skills--header">what i want to learn next:</h3>
-					<p class="new-skills--text">react // css grid // css animations // typography basics // b__e--m methodology
-					</p>
-					<p>and of course i want to build upon my existing skills.</p>
-				</div>
-			</div>
-		</div>
-	</section>
-	<!-- /skills -->
-
 	<section class="grid-container" id="projects">
 		<div class="grid">
 			<div class="row">
 				<div class="col-12 hcenter">
 					<div class="section-head">
-						<h2>my projects</h2>
+						<h2>projects</h2>
 					</div>
 				</div>
 			</div>
-			<div class="row">
-				<div class="col-sm-12 col-md-6">
-					<a href="http://www.talesofkavaya.com">
-						<img src="assets/images/projectPics/kavayaPic.jpg" alt="Project: Kavaya" />
-					</a>
-				</div>
-
+			<div class="row project">
 				<div class="col-sm-12 col-md-6 true-center">
 					<h3>tales of kavaya</h3>
 					<p>html, css, javascript</p>
 					<p>tales of Kavaya is a web comic about a magical land and its new rulers. it is a collboration between me and
 						two friends though i handle all building of the site itself.</p>
 				</div>
+				<div class="col-sm-12 col-md-6">
+					<a href="http://www.talesofkavaya.com">
+						<img src="assets/images/projectPics/kavayaPic.jpg" alt="Project: Kavaya" />
+					</a>
+				</div>
+
 			</div>
 
-			<div class="row">
+			<div class="row project">
 				<div class="col-sm-12 col-md-6">
 					<a href="http://www.pixelgalaxies.com/crescendo">
 						<img src="assets/images/projectPics/crescendoPic.jpg" alt="Project: Crescendo" />
@@ -201,20 +114,20 @@
 				</div>
 			</div>
 
-			<div class="row">
-				<div class="col-sm-12 col-md-6">
-					<a href="http://www.pixelgalaxies.com/burnitall">
-						<img src="assets/images/projectPics/burnitallPic.jpg" alt="Project: Burn It All" />
-					</a>
-				</div>
+			<div class="row project">
 				<div class="col-sm-12 col-md-6 true-center">
 					<h3>burn it all</h3>
 					<p>html, css, javascript</p>
 					<p>this site is a simple quote generator with a twist: all the quotes are about fire. it's one of my first
 						projects while learning javascript.</p>
 				</div>
+				<div class="col-sm-12 col-md-6">
+					<a href="http://www.pixelgalaxies.com/burnitall">
+						<img src="assets/images/projectPics/burnitallPic.jpg" alt="Project: Burn It All" />
+					</a>
+				</div>
 			</div>
-			<div class="row">
+			<div class="row project">
 				<div class="col-sm-12 col-md-6">
 					<a href="http://www.pixelgalaxies.com/atropos">
 						<img src="assets/images/projectPics/atroposPic.jpg" alt="Project: Atropos" />
@@ -233,12 +146,75 @@
 	</section>
 	<!-- /projects -->
 
+	<section class="grid-container" id="skills">
+		<div class="grid">
+			<div class="row">
+				<div class="col-12 hcenter">
+					<div class="section-head">
+						<h2>resume</h2>
+					</div>
+				</div>
+			</div>
+
+			<div class="row resume">
+				<div class="col-sm-12 col-md-6 col-lg-4">
+					<h3>experience</h3>
+					<p>
+						<span class="resume--heading">Dealer Spike <br> Technical Support Specialist II </span><br>
+						<span class="">September 2020 - Present</span>
+					</p>
+					<p>
+						<span class="resume--heading">Dealer Spike <br> Technical Support Specialist I </span><br>
+						<span class="">September 2019 - September 2020</span>
+					</p>
+					<p>
+						<span class="resume--heading">American Savings Bank <br> Application Support Analyst I</span><br>
+						<span class="">March 2018 - April 2019</span>
+					</p>
+				</div>
+
+				<div class="col-sm-12 col-md-6 col-lg-4">
+					<h3>education</h3>
+					<p>
+						<span class="resume--heading">Franklin University</span><br>
+						<span class="">B.S. Web Development ~ 2018 - 2021</span>
+					</p>
+					<p>
+						<span class="resume--heading">Leeward Community College</span><br>
+						<span class="">A.S. Computer Science ~ 2014-2016</span>
+					</p>
+					<p>
+						<span class="resume--heading">Leeward Community College</span><br>
+						<span class="">A.A Liberal Arts ~ 2008 - 2011</span>
+					</p>
+				</div>
+
+				<div class="col-sm-12 col-md-6 col-lg-4">
+					<h3>skills</h3>
+					<p><span class="resume--heading">languages:</span><br>html, css, javascript, less, sass</p>
+					<p><span class="resume--heading">libraries/frameworks:</span><br>jquery, bootstrap</p>
+					<p><span class="resume--heading">software:</span><br>git, photoshop, affinity designer, Mac OS, Windows, Linux
+					</p>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-12 hcenter new-skills">
+					<h3 class="new-skills--header">what i want to learn next:</h3>
+					<p class="new-skills--text">react // css grid // css animations // typography basics // b__e--m methodology
+					</p>
+					<p>and of course i want to build upon my existing skills.</p>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- /skills -->
+
 	<section class="grid-container" id="contact">
 		<div class="grid">
 			<div class="row">
 				<div class="col-12 hcenter">
 					<div class="section-head">
-						<h2>let's connect</h2>
+						<h2>connect</h2>
 					</div>
 				</div>
 			</div>
@@ -246,37 +222,43 @@
 			<div class="row">
 				<div class="col-sm-4 col-md-2 contact-box vcenter">
 					<a href="mailto:pixel.galaxies@gmail.com">
-						<img src="assets/images/contactIcons/email.png" alt="Email icon" />
+						<i class="far fa-envelope"></i>
+						<span class="contact-box--label">email</span>
 					</a>
 				</div>
 
-				<div class="col-sm-4 col-md-2 contact-box">
+				<div class="col-sm-4 col-md-2 contact-box vecenter">
 					<a href="https://github.com/pixelgalaxies">
-						<img src="assets/images/contactIcons/github.png" alt="GitHub icon" />
+						<i class="fab fa-github"></i>
+						<span class="contact-box--label">github</span>
 					</a>
 				</div>
 
-				<div class="col-sm-4 col-md-2 contact-box">
+				<div class="col-sm-4 col-md-2 contact-box vecenter">
 					<a href="https://www.linkedin.com/in/imdustin/">
-						<img src="assets/images/contactIcons/linkedin.png" alt="LinkedIn icon" />
+						<i class="fab fa-linkedin-in"></i>
+						<span class="contact-box--label">linkedin</span>
 					</a>
 				</div>
 
-				<div class="col-sm-4 col-md-2 contact-box">
+				<div class="col-sm-4 col-md-2 contact-box vecenter">
 					<a href="https://www.instagram.com/pixelgalaxies/">
-						<img src="assets/images/contactIcons/instagram.png" alt="Instgram icon" />
+						<i class="fab fa-instagram"></i>
+						<span class="contact-box--label">instagram</span>
 					</a>
 				</div>
 
-				<div class="col-sm-4 col-md-2 contact-box">
+				<div class="col-sm-4 col-md-2 contact-box vecenter">
 					<a href="https://codepen.io/pixelgalaxies/">
-						<img src="assets/images/contactIcons/codepen.png" alt="CodePen icon" />
+						<i class="fab fa-codepen"></i>
+						<span class="contact-box--label">codepen</span>
 					</a>
 				</div>
 
-				<div class="col-sm-4 col-md-2 contact-box">
+				<div class="col-sm-4 col-md-2 contact-box vecenter">
 					<a href="https://www.freecodecamp.com/pixelgalaxies">
-						<img src="assets/images/contactIcons/fcc.png" alt="FreeCodeCamp icon" />
+						<i class="fab fa-free-code-camp"></i>
+						<span class="contact-box--label">freecodecamp</span>
 					</a>
 				</div>
 			</div>

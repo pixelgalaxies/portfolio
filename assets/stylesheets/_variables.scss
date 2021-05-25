@@ -1,6 +1,18 @@
-$black: #394b51;
-$pink: #dec5e3;
-$cer: #cdedfd;
-$blue: #b7cbff;
-$yellow: #fffdd8;
-$white: #fafafa;
+// light mode
+$black: #252525;
+$yellow: #fffa99;
+$white: #F5F2F8;
+$primary: #BBA1CE;
+$primary-lighten: #E2D7EA;
+$primary-darken: #956CB2;
+
+
+body.dark {
+	
+$black: #0e060d;
+$yellow: #8d903c;
+$white: #eae8ff;
+$primary: #331832;
+$primary-lighten: #452144;
+$primary-darken: #2A1429;
+}

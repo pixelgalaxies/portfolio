@@ -22,8 +22,18 @@
 </head>
 
 <body class="dark">
+
+	<div class="stargroup">
+		<div id="group1"></div>
+		<div id="group2"></div>
+		<div id="group3"></div>
+	</div>
+
 	<a href="javascript:void(0);" class="toTop">
 		<i class="fas fa-angle-double-up"></i>
+	</a>
+	<a href="javascript:void(0);" class="toggleMode">
+		<i class="fas fa-sun"></i>
 	</a>
 
 	<header>
@@ -62,7 +72,7 @@
 
 			<div class="row">
 				<div class="col-sm-12 col-md-6 hcenter">
-					<img class="me vecenter" src="assets/images/me.jpg" alt="photo of dustin clark" />
+					<img class="me vcenter" src="assets/images/me.jpg" alt="photo of dustin clark" />
 				</div>
 				<div class="cols-sm-12 col-md-6 vcenter">
 					<p class="about-text">
@@ -278,11 +288,7 @@
 
 	<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/pixelgalaxies/crescendo@master/crescendo.js"></script>
 
-	<script>
-		document.querySelector('.toTop').addEventListener("click", function () {
-			window.scroll({ top: 0, left: 0, behavior: 'smooth' });
-		})
-	</script>
+	<script src="assets/js/helper.js"></script>
 </body>
 
 </html>

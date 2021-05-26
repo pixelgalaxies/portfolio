@@ -3,15 +3,12 @@
 */
 @import "_variables.scss";
 
+
 /* 
 ------------------------------ General
 */
 body {
 	font-family: "Ubuntu", sans-serif;
-	color: $black;
-}
-
-body.dark {
 	color: $black;
 }
 
@@ -21,6 +18,7 @@ body.dark {
 	padding: 1em;
 	text-align: center;
 	transition: width 0.5s;
+	margin-bottom: 15px;
 	
 
 	&:hover {
@@ -34,7 +32,13 @@ body.dark {
 }
 
 .grid-container {
-	padding: 37px 10px 75px 10px;
+	padding: 75px 10px 75px 10px;
+}
+
+.stargroup {
+	display: none;
+	position: fixed;
+	z-index: -1;
 }
 
 .toTop {
@@ -44,11 +48,29 @@ body.dark {
 	font-size: 48px;
 	color: $black;
 	opacity: 0.5;
-
+	animation: bounce 2s infinite linear;
 	&:hover {
 		opacity: 1;
 	}
 }
+.toggleMode {
+	position: fixed;
+	bottom: 15px;
+	left: 15px;
+	font-size: 48px;
+	color: $black;
+	opacity: 0.5;
+	animation: bounce 1.5s infinite linear;
+	&:hover {
+		opacity: 1;
+	}
+}
+
+@keyframes bounce {
+	from { transform: translateY(0) }
+	to { transform: translateY(-10px) }
+}
+
 
 /* 
 ------------------------------ Navigation
@@ -56,12 +78,6 @@ body.dark {
 header {
 	background-color: $primary;
 }
-
-// body.dark {
-// 	header {
-// 		background-color: $yellow;
-// 	}
-// }
 
 .navbar {
 	padding: 10px;
@@ -109,7 +125,7 @@ header {
 	background-position: center;
 	background-attachment: fixed;
 	background-size: cover;
-	min-height: 100%;
+	min-height: 95%;
 
 	h1 {
 		color: $black;
@@ -151,16 +167,16 @@ header {
 ---------------------------------------- about
 */
 #about {
-	background-color: #f0f0f0;
+	background-color: $white;
 
 	.me {
-		max-width: 90%;
+		max-width: 60%;
 		border: 2px solid $black;
 		border-radius: 50%;
 	}
 
 	.about-text {
-		font-size: 22px;
+		font-size: 20px;
 		color: $black;
 	}
 }
@@ -193,11 +209,14 @@ header {
 
 	h3 {
 		font-size: 24px;
+		border-bottom: 2px solid $black;
 	}
 
 	p {
 		@media(min-width:768px) {
-			font-size: 18px
+			font-size: 18px;
+			padding: 0 10px;
+			margin: 3px 0;
 		}
 	}
 
@@ -235,9 +254,11 @@ header {
 		text-transform: lowercase;
 		letter-spacing: .5px;
 		padding: 15px;
+		margin: 3px 0;
 	}
 	&--heading {
 		font-size: 18px;
+		color: $primary-darken;
 	}
 }
 
@@ -294,31 +315,172 @@ footer {
 	text-align: center;
 	padding: 40px 0px;
 	background-color: $primary;
-	color: $black;
 }
 
 /* 
-------------------------------------- Media Queries
+------------------------------ DARK
 */
+body.dark {
+	color: $dark-white;
 
-@media (min-width: 300px) {
+	.section-head {
+		color: $dark-black;
+		background: linear-gradient(90deg, rgba(0, 0, 0, 0), rgb(179,183,82), rgba(0, 0, 0, 0));
+		}
 
+	.toTop, .toggleMode {
+		color: $dark-white;
+	}
+
+	.stargroup {
+		display: inherit;
+	}
+
+	header {
+		background-color: $dark-primary;
+	}
+
+	.nav-list a {
+		color: $dark-white;
+	}
+
+	.nav-list a:hover {
+		border-bottom: 3px solid $dark-white;
+	}
+
+	.nav-list {
+		background-color: $dark-primary;
+	}
+
+	#home {
+		background-image: unset;
+		background-color: transparent;
+		
+
+		h1 {
+			color: $dark-white;
+		}
+
+		h2 {
+			color: $dark-white;
+		}
+	}
+
+	.gems {
+		display: none;
+	}
+
+	#about {
+		background-color: $dark-black;
+
+		.me {
+			border: unset;
+			filter: brightness(75%);
+			
+		}
+
+		.about-text {
+			color: $dark-white;
+		}
+	}
+
+	#projects {
+		background-image: unset;
+		background-color: transparent;
+
+		h3 {
+			color: $dark-yellow;
+			border-bottom: none;
+		}
+		
+		img {
+			box-shadow: 0px 3px 6px $dark-white;
+			filter: brightness(75%);
+		}
+	}
+
+	#skills {
+		background-color: $dark-black;
+	}
+
+	.resume {
+		div {
+			background-color: $dark-primary-lighten;
+		}
+		h3 {
+			background-color: $dark-primary;
+		}
+		&--heading {
+			color: $dark-yellow;
+		}
+	}
+
+	#contact {
+		background-image: unset;
+		background-color: transparent;
+	}
+
+	.contact-box {
+		a {
+			color: $dark-white;
+		
+			&:hover {
+				color: $dark-black;
+			}
+		}
+		&:hover {
+			background-color: rgba(234, 232, 255, 0.6);
+			
+		}
+	}
+
+	footer {
+		background-color: $dark-primary;
+	}
 }
 
-@media (min-width: 768px) {
-	// .nav-list li:nth-child(2) {
-	// 	margin-right: 100px;
-	// }
+// STARS
+.stargroup{
+	background: radial-gradient(ellipse at top, $dark-primary-darken 0%, #000 100%);
+	height: 100vh;
+	width: 100%;
+}
 
-	// .nav-logo img {
-	// 	position: absolute;
-	// 	top: 5px;
-	// 	width: 75px;
-	// 	max-height: 75px;
-	// 	border: 1px solid $black;
-	// }
+@function generateStars ($n) { 
+  $value: '#{random(2000)}px #{random(2000)}px #eae8ff';
+  @for $i from 2 through $n {
+    $value: '#{$value} , #{random(2000)}px #{random(2000)}px #eae8ff';
+	}
+  @return unquote($value);
+}
 
-	
+$stars-small:  generateStars(1000);
+$stars-medium: generateStars(400);
+$stars-big:    generateStars(100);
 
-	
+#group1 {
+	box-shadow: $stars-small;
+	width: 1px;
+	height: 1px;
+	animation	: stardrop 75s linear infinite;
+	animation-delay:-25s;
+	}
+#group2 {
+	box-shadow: $stars-medium;
+	width: 2px;
+	height: 2px;
+	animation	: stardrop 100s linear infinite;
+	animation-delay:-20s;
+}
+#group3 {
+	box-shadow: $stars-big;
+	width: 3px;
+	height: 3px;
+	animation: stardrop 125s linear infinite;
+	animation-delay:-20s;
+}
+
+@keyframes stardrop {
+	from { transform: translateY(-2000px) }
+	to { transform: translateY(0) }
 }

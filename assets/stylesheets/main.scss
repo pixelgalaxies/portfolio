@@ -209,7 +209,7 @@ header {
 
 	h3 {
 		font-size: 24px;
-		border-bottom: 2px solid $black;
+		font-style: italic;
 	}
 
 	p {
@@ -390,7 +390,7 @@ body.dark {
 
 		h3 {
 			color: $dark-yellow;
-			border-bottom: none;
+			font-style: unset;
 		}
 		
 		img {

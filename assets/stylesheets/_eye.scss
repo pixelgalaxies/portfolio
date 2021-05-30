@@ -1,0 +1,35 @@
+.lid {
+  animation: blink 4s ease-in infinite;
+  display: flex;
+  justify-content: center;
+}
+
+.outer {
+  height: 80px;
+  width: 80px;
+  border: 2px $dark-white solid;
+  border-top-left-radius: 100%;
+  border-bottom-right-radius: 100%;
+  transform: rotate(45deg); 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+}
+
+.inner {
+  height: 30px;
+  width: 30px;
+  background: $dark-white;
+  border-radius: 50%;
+}
+
+@keyframes blink {
+  0%, 30%, 36%, 100% {
+    transform: scale(1);
+  }
+  32%, 34% {
+    transform: scale(1,0);
+  }
+}
+

@@ -2,6 +2,8 @@
 ------------------------------ Imports and mixins
 */
 @import "_variables.scss";
+@import "_stars.scss";
+@import "_eye.scss";
 
 
 /* 
@@ -60,7 +62,7 @@ body {
 	font-size: 48px;
 	color: $black;
 	opacity: 0.5;
-	animation: bounce 1.5s infinite linear;
+	animation: bounce 2s infinite linear;
 	&:hover {
 		opacity: 1;
 	}
@@ -144,6 +146,10 @@ header {
 	animation: rotateMe 2s infinite linear;
 }
 
+.lid {
+	display: none;
+}
+
 @keyframes rotateMe {
 	0% {
 		transform: rotate(0deg);
@@ -203,6 +209,16 @@ header {
 				flex-direction: column-reverse;
 			}
 		}
+
+		&__links {
+			margin-top: 5px;
+			a {
+				color: $black;
+				font-size: 24px;
+				text-decoration: none;
+				padding: 5px;
+			}
+		}
 	}
 
 	
@@ -222,7 +238,6 @@ header {
 
 	img {
 		box-shadow: 0px 3px 6px $black;
-		margin-bottom: 10px;
 		min-width: 100%;
 	}
 }
@@ -246,7 +261,7 @@ header {
 		padding: 10px;
 		border-top-left-radius: 3px;
 		border-top-right-radius: 3px;
-		text-align: right;
+		text-align: center;
 		
 	}
 	p {
@@ -370,6 +385,10 @@ body.dark {
 		display: none;
 	}
 
+	.lid {
+		display: flex;
+	}
+
 	#about {
 		background-color: $dark-black;
 
@@ -387,6 +406,14 @@ body.dark {
 	#projects {
 		background-image: unset;
 		background-color: transparent;
+
+		.project {
+			&__links {
+				a {
+					color: $dark-white;
+				}
+			}
+		}
 
 		h3 {
 			color: $dark-yellow;
@@ -437,50 +464,4 @@ body.dark {
 	footer {
 		background-color: $dark-primary;
 	}
-}
-
-// STARS
-.stargroup{
-	background: radial-gradient(ellipse at top, $dark-primary-darken 0%, #000 100%);
-	height: 100vh;
-	width: 100%;
-}
-
-@function generateStars ($n) { 
-  $value: '#{random(2000)}px #{random(2000)}px #eae8ff';
-  @for $i from 2 through $n {
-    $value: '#{$value} , #{random(2000)}px #{random(2000)}px #eae8ff';
-	}
-  @return unquote($value);
-}
-
-$stars-small:  generateStars(1000);
-$stars-medium: generateStars(400);
-$stars-big:    generateStars(100);
-
-#group1 {
-	box-shadow: $stars-small;
-	width: 1px;
-	height: 1px;
-	animation	: stardrop 75s linear infinite;
-	animation-delay:-25s;
-	}
-#group2 {
-	box-shadow: $stars-medium;
-	width: 2px;
-	height: 2px;
-	animation	: stardrop 100s linear infinite;
-	animation-delay:-20s;
-}
-#group3 {
-	box-shadow: $stars-big;
-	width: 3px;
-	height: 3px;
-	animation: stardrop 125s linear infinite;
-	animation-delay:-20s;
-}
-
-@keyframes stardrop {
-	from { transform: translateY(-2000px) }
-	to { transform: translateY(0) }
 }

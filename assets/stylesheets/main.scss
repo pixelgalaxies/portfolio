@@ -445,6 +445,10 @@ body.dark {
 			&__links {
 				a {
 					color: $dark-white;
+
+					&:hover, &:active, &:focus {
+						color: $yellow;
+					}
 				}
 			}
 		}

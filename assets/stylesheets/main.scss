@@ -1,14 +1,15 @@
-/*
------------------------------- Imports and mixins
-*/
+/*------------------------------*\
+#IMPORTS
+\*------------------------------*/
 @import "_variables.scss";
 @import "_stars.scss";
 @import "_eye.scss";
 
 
-/* 
------------------------------- General
-*/
+
+/*------------------------------*\
+#GENERAL
+\*------------------------------*/
 body {
 	font-family: "Ubuntu", sans-serif;
 	color: $black;
@@ -23,7 +24,7 @@ body {
 	margin-bottom: 15px;
 	
 
-	&:hover {
+	&:hover, &:active, &:focus {
 		width: 100%;
 	}
 
@@ -74,9 +75,10 @@ body {
 }
 
 
-/* 
------------------------------- Navigation
-*/
+
+/*------------------------------*\
+#NAVIGATION
+\*------------------------------*/
 header {
 	background-color: $primary;
 }
@@ -89,15 +91,31 @@ header {
 	color: $black;
 	font-size: 18px;
 	text-decoration: none;
-	
+	position: relative;
+	z-index: 2;
+	padding: 0 3px;
+
+	&:after {
+		position: absolute;
+		content: "";
+		bottom: 0;
+		left: 0;
+		right: 0;
+		height: 0;
+		background-color: $yellow;
+		transition: all .33s ease-in-out;
+		z-index: -1;
+	}
+
+	&:hover, &:active, &:focus {
+		&:after {
+			height: 10px;
+		}
+	}
 }
 
 .nav-list li {
 	padding: 10px;
-}
-
-.nav-list a:hover {
-	border-bottom: 3px solid $white;
 }
 
 .nav-icon {
@@ -118,9 +136,9 @@ header {
 	border-radius: 50%;
 }
 
-/*
--------------------------------------- splash
-*/
+/*------------------------------*\
+#SPLASH
+\*------------------------------*/
 
 #home {
 	background-image: url(../images/bg.png);
@@ -169,9 +187,9 @@ header {
 	}
 }
 
-/* 
----------------------------------------- about
-*/
+/*------------------------------*\
+#ABOUT
+\*------------------------------*/
 #about {
 	background-color: $white;
 
@@ -185,13 +203,23 @@ header {
 		font-size: 20px;
 		color: $black;
 	}
+
+	.new-skills {
+		&--header {
+			font-size: 24px;
+			margin-top: 15px;
+		}
+		&--text {
+			font-size: 18px;
+		}
+	}
 }
 
 
 
-/* 
------------------------------------ projects
-*/
+/*------------------------------*\
+#PROJECTS
+\*------------------------------*/
 #projects {
 	background-image: url(../images/bg.png);
 	background-position: center;
@@ -217,6 +245,11 @@ header {
 				font-size: 24px;
 				text-decoration: none;
 				padding: 5px;
+				transition: all .33s ease-in-out;
+
+				&:hover, &:active, &:focus {
+					color: $yellow;
+				}
 			}
 		}
 	}
@@ -237,15 +270,20 @@ header {
 	}
 
 	img {
-		box-shadow: 0px 3px 6px $black;
+		box-shadow: 0px 2px 4px $black;
+		border-radius: 3px;
 		min-width: 100%;
+
+		&:hover, &:active, &:focus {
+			box-shadow: 0px 4px 8px $black;
+		}
 	}
 }
 
 
-/*
-------------------------------------- skills
-*/
+/*------------------------------*\
+#SKILLS
+\*------------------------------*/
 #skills {
 	background-color: $white;
 }
@@ -277,16 +315,6 @@ header {
 	}
 }
 
-.new-skills {
-	&--header {
-		font-size: 24px;
-		
-	}
-	&--text {
-		font-size: 18px;
-	}
-}
-
 
 
 /* 
@@ -300,7 +328,6 @@ header {
 }
 
 .contact-box {
-	// background-color: $primary-darken;
 	border-radius: 3px;
 	text-align: center;
 	padding: 10px;
@@ -318,10 +345,12 @@ header {
 		margin: 3px 0;
 	}
 
-	&:hover {
+	&:hover, &:active, &:focus {
 		background-color: rgba(245, 242, 248, 0.6);
 	}
 }
+
+
 
 /* 
 ------------------------------------- footer
@@ -331,6 +360,11 @@ footer {
 	padding: 40px 0px;
 	background-color: $primary;
 }
+
+
+
+
+
 
 /* 
 ------------------------------ DARK
@@ -357,10 +391,10 @@ body.dark {
 
 	.nav-list a {
 		color: $dark-white;
-	}
 
-	.nav-list a:hover {
-		border-bottom: 3px solid $dark-white;
+		&:after {
+			background-color: darken($dark-yellow, 10%);
+		}
 	}
 
 	.nav-list {
@@ -421,8 +455,12 @@ body.dark {
 		}
 		
 		img {
-			box-shadow: 0px 3px 6px $dark-white;
+			box-shadow: 0px 2px 4px $dark-white;
 			filter: brightness(75%);
+
+			&:hover, &:active, &:focus {
+				box-shadow: 0px 4px 8px $dark-white;
+			}
 		}
 	}
 
@@ -451,13 +489,12 @@ body.dark {
 		a {
 			color: $dark-white;
 		
-			&:hover {
+			&:hover, &:active, &:focus {
 				color: $dark-black;
 			}
 		}
-		&:hover {
+		&:hover, &:active, &:focus {
 			background-color: rgba(234, 232, 255, 0.6);
-			
 		}
 	}
 

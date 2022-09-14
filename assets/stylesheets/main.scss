@@ -262,18 +262,18 @@ header {
 	text-align: center;
 }
 
-.nav-icon {
-	top: 25px;
-	right: 15px;
-  > span {
-    width: 30px;
-    height: 4px;
-    background-color: $black;
-  }
+.nav-icon span, .nav-icon span:before, .nav-icon span:after {
+  background-color: #d8d7d8;
+  height: 2px;
+  width: 30px;
+}
+.nav-icon.nav-open span {
+  background-color: transparent;
 }
 
 .nav-list {
 	background-color: $primary;
+	top: 75px;
 }
 
 .nav-logo img {

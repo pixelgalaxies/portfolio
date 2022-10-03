@@ -1,0 +1,32 @@
+@use "index" as *;
+
+/*------------------------------*\
+#SKILLS
+\*------------------------------*/
+.skills {
+	&__inner {
+		@include contain;
+		@include grid;
+	}
+
+	&__subheading {
+		@include underline(var(--subheading-line), 56px);
+
+		margin-bottom: 25px;
+	}
+
+	&__copy {
+		padding: 50px 30px;
+		background-color: var(--content-bg);
+		grid-column: span 12;
+
+		@media(min-width: 1024px) {
+			grid-column: span 6;
+		}
+	}
+
+	&__items {
+		display: flex;
+		flex-wrap: wrap;
+	}
+}

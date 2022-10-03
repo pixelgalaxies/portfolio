@@ -1,0 +1,12 @@
+@use "index" as *;
+
+/*------------------------------*\
+#FOOTER
+\*------------------------------*/
+footer {
+	text-align: center;
+	padding: 40px 0px;
+	background-color: var(--footer-bg);
+	color: var(--footer-color);
+	margin-top: -10px;
+}

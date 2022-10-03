@@ -1,0 +1,111 @@
+@use "index" as *;
+
+/*------------------------------*\
+#PROJECTS
+\*------------------------------*/
+.projects {
+	@include dotted(var(--dot-color), 5px);
+
+	background-color: var(--projects-bg);
+	
+	&__inner {
+		@include contain;
+		@include grid;
+	}
+
+	.project {
+		grid-column: span 12;
+		position: relative;
+		display: grid;
+		gap: $gap;
+		grid-template-columns: repeat(12, 1fr);
+		align-items: center;
+
+		&:not(:last-of-type) {
+			margin-bottom: 75px;
+		}
+
+		&__subheading {
+			@include underline(var(--subheading-line), 56px);
+
+			margin-bottom: 25px;
+		}
+
+		&__copy {
+			background-color: var(--content-bg);
+			padding: 50px 30px;
+			grid-area: 2 / 1 / 2 / -1;
+
+			@media (min-width: $container-lg) {
+				grid-area: 1 / 1 / 1 / 7;
+				position: relative;
+				z-index: 1;
+			}
+		}
+
+		&__skills {
+			margin-block: $gap;
+			display: flex;
+			flex-wrap: wrap;
+		}
+
+		&__image {
+			border-color: var(--box-border);
+			position: relative;
+			grid-area: 1 / 1 / 1 / -1;
+
+			@media (min-width: $container-lg) {
+				grid-area: 1 / 6 / 1 / -1;
+				z-index: 0;
+			}
+
+			&:after {
+				content: 'Project: Complete';
+				color: $light;
+				position: absolute;
+				width: 100%;
+				text-align: right;
+				bottom: -16px;
+				right: 15px;
+				font-size: 12px;
+				animation: general-glitch 2s infinite;
+			}
+		}
+
+		&__image--rebuild {
+			&:after {
+				content: 'Project: Rebuild';
+			}
+		}
+
+		&:nth-child(odd) {
+			@media(min-width: $container-lg) {
+				.project__copy {
+					grid-area: 1 / 7 / 1 / -1;
+				}
+		
+				.project__image {
+					grid-area: 1 / 1 / 1 / 8;
+				}
+			}
+		}
+
+		&__links {
+			margin-top: 5px;
+			display: flex;
+			a {
+				color: var(--project-links);
+				transition: all $tt ease-in-out;
+				margin-right: $gap;
+
+				&:hover, &:active, &:focus {
+					color: var(--project-links-hover);
+				}
+			}
+
+			i {
+				font-size: 24px;
+			}
+		}
+	}
+}

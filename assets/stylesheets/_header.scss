@@ -1,0 +1,130 @@
+@use "index" as *;
+
+
+/*------------------------------*\
+#NAVIGATION
+\*------------------------------*/
+header {
+	position: fixed;
+  width: 100%;
+  z-index: 100;
+
+	&.fixed {
+		background-color: var(--header-bg);
+		
+	}
+
+	&.p-cutout-5 {
+		margin-top: -10px;
+		padding-block: calc($gap + 10px);
+	}
+}
+
+.nav {
+	@include contain;
+
+	display: flex;
+	justify-content: space-between;
+	position: relative;
+	padding: $gap;
+
+
+	&__logo {
+		img {
+			width: 3.5em;
+			border-radius: 50%;
+		}
+	}
+
+	&__icon {
+		width: 45px;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		position: relative;
+		cursor: pointer;
+
+		@media(min-width: $container-md) {
+			display: none;
+		}
+
+		span {
+			position: relative;
+			transition: all .25s ease-in-out;
+			&:before, &:after {
+				content: "";
+				position: absolute;
+				transition: all .25s ease-in-out;
+				left: 0;
+			}
+			&:before {
+				transform: translateY(-8px);
+			}
+			&:after {
+				transform: translateY(8px);
+			}
+			
+		}
+
+		span, span:before, span:after {
+			background-color: var(--header-icon);
+			height: 2px;
+			width: 30px;
+		}
+	}
+
+	&__list {
+		list-style: none;
+		transition: max-height 0.5s cubic-bezier(0, 1, 0, 1);
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		
+		@media(max-width: $container-md) {
+			width: 100%;
+			position: absolute;
+			left: 0;
+			top: 75px;
+			flex-direction: column;
+			max-height: 0;
+			overflow: hidden;
+			background-color: var(--header-list-bg);
+		}
+
+		li {
+			@media (max-width: $container-md) {
+				padding-block: $gap;
+			}
+
+			&:not(:last-child) {
+				@media (min-width: $container-md) {
+					margin-right: $gap;
+				}
+			}
+		}
+	}
+
+	&.nav-open {
+		.nav__icon {
+			span {
+				background-color: transparent;
+				&:before {
+					transform: rotate(45deg);
+				}
+				&:after {
+					transform: rotate(-45deg)
+				}
+			}
+		}
+		.nav__list {
+			transition: max-height 0.5s ease;
+			max-height: 100vh;
+		}
+	}
+
+	.btn {
+		height: 40px;
+		width: 125px;
+		font-size: 14px;
+	}
+}

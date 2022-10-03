@@ -1,0 +1,1069 @@
+// PROXIMA CSS
+// AUTHOR: DUSTIN CLARK 2022
+
+
+/*------------------------------*\
+# VARIABLES 
+\*------------------------------*/
+$glitch-time: 2s;
+
+//lines
+$line-1-path: polygon(0px 5px, 30px 5px, 35px 0px, 270px 0px, 275px 5px, 100% 5px, 100% 6px, 185px 6px, 180px 10px, 20px 10px, 15px 6px, 0px 6px);
+
+$line-2-path: polygon(0px 5px, 15px 5px, 20px 0px, 200px 0px, 205px 5px, 100% 5px, 100% 6px, 260px 6px, 255px 10px, 20px 10px, 15px 6px, 0px 6px);
+
+$line-3-path: polygon(0px 5px, 15px 5px, 20px 0px, 280px 0px, 285px 5px, 100% 5px, 100% 6px, 60px 6px, 65px 10px, 180px 10px, 185px 6px, 0px 6px);
+
+$line-4-path: polygon(0px 5px, 15px 5px, 20px 0px, 250px 0px, 255px 5px, 100% 5px, 100% 6px, 150px 6px, 145px 2px, 25px 2px, 8px 20px, 0px 10px);
+
+$line-5-path: polygon(0px 5px, 30px 5px, 35px 0px, 230px 0px, 235px 5px, 100% 5px, 100% 6px, 270px 6px, 265px 10px, 20px 10px, 15px 6px, 0px 6px);
+
+$bungle-path: polygon(0px 0px, 270px 0px, 275px 5px, 100% 5px, 100% 6px, 265px 6px, 260px 10px, 0px 10px);
+
+//buttons
+$btn-1-path: polygon(
+  -15px 0%,
+  calc(100% + 15px) 0%,
+  calc(100% + 15px) 100%,
+  20px 100%,
+  -15px calc(100% - 35px)
+);
+
+$btn-2-path: polygon(
+  -15px 0%, 
+  -15px 0%,
+  calc(100% - 20px) 0%,
+  100% 20px,
+  calc(100% + 15px) 100%,
+  calc(100% + 15px) 100%,
+  20px 100%, //bottom left
+  -15px calc(100% - 35px)
+);
+
+$btn-3-path: polygon(
+  -15px 0%,
+  -15px 0%,
+  calc(100% - 20px) 0%,
+  100% 20px,
+  calc(100% + 15px) 100%,
+  calc(100% + 15px) 100%,
+  -15px 100%,
+  -15px 100%
+);
+
+// boxes and cutouts
+$box-1: polygon(
+    0px 10px, 10px 0px,
+    calc(80% - 10px) 0px, 80% 10px,
+    100% 10px, 100% calc(100% - 10px),
+    calc(100%) calc(100% - 10px), calc(100% - 10px) 100%,
+    50% 100%, calc(50% - 10px) calc(100% - 10px),
+    0% calc(100% - 10px), 0% calc(100% - 10px)
+  );
+
+$box-2: polygon(
+    0px 10px,
+    calc(5% - 10px) 10px,
+    5% 0px,
+    calc(25% - 10px) 0px,
+    25% 10px,
+    calc(40% - 10px) 10px,
+    calc(40%) 0px,
+    100% 0px,
+    100% calc(100% - 10px),
+    calc(100% - 15px) calc(100% - 10px),
+    calc(80%) calc(100% - 10px), calc(80% - 10px) 100%,
+    10% 100%, calc(10% - 10px) calc(100% - 10px),
+    0% calc(100% - 10px), 0% calc(100% - 10px)
+  );
+
+$box-3: polygon(
+    0 10px,
+    calc(60% - 10px) 10px, 60% 0,
+    calc(100% - 10px) 0, 100% 10px,
+    100% 10px, 100% calc(100% - 25px),
+    calc(100%) calc(100% - 10px), calc(100% - 10px) 100%,
+    10% 100%, calc(10% - 10px) calc(100% - 10px),
+    0% calc(100% - 10px), 0% calc(100% - 10px)
+  );
+
+$box-4: polygon(
+    0px 0px,
+    calc(10% - 10px) 0px,
+    10% 10px,
+    calc(30% - 10px) 10px,
+    30% 0px,
+    calc(90% - 10px) 0px,
+    90% 10px,
+    100% 10px,
+    100% calc(100% - 10px),
+    calc(100% - 15px) calc(100% - 10px),
+    calc(80% - 15px) calc(100% - 10px),
+    calc(80% - 25px) calc(100% - 0px),
+    10px calc(100% - 0px),
+    0% calc(100% - 10px)
+  );
+  
+$box-5: polygon(
+    0px 10px,
+    calc(10% - 10px) 10px,
+    10% 0px,
+    calc(60% - 10px) 0px,
+    60% 10px,
+    calc(80% - 10px) 10px,
+    calc(80%) 0px,
+    100% 0px,
+    100% calc(100% - 10px),
+    calc(100% - 15px) calc(100% - 10px),
+    calc(100%) calc(100% - 10px), calc(100% - 10px) 100%,
+    30% 100%, calc(30% - 10px) calc(100% - 10px),
+    0% calc(100% - 10px), 0% calc(100% - 10px)
+  );
+
+//trims
+$trim-1-before: polygon(
+  calc(0% + 30px) -1px, calc(0% + 45px) 15px, 
+  15% 15px, calc(15% + 15px) -1px, 
+  calc(25% + 30px) -1px, calc(25% + 60px) 30px, 
+  50% 30px, calc(50% + 30px) -1px, 
+  calc(80% + 30px) -1px, calc(80% + 45px) 15px, 
+  95% 15px, calc(95% + 15px) -1px);
+
+$trim-1-after: polygon(
+  0% 0%, 
+  18% 0%, calc(18% + 45px) 45px, 
+  36% 30px, calc(36% + 15px) 15px, 
+  70% 15px, calc(70% + 15px) 30px, 
+  80% 45px, calc(80% + 45px) 0px, 
+  100% 0px, 100% 45px, 0px 45px);
+
+$trim-2-before: polygon(
+  calc(0% + 30px) -1px, calc(0% + 45px) 15px, 
+  20% 15px, calc(20% + 15px) -1px, 
+  calc(30% + 30px) -1px, calc(30% + 60px) 30px, 
+  50% 30px, calc(50% + 30px) -1px, 
+  calc(60% + 30px) -1px, calc(60% + 45px) 15px, 
+  90% 15px, calc(90% + 15px) -1px);
+
+$trim-2-after: polygon(
+  0% 0%, 
+  5% 0%, calc(5% + 45px) 45px, 
+  15% 30px, calc(15% + 15px) 15px, 
+  40% 15px, calc(40% + 15px) 30px,
+  55% 30px, calc(55% + 15px) 15px, 
+  80% 15px, calc(80% + 15px) 15px, 
+  80% 15px, calc(80% + 15px) 0px, 
+  100% 0px, 100% 45px, 
+  0px 45px);
+
+$trim-3-before: polygon(
+  calc(0% + 30px) -1px, calc(0% + 60px) 30px, 
+  25% 30px, calc(25% + 30px) -1px, 
+  calc(15% + 15px) -1px, calc(15% + 30px) 15px, 
+  50% 15px, calc(50% + 15px) -1px, 
+  calc(65% + 15px) -1px, calc(65% + 45px) 30px, 
+  80% 45px, calc(80% + 45px) -1px);
+
+$trim-3-after: polygon(
+  0% 0%, 
+  10% 0%, calc(10% + 45px) 45px, 
+  25% 30px, calc(25% + 15px) 15px, 
+  50% 15px, calc(50% + 15px) 30px, 
+  65% 45px, calc(65% + 45px) 0px, 
+  100% 0px, 100% 45px, 
+  0px 45px);
+
+$trim-bottom: polygon(
+  0% 0%, 
+  20% 0%, calc(20% + 45px) 45px, 
+  20% 30px, calc(20% + 15px) 15px, 
+  40% 15px, calc(40% + 15px) 30px, 
+  85% 45px, calc(85% + 45px) 0px, 
+  100% 0px, 100% 45px, 
+  0px 45px);
+
+
+
+
+
+/*------------------------------*\
+# MIXINS
+\*------------------------------*/
+@mixin underline($line-color: #000, $line-height: 2) {
+  line-height: $line-height;
+  &:before {
+    background-color: $line-color;
+  }
+}
+
+//buttons
+@mixin button-bg($bg-color, $bg-color-hover) {
+  background-color: $bg-color;
+  
+  &:before {
+    background-color: $bg-color;
+  }
+  
+  &:hover, &:focus, &:active {
+    background-color: $bg-color-hover;
+    &:before {
+      background-color: $bg-color-hover;
+    }
+  }
+}
+
+
+
+// text
+@mixin hypertext($color-1: rgba(255, 0, 0, 0.75), $color-2: rgba(0, 255, 0, 0.75), $color-3: rgba(0 0 255 / 0.75)) {
+  text-shadow:
+    0.05em 0 0 $color-1,
+    -0.025em -0.05em 0 $color-2,
+    -0.025em 0.05em 0 $color-3;
+
+  @keyframes hypertext-color {
+    0%, 14% {
+      text-shadow:
+      0.05em 0 0 $color-1,
+      -0.025em -0.05em 0 $color-2,
+      -0.025em 0.05em 0 $color-3;
+    }
+
+    15%, 49% {
+      text-shadow:
+      -0.05em 0 0 $color-1,
+      0.025em 0.05em 0 $color-2,
+      0.025em -0.05em 0 $color-3;
+    }
+
+    50%, 99% {
+      text-shadow:
+      -0.05em 0 0 $color-1,
+      0.025em -0.05em 0 $color-2,
+      -0.025em -0.05em 0 $color-3;
+    }
+
+    100% {
+      text-shadow:
+      0.225em 0 0 $color-1,
+      0.25em 0.05em 0 $color-2,
+      0.025em -0.05em 0 $color-3;
+    }
+  }
+
+  @keyframes hypertext-shift {
+    0%, 30% {
+      text-shadow:
+      0.05em 0 0 $color-1,
+      -0.025em -0.05em 0 $color-2,
+      -0.025em 0.05em 0 $color-3;
+      transform: translate(0, 0);
+    }
+
+    31%, 49% {
+      text-shadow:
+      -0.05em 0 0 $color-1,
+      0.025em 0.05em 0 $color-2,
+      0.025em -0.05em 0 $color-3;
+      transform: translate(.15em, .025em);
+    }
+
+    50%, 70% {
+      transform: translate(0, 0);
+    }
+
+    50%, 99% {
+      text-shadow:
+      -0.05em 0 0 $color-1,
+      0.025em -0.05em 0 $color-2,
+      -0.025em -0.05em 0 $color-3;
+    }
+
+    100% {
+      text-shadow:
+      0.225em 0 0 $color-1,
+      0.25em 0.05em 0 $color-2,
+      0.025em -0.05em 0 $color-3;
+    }
+  }
+}
+
+// trims 
+@mixin trim($bg-color, $before-color, $after-color, $text-color) {
+  color: $text-color;
+  background-color: $bg-color;
+  &:before {
+    background-color: $before-color;
+  }
+  &:after {
+    background-color: $after-color;
+  }
+}
+
+// backgrounds
+@mixin dotted($dot-color, $size) {
+  background-image: radial-gradient( $dot-color 1px, transparent 0 );
+  background-size: $size $size;
+}
+
+@mixin crossed($cross-color, $size) {
+  background-image: url("data:image/svg+xml,%3Csvg width='#{$size}' height='#{$size}' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='#{$cross-color}' fill-opacity='1'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+}
+
+@mixin connected($line-color, $dot-color) {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='200' height='200' viewBox='0 0 800 800'%3E%3Cg fill='none' stroke='#{$line-color}' stroke-width='1'%3E%3Cpath d='M769 229L1037 260.9M927 880L731 737 520 660 309 538 40 599 295 764 126.5 879.5 40 599-197 493 102 382-31 229 126.5 79.5-69-63'/%3E%3Cpath d='M-31 229L237 261 390 382 603 493 308.5 537.5 101.5 381.5M370 905L295 764'/%3E%3Cpath d='M520 660L578 842 731 737 840 599 603 493 520 660 295 764 309 538 390 382 539 269 769 229 577.5 41.5 370 105 295 -36 126.5 79.5 237 261 102 382 40 599 -69 737 127 880'/%3E%3Cpath d='M520-140L578.5 42.5 731-63M603 493L539 269 237 261 370 105M902 382L539 269M390 382L102 382'/%3E%3Cpath d='M-222 42L126.5 79.5 370 105 539 269 577.5 41.5 927 80 769 229 902 382 603 493 731 737M295-36L577.5 41.5M578 842L295 764M40-201L127 80M102 382L-261 269'/%3E%3C/g%3E%3Cg fill='#{$dot-color}'%3E%3Ccircle cx='769' cy='229' r='6'/%3E%3Ccircle cx='539' cy='269' r='6'/%3E%3Ccircle cx='603' cy='493' r='6'/%3E%3Ccircle cx='731' cy='737' r='6'/%3E%3Ccircle cx='520' cy='660' r='6'/%3E%3Ccircle cx='309' cy='538' r='6'/%3E%3Ccircle cx='295' cy='764' r='6'/%3E%3Ccircle cx='40' cy='599' r='6'/%3E%3Ccircle cx='102' cy='382' r='6'/%3E%3Ccircle cx='127' cy='80' r='6'/%3E%3Ccircle cx='370' cy='105' r='6'/%3E%3Ccircle cx='578' cy='42' r='6'/%3E%3Ccircle cx='237' cy='261' r='6'/%3E%3Ccircle cx='390' cy='382' r='6'/%3E%3C/g%3E%3C/svg%3E");
+}
+
+
+
+
+
+/*------------------------------*\
+# GLITCHES
+\*------------------------------*/
+@keyframes general-glitch {
+  0%, 10% {
+    transform: skew(-20deg);
+    left: -4px;
+  }
+  11% {
+    transform: skew(0deg);
+    left: 2px;
+  }
+  50% {
+    transform: skew(0deg);
+  }
+  51%, 60% {
+    transform: skew(10deg);
+  }
+  61%, 100% {
+    transform: skew(0deg);
+  }
+}
+
+
+
+// styles
+.p-glitch {
+  position: relative;
+	animation-name: general-glitch;
+  animation-duration: $glitch-time;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+
+  &-hover {
+    &:hover, &:focus, &:active {
+      position: relative;
+      animation-name: general-glitch;
+      animation-duration: $glitch-time;
+      animation-iteration-count: infinite;
+      animation-timing-function: linear;
+    }
+  }
+
+	&-fast {
+    position: relative;
+		animation-name: general-glitch;
+		animation-duration: $glitch-time * 0.5;
+		animation-iteration-count: infinite;
+		animation-timing-function: linear;
+	}
+	&-faster {
+    position: relative;
+		animation-name: general-glitch;
+		animation-duration: $glitch-time * 0.25;
+		animation-iteration-count: infinite;
+		animation-timing-function: linear;
+	}
+
+	&-slow {
+    position: relative;
+		animation-name: general-glitch;
+		animation-duration: $glitch-time * 1.2;
+		animation-iteration-count: infinite;
+		animation-timing-function: linear;
+	}
+
+	&-slower {
+    position: relative;
+		animation-name: general-glitch;
+		animation-duration: $glitch-time * 1.6;
+		animation-iteration-count: infinite;
+		animation-timing-function: linear;
+	}
+}
+
+
+
+
+
+/*------------------------------*\
+# TRIMS
+\*------------------------------*/
+.p-trim-1 {
+  position: relative;
+  &:before {
+    content: "";
+    display: block;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 30px;
+    position: absolute;
+    clip-path: $trim-1-before;
+  }
+  &:after {
+    content: "";
+    display: block;
+    bottom: -1px;
+    left: 0px;
+    width: 100%;
+    height: 30px;
+    position: absolute;
+    clip-path: $trim-1-after;
+  }
+}
+
+.p-trim-2 {
+  position: relative;
+  &:before {
+    content: "";
+    display: block;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 30px;
+    position: absolute;
+    clip-path: $trim-2-before;
+  }
+  &:after {
+    content: "";
+    display: block;
+    bottom: -1px;
+    left: 0px;
+    width: 100%;
+    height: 30px;
+    position: absolute;
+    clip-path: $trim-2-after;
+  }
+}
+
+.p-trim-3 {
+  position: relative;
+  &:before {
+    content: "";
+    display: block;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 30px;
+    position: absolute;
+    clip-path: $trim-3-before;
+  }
+  &:after {
+    content: "";
+    display: block;
+    bottom: -1px;
+    left: 0px;
+    width: 100%;
+    height: 30px;
+    position: absolute;
+    clip-path: $trim-3-after;
+  }
+}
+
+.p-trim-bottom {
+  position: relative;
+  &:after {
+    content: "";
+    display: block;
+    bottom: -1px;
+    left: 0px;
+    width: 100%;
+    height: 30px;
+    position: absolute;
+    clip-path: $trim-bottom;
+  }
+}
+
+
+
+
+
+/*------------------------------*\
+# LINES
+\*------------------------------*/
+//animations
+@keyframes glitch-flip {
+  0%, 10% {
+    transform: scaleY(1);
+  }
+  11%, 50% {
+    transform: scaleY(-1);
+  }
+  51%, 60% {
+    transform: scaleY(1);
+  }
+  61%, 100% {
+    transform: scaleY(1);
+  }
+}
+
+@keyframes glitch-bungle-1 {
+  0% {
+    transform: skew(-20deg);
+    left: -4px;
+    clip-path: $line-1-path;
+  }
+  10% {
+    transform: skew(-20deg);
+    left: -4px;
+    clip-path: $bungle-path;
+  }
+  11% {
+    transform: skew(0deg);
+    left: 2px;
+    clip-path: $line-1-path
+  }
+  50% {
+    transform: skew(0deg);
+    clip-path: $bungle-path;
+  }
+  51% {
+    transform: skew(50deg);
+  }
+  59% {
+    transform: skew(50deg);
+  }
+  60% {
+    transform: skew(0deg);
+    clip-path: $line-1-path;
+  }
+  100% {
+    transform: skew(0deg);
+    clip-path: $line-1-path;
+  }
+}
+
+@keyframes glitch-bungle-2 {
+  0% {
+    transform: skew(-20deg);
+    left: -4px;
+    clip-path: $line-2-path;
+  }
+  10% {
+    transform: skew(-20deg);
+    left: -4px;
+    clip-path: $bungle-path;
+  }
+  11% {
+    transform: skew(0deg);
+    left: 2px;
+    clip-path: $line-2-path
+  }
+  50% {
+    transform: skew(0deg);
+    clip-path: $bungle-path;
+  }
+  51% {
+    transform: skew(50deg);
+  }
+  59% {
+    transform: skew(50deg);
+  }
+  60% {
+    transform: skew(0deg);
+    clip-path: $line-2-path;;
+  }
+  100% {
+    transform: skew(0deg);
+    clip-path: $line-2-path;
+  }
+}
+
+@keyframes glitch-bungle-3 {
+  0% {
+    transform: skew(-20deg);
+    left: -4px;
+    clip-path: $line-3-path;
+  }
+  10% {
+    transform: skew(-20deg);
+    left: -4px;
+    clip-path: $bungle-path;
+  }
+  11% {
+    transform: skew(0deg);
+    left: 2px;
+    clip-path: $line-3-path
+  }
+  50% {
+    transform: skew(0deg);
+    clip-path: $bungle-path;
+  }
+  51% {
+    transform: skew(50deg);
+  }
+  59% {
+    transform: skew(50deg);
+  }
+  60% {
+    transform: skew(0deg);
+    clip-path: $line-3-path;
+  }
+  100% {
+    transform: skew(0deg);
+    clip-path: $line-3-path;
+  }
+}
+
+@keyframes glitch-bungle-4 {
+  0% {
+    transform: skew(-20deg);
+    left: -4px;
+    clip-path: $line-4-path;
+  }
+  10% {
+    transform: skew(-20deg);
+    left: -4px;
+    clip-path: $bungle-path;
+  }
+  11% {
+    transform: skew(0deg);
+    left: 2px;
+    clip-path: $line-4-path
+  }
+  50% {
+    transform: skew(0deg);
+    clip-path: $bungle-path;
+  }
+  51% {
+    transform: skew(50deg);
+  }
+  59% {
+    transform: skew(50deg);
+  }
+  60% {
+    transform: skew(0deg);
+    clip-path: $line-4-path;
+  }
+  100% {
+    transform: skew(0deg);
+    clip-path: $line-4-path;
+  }
+}
+
+@keyframes glitch-bungle-5 {
+  0% {
+    transform: skew(-20deg);
+    left: -4px;
+    clip-path: $line-5-path;
+  }
+  10% {
+    transform: skew(-20deg);
+    left: -4px;
+    clip-path: $bungle-path;
+  }
+  11% {
+    transform: skew(0deg);
+    left: 2px;
+    clip-path: $line-5-path
+  }
+  50% {
+    transform: skew(0deg);
+    clip-path: $bungle-path;
+  }
+  51% {
+    transform: skew(50deg);
+  }
+  59% {
+    transform: skew(50deg);
+  }
+  60% {
+    transform: skew(0deg);
+    clip-path: $line-5-path;
+  }
+  100% {
+    transform: skew(0deg);
+    clip-path: $line-5-path;
+  }
+}
+
+
+
+//styles
+.p-underline-1,
+.p-underline-2,
+.p-underline-3,
+.p-underline-4,
+.p-underline-5 {
+  position: relative;
+  
+  &:before {
+    content: "";
+    display: block;
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    width: 100%;
+    height: 10px;
+  }
+}
+
+.p-underline-1 {
+  &:before {
+    clip-path: $line-1-path;
+  }
+}
+
+.p-underline-2 { 
+  &:before {
+    clip-path: $line-2-path;
+  }
+}
+
+.p-underline-3 {
+  &:before {
+    clip-path: $line-3-path;
+  }
+}
+
+.p-underline-4 {
+  &:before {
+    clip-path: $line-4-path;
+  }
+}
+
+.p-underline-5{
+  &:before {
+    clip-path: $line-5-path;
+  }
+}
+
+
+
+//glitches
+.p-flip {
+	&:before {
+		animation-name: glitch-flip;
+		animation-duration: $glitch-time;
+		animation-iteration-count: infinite;
+		animation-timing-function: linear;
+	}
+}
+
+.p-bungle-1 {
+	&:before {
+		animation-name: glitch-bungle-1;
+		animation-duration: $glitch-time * 2;
+		animation-iteration-count: infinite;
+		animation-timing-function: linear;
+	}
+}
+
+.p-bungle-2 {
+	&:before {
+		animation-name: glitch-bungle-2;
+		animation-duration: $glitch-time * 1.8;
+		animation-iteration-count: infinite;
+		animation-timing-function: linear;
+	}
+}
+
+.p-bungle-3 {
+	&:before {
+		animation-name: glitch-bungle-3;
+		animation-duration: $glitch-time * 1.6;
+		animation-iteration-count: infinite;
+		animation-timing-function: linear;
+	}
+}
+
+.p-bungle-4 {
+	&:before {
+		animation-name: glitch-bungle-4;
+		animation-duration: $glitch-time * 1.4;
+		animation-iteration-count: infinite;
+		animation-timing-function: linear;
+	}
+}
+
+.p-bungle-5 {
+	&:before {
+		animation-name: glitch-bungle-5;
+		animation-duration: $glitch-time * 1.2;
+		animation-iteration-count: infinite;
+		animation-timing-function: linear;
+	}
+}
+
+
+
+
+
+/*------------------------------*\
+# BUTTONS
+\*------------------------------*/
+// animations
+@keyframes btn-glitch {
+  0%, 45% {
+    transform: skew(0deg);
+    backface-visibility: hidden;
+  }
+  46%, 55% {
+    transform: skew(10deg);
+    backface-visibility: hidden;
+  }
+  56%, 100% {
+    transform: skew(0deg);
+    backface-visibility: hidden;
+  }
+}
+
+@keyframes btn-glitch-before {
+  0%, 10% {
+    display: none;
+    top: 0px;
+  }
+  11%, 49% {
+    display: block;
+    top: 3%;
+    left: calc(0px - 0px - 4px);
+  }
+  50% {
+    display: none;
+    top: 0px;
+  }
+  51% {
+    display: block;
+    top: 80%;
+    filter: blur(1px);
+    height: 10px;
+  }
+  90% {
+    display: block;
+    top: 90%;
+    height: 10px;
+  }
+  91% {
+    filter: blur(0px);
+    display: none;
+    top: 0px;
+    height: 12px;
+  }
+  100% {
+    display: none;
+    top: 0px;
+  }
+}
+
+
+
+// styles
+.p-btn-1 {
+  clip-path: $btn-1-path
+}
+
+.p-btn-2 {
+  clip-path: $btn-2-path;
+}
+
+.p-btn-3 {
+  clip-path: $btn-3-path;
+}
+
+.p-btn-1, .p-btn-2, .p-btn-3 {
+  cursor: pointer;
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  border: none;
+}
+
+.p-btn-hover-glitch {
+  &:hover,&:focus,&:active {
+    animation-name: btn-glitch;
+    animation-duration: calc($glitch-time / 1.5);
+    animation-iteration-count: infinite;
+    animation-timing-function: linear; 
+    
+    &:before {
+      display: block;
+      animation-name: btn-glitch-before;
+      animation-duration: calc($glitch-time / 2);
+      animation-iteration-count: infinite;
+      animation-timing-function: linear;
+    }
+  }
+  
+  &:before {
+    content: "";
+    position: absolute;
+    display: none;
+    width: calc(100% + 8px);
+    height: 12px;
+    top: 0px;
+    left: calc(-4px);
+  }
+}
+
+.p-btn-glitch {
+	animation-name: btn-glitch;
+	animation-duration: calc($glitch-time / 1.5);
+	animation-iteration-count: infinite;
+	animation-timing-function: linear; 
+	
+	&:before {
+		display: block;
+		animation-name: btn-glitch-before;
+		animation-duration: calc($glitch-time / 2);
+		animation-iteration-count: infinite;
+		animation-timing-function: linear;
+		content: "";
+    position: absolute;
+    width: calc(100% + 8px);
+    height: 12px;
+    top: 0px;
+    left: calc(-4px);
+	}
+}
+
+
+
+
+
+/*------------------------------*\
+# CUTOUTS
+\*------------------------------*/
+.p-cutout-1 {
+  clip-path: $box-1;
+}
+.p-cutout-2 {
+  clip-path: $box-2;
+}
+.p-cutout-3 {
+  clip-path: $box-3;
+}
+.p-cutout-4 {
+  clip-path: $box-4;
+}
+.p-cutout-5 {
+  clip-path: $box-5;
+}
+
+
+
+
+
+/*------------------------------*\
+# TEXT
+\*------------------------------*/
+.p-hypertext {
+  position: relative;
+  animation: hypertext-color 1s infinite;
+
+  &:before, &:after {
+    content: attr(data-hypertext);
+    position: absolute;
+    left: 0;
+    top: 0;
+  }
+  
+  &:before {
+    animation: hypertext-color 0.5s infinite;
+    clip-path: polygon(0 45%, 100% 45%, 100% 0, 0 0);
+    opacity: 0.5
+  }
+  
+  &:after {
+    animation: hypertext-shift 2s infinite;
+    clip-path: polygon(0 60%, 100% 60%, 100% 100%, 0 100%);
+    opacity: 0.8
+  }
+}
+
+@keyframes cursor {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0;
+  }
+  51% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.p-cursor-underline {
+  &:after {
+    content: "\005F";
+    font-weight: 200;
+    animation-name: cursor;
+    animation-duration: calc($glitch-time / 2);
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+  }
+}
+.p-cursor-line {
+  &:after {
+    content: "\23D0";
+    font-weight: 200;
+    animation-name: cursor;
+    animation-duration: calc($glitch-time / 2);
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+  }
+}
+.p-cursor-block {
+  &:after {
+    content: "\1FB09";
+    font-weight: 200;
+    animation-name: cursor;
+    animation-duration: calc($glitch-time / 2);
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+  }
+}
+
+
+
+
+
+/*------------------------------*\
+# BOXES
+\*------------------------------*/
+.p-box-1, 
+.p-box-2, 
+.p-box-3, 
+.p-box-4, 
+.p-box-5 {
+  border-top-width: 15px;
+  border-left-width: 5px;
+  border-right-width: 5px;
+  border-bottom-width: 15px;
+  border-style: solid;
+}
+
+.p-box-1 {
+  clip-path: $box-1;
+}
+
+.p-box-2 {
+  clip-path: $box-2;
+}
+
+.p-box-3 {
+  clip-path: $box-3;
+}
+
+.p-box-4 {
+  clip-path: $box-4;
+}
+
+.p-box-5 {
+  clip-path: $box-5;
+}

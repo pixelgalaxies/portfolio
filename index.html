@@ -7,327 +7,383 @@
 	<meta charset="utf-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-	<link href="https://fonts.googleapis.com/css?family=Ubuntu:300,700" rel="stylesheet" />
-	<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
+	<meta keywords="front-end, front end, developer, front-end developer, front end developer, html, css, javascript">
+	<meta description="Dustin is a front-end web developer based in Portland, Oregon. He was lost for a long time, but he found myself in his passion, web development. His goal in life is to bring information to people. He loves learning, he loves improving, and he loves problem solving.">
+	<title>Dustin Clark | Front-end Web Developer</title>
 
+	<!-- icons -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+
+	<!-- fonts -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@100;300;400;700&family=Libre+Barcode+39+Extended+Text&family=Megrim&family=Nova+Flat&display=swap" rel="stylesheet">
+
+	<!-- resets -->
 	<link type="text/css" rel="stylesheet" href="https://yarn.pm/normalize.css" />
 
-	<link type="text/css" rel="stylesheet"
-		href="https://cdn.jsdelivr.net/gh/pixelgalaxies/crescendo@master/crescendo.css" />
-
+	<!-- main styles -->
 	<link type="text/css" rel="stylesheet" href="assets/stylesheets/main.css" />
 
+	<!-- favicon -->
 	<link rel="shortcut icon" href="assets/images/gems.png" type="image/x-icon" />
 
-	<title>Dustin Clark - Web Developer</title>
 </head>
 
-<body class="">
-
-	<div class="stargroup">
-		<div id="group1"></div>
-		<div id="group2"></div>
-		<div id="group3"></div>
+<body class="dark-mode">
+	<div class="settings">
+		<ul class="settings__list settings__list--hide">
+			<li>
+				<button class="js-mode settings__item p-btn-1">
+					<span class="btn-icon"><i class="fa fa-sun"></i></span>
+					<span class="btn-text">Light Mode</span>
+				</button>
+			</li>
+			<li>
+				<button class="js-motion settings__item p-btn-1">
+					<span class="btn-icon"><i class="fa fa-stop"></i></span>
+					<span class="btn-text">Disable Motion</span>
+				</button>
+			</li>
+		</ul>
+		<button class="js-settings settings__cog p-btn-1"><i class="fa fa-cog"></i></button>
 	</div>
 
 
 
-	<a href="javascript:void(0);" class="toTop">
-		<i class="fas fa-angle-double-up"></i>
-	</a>
-	<a href="javascript:void(0);" class="toggleMode">
-		<i class="fas fa-moon"></i>
-	</a>
-
-
-
 	<header>
-		<nav class="navbar">
-			<a href="#" class="nav-logo"><img src="assets/images/meVector.svg" alt="a vector image of me" /></a>
-			<div role="button" class="nav-icon">
+		<nav class="nav">
+			<a href="#" class="nav__logo"><img src="assets/images/meVector.svg" alt="a vector image of me" /></a>
+			<div role="button" class="nav__icon">
 				<span></span>
 			</div>
-			<ul class="nav-list">
-				<li><a href="#about">about</a></li>
-				<li><a href="#projects">projects</a></li>
-				<li><a href="#skills">resume</a></li>
-				<li><a href="#contact">connect</a></li>
+			<ul class="nav__list">
+				<li><a class="btn btn--primary p-btn-3 p-btn-hover-glitch" href="#about">About</a></li>
+				<li><a class="btn btn--primary p-btn-3 p-btn-hover-glitch" href="#skills">Skills</a></li>
+				<li><a class="btn btn--primary p-btn-3 p-btn-hover-glitch" href="#projects">Projects</a></li>
+				<li><a class="btn btn--primary p-btn-3 p-btn-hover-glitch" href="#resume">Resume</a></li>
+				<li><a class="btn btn--secondary p-btn-3 p-btn-hover-glitch" href="#contact">Contact</a></li>
 			</ul>
 		</nav>
 	</header>
 
 
 
-	<div id="home" class="hero true-center">
 
-		<h1>dustin clark</h1>
-		<h2>front-end web developer</h2>
-		<img class="gems" src="assets/images/gems.png" alt="dancing gem" />
-		<div class="lid">
-			<div class="outer">
-				<div class="inner"></div>
+
+<main>
+	<section id="hero" class="hero">
+		<div class="circles" aria-hidden="true"></div>
+		<div class="hero__inner">
+			<div class="hero__copy p-box-1 p-dotted">
+				<h1 class="hero__heading p-hypertext">Knowledge is power.</h1>
+				<h2 class="hero__subheading">Dustin Clark</h2>
+			</div>
+			<div class="hero__buttons">
+				<a class="btn btn--secondary p-btn-3 p-btn-hover-glitch" href="#">Projects</a>
+				<a class="btn btn--primary p-btn-3 p-btn-hover-glitch" href="#">Contact</a>
 			</div>
 		</div>
-	</div>
-	<!-- /splash -->
+	</section>
+	<!-- /hero -->
 
 
 
-	<section class="grid-container" id="about">
-		<div class="grid">
-			<div class="row">
-				<div class="col-12 hcenter">
-					<div class="section-head">
-						<h2>about</h2>
-					</div>
+
+
+	<section id="about" class="grid-container about p-dotted p-cutout-1">
+		<div class="about__inner">
+			<div class="section-head">
+				<h2 class="about__heading section-heading p-cursor-underline">About</h2>
+			</div>
+			
+			<div class="p-cutout-4 about__copy">
+				<p>
+					Hi! I'm Dustin. I was lost for a long time, but I found
+					myself in my passion, web development. my goal in life is to bring information to people. I love learning, I
+					love improving, and I love problem solving.
+				</p>
+				<h3 class="new-skills__heading">What I'm currently learning:</h3>
+				<div class="new-skills__items">
+					<span class="skill-box">css animations</span>
+					<span class="skill-box">grid module</span>
+				</div>
+				
+				<h3 class="new-skills__heading">What I want to learn next:</h3>
+				<div class="new-skills__items">
+					<span class="skill-box">react</span>
+					<span class="skill-box">svelte</span>
+					<span class="skill-box">typograpy basics</span>
 				</div>
 			</div>
 
-			<div class="row">
-				<div class="col-sm-12 col-md-6 hcenter">
-					<img class="me vcenter" src="assets/images/me.jpg" alt="photo of dustin clark" />
+			<div class="about__image-wrapper p-box-3">
+				<img class="about__me" src="assets/images/me-pink.jpg" alt="A photo of Dustin Clark" />
+			</div>
+		</div>
+	</section>
+	<!-- /about -->
+
+
+
+
+
+	<section id="skills" class="grid-container skills">
+		<div class="skills__inner">
+			<div class="section-head">
+				<h2 class="skills__heading section-heading p-cursor-underline">Skills</h2>
+			</div>
+
+
+			<div class="skills__copy p-cutout-1">
+				<h4 class="skills__subheading section-subheading p-underline-1">Languages</h4>
+				<div class="skills__items">
+					<span class="skill-box">html</span>
+					<span class="skill-box">css</span>
+					<span class="skill-box">javascript</span>
+					<span class="skill-box">less</span>
+					<span class="skill-box">sass</span>
+					<span class="skill-box">typescript</span>
 				</div>
-				<div class="cols-sm-12 col-md-6 vcenter">
-					<p class="about-text">
-						hi! i'm dustin, a front-end web developer based in portland, oregon. i was lost for a long time, but i found
-						myself in my passion, web development. my goal in life is to bring information to people. i love learning, i
-						love improving, and i love problem solving.
-					</p>
-					<h3 class="new-skills--header">what i'm currently learning:</h3>
-					<p class="new-skills--text">vue // typescript // css animations</p>
-					<h3 class="new-skills--header">what i want to learn next:</h3>
-					<p class="new-skills--text">react // svelte // css grid // typography design</p>
+			</div>
+
+			<div class="skills__copy p-cutout-2">
+				<h4 class="skills__subheading section-subheading p-underline-2">Libraries/Frameworks</h4>
+				<div class="skills__items">
+					<span class="skill-box">jquery</span>
+					<span class="skill-box">bootstrap</span>
+					<span class="skill-box">vue.js</span>
+				</div>
+			</div>
+
+			<div class="skills__copy p-cutout-4">
+				<h4 class="skills__subheading section-subheading p-underline-4 p-bungle-4">Software</h4>
+				<div class="skills__items">
+					<span class="skill-box">photoshop</span>
+					<span class="skill-box">jira</span>
+					<span class="skill-box">affinity designer</span>
+					<span class="skill-box">mac os</span>
+					<span class="skill-box">windows</span>
+					<span class="skill-box">linux</span>
+					<span class="skill-box">github</span>
+					<span class="skill-box">bitbucket</span>
+				</div>
+			</div>
+
+			<div class="skills__copy p-cutout-5">
+				<h4 class="skills__subheading section-subheading p-underline-5">Other</h4>
+				<div class="skills__items">
+					<span class="skill-box">bem methodology</span>
+					<span class="skill-box">kanban</span>
+					<span class="skill-box">git</span>
 				</div>
 			</div>
 		</div>
 	</section>
-	<!-- /#about -->
+	<!--  /skills -->
 
 
 
-	<section class="grid-container" id="projects">
-		<div class="grid">
-			<div class="row">
-				<div class="col-12 hcenter">
-					<div class="section-head">
-						<h2>projects</h2>
-					</div>
-				</div>
+
+
+	<section id="projects" class="projects p-dotted p-cutout-3">
+		<div class="projects__inner">
+			<div class="section-head">
+				<h2 class="projects__heading section-heading p-cursor-underline">Projects</h2>
 			</div>
-			<div class="row project">
-				<div class="col-sm-12 col-md-6 true-center">
-					<h3>tales of kavaya</h3>
-					<p>html, css, javascript</p>
-					<p>tales of Kavaya is a web comic about a magical land and its new rulers. it is a collboration between me and
-						two friends. i handle building out the site and will be responsible for any updates as soon as we finish the
-						story.</p>
+
+			<div class="project">
+				<div class="project__copy p-cutout-1">
+					<h3 class="project__subheading section-subheading p-underline-1">Tales of Kavaya</h3>
+
+					<p>Tales of Kavaya is a web comic about a magical land and its new rulers. I am currently in the process of rebuilding the existing site but using Vue.js and making it a single page application.</p>
+
+					<div class="project__skills">
+						<span class="skill-box">html</span>
+						<span class="skill-box">scss</span>
+						<span class="skill-box">javascript</span>
+					</div>
+
 					<div class="project__links">
-						<a target="_blank" href="https://github.com/pixelgalaxies/kavaya/tree/gh-pages">
-							<i class="fab fa-github"></i>
+						<a target="_blank" class="p-glitch-hover"  href="https://github.com/pixelgalaxies/kavaya/tree/gh-pages">
+							<i class="fab fa-github"></i> GitHub
 						</a>
-						<a target="_blank" href="http://www.talesofkavaya.com">
-							<i class="fas fa-external-link-alt"></i>
+						<a target="_blank" class="p-glitch-hover" href="http://www.talesofkavaya.com">
+							<i class="fas fa-external-link-alt"></i> Demo
+						</a>
+						<a target="_blank" class="p-glitch-hover" href="/projects/kavaya.html">
+							<i class="fas fa-circle-info"></i> More Info
 						</a>
 					</div>
 				</div>
-				<div class="col-sm-12 col-md-6">
+			
+				<div class="project__image project__image--rebuild p-box-5">
 					<a target="_blank" href="http://www.talesofkavaya.com">
-						<img src="assets/images/projectPics/kavayaPic.jpg" alt="Project: Kavaya" />
+						<img src="assets/images/projectPics/kavaya-1.png" alt="Project: Kavaya" />
 					</a>
-				</div>
-
-			</div>
-
-			<div class="row project">
-				<div class="col-sm-12 col-md-6">
-					<a target="_blank" href="http://www.pixelgalaxies.com/crescendo">
-						<img src="assets/images/projectPics/crescendoPic.jpg" alt="Project: Crescendo" />
-					</a>
-				</div>
-				<div class="col-sm-12 col-md-6 true-center">
-					<h3>crescendo</h3>
-					<p>html, css, javascript</p>
-					<p>crescendo is a css library that i built to learn more about flexbox. i ended up liking it so much i use it
-						for a lot of my personal projects.</p>
-					<div class="project__links">
-						<a target="_blank" href="https://github.com/pixelgalaxies/crescendo">
-							<i class="fab fa-github"></i>
-						</a>
-						<a target="_blank" href="http://www.pixelgalaxies.com/crescendo">
-							<i class="fas fa-external-link-alt"></i>
-						</a>
-					</div>
 				</div>
 			</div>
 
-			<div class="row project">
-				<div class="col-sm-12 col-md-6 true-center">
-					<h3>burn it all</h3>
-					<p>html, css, javascript</p>
-					<p>this site is the all too common quote generator but with a twist: all the quotes are about fire. it's one
-						of my first
-						projects while learning javascript.</p>
+			<div class="project">
+				<div class="project__copy p-cutout-3">
+					<h3 class="project__subheading section-subheading p-underline-2 p-flip">Proxima</h3>
+
+					<p>Proxima is a SCSS library that will let you cyberpunkify your site. It all runs from a single SCSS file. Just use the Proxima classes and their associated mixins and watch as your site comes alive with cybepunk flair.</p>
+
+					<div class="project__skills">
+						<span class="skill-box">html</span>
+						<span class="skill-box">scss</span>
+					</div>
+
 					<div class="project__links">
-						<a target="_blank" href="https://github.com/pixelgalaxies/burnitall/tree/gh-pages">
-							<i class="fab fa-github"></i>
+						<a target="_blank" class="p-glitch-hover" href="https://github.com/pixelgalaxies/proxima/tree/gh-pages">
+							<i class="fab fa-github"></i> GitHub
 						</a>
-						<a target="_blank" href="http://www.pixelgalaxies.com/burnitall">
-							<i class="fas fa-external-link-alt"></i>
+						<a target="_blank" class="p-glitch-hover" href="http://www.pixelgalaxies.com/proxima">
+							<i class="fas fa-external-link-alt"></i> Demo
+						</a>
+						<a target="_blank" class="p-glitch-hover" href="/projects/proxima.html">
+							<i class="fas fa-circle-info"></i> More Info
 						</a>
 					</div>
 				</div>
-				<div class="col-sm-12 col-md-6">
+
+				<div class="project__image p-box-1">
+					<a target="_blank" href="http://www.pixelgalaxies.com/proxima">
+						<img src="assets/images/projectPics/proxima-1.png" alt="Project: Proxima" />
+					</a>
+				</div>
+			</div>
+
+			<div class="project">
+				<div class="project__copy p-cutout-5">
+					<h3 class="project__subheading section-subheading p-underline-5">Virtuoso</h3>
+
+					<p>Virtuoso is a CSS library of classes that make it easy to layout content in grids. It uses the CSS Grid Module. It's a no frills library and strictly for arranging content.</p>
+
+					<div class="project__skills">
+						<span class="skill-box">html</span>
+						<span class="skill-box">scss</span>
+					</div>
+
+					<div class="project__links">
+						<a target="_blank" class="p-glitch-hover" href="https://github.com/pixelgalaxies/virtuoso/tree/gh-pages">
+							<i class="fab fa-github"></i> GitHub
+						</a>
+						<a target="_blank" class="p-glitch-hover" href="http://www.pixelgalaxies.com/virtuoso">
+							<i class="fas fa-external-link-alt"></i> Demo
+						</a>
+						<a target="_blank" class="p-glitch-hover" href="/projects/virtuoso.html">
+							<i class="fas fa-circle-info"></i> More Info
+						</a>
+					</div>
+				</div>
+
+				<div class="project__image p-box-3">
 					<a target="_blank" href="http://www.pixelgalaxies.com/burnitall">
-						<img src="assets/images/projectPics/burnitallPic.jpg" alt="Project: Burn It All" />
+						<img src="assets/images/projectPics/virtuoso-1.png" alt="Project: Virtuoso" />
 					</a>
-				</div>
-			</div>
-
-			<div class="row project">
-				<div class="col-sm-12 col-md-6">
-					<a target="_blank" href="http://www.pixelgalaxies.com/atropos">
-						<img src="assets/images/projectPics/atroposPic.jpg" alt="Project: Atropos" />
-					</a>
-				</div>
-				<div class="col-sm-12 col-md-6 true-center">
-					<h3>atropos</h3>
-					<p>html, css, javascript, jquery</p>
-					<p>atropos is a quirky, light-hearted project. it shows you how many years you have to live (not really). this
-						project allowed me
-						to practice some more javascript and jquery</p>
-					<div class="project__links">
-						<a target="_blank" href="https://github.com/pixelgalaxies/atropos/tree/gh-pages">
-							<i class="fab fa-github"></i>
-						</a>
-						<a target="_blank" href="http://www.pixelgalaxies.com/atropos">
-							<i class="fas fa-external-link-alt"></i>
-						</a>
-					</div>
 				</div>
 			</div>
 		</div>
-		<!-- /grid -->
 	</section>
 	<!-- /projects -->
 
 
 
-	<section class="grid-container" id="skills">
-		<div class="grid">
-			<div class="row">
-				<div class="col-12 hcenter">
-					<div class="section-head">
-						<h2>resume</h2>
-					</div>
-				</div>
+
+
+	<section id="resume" class="resume">
+		<div class="resume__inner">
+			<div class="section-head">
+				<h2 class="resume__heading section-heading p-cursor-underline">Resume</h2>
+			</div>
+				
+			<div class="resume__content p-cutout-3">
+				<h3 class="resume__subheading section-subheading p-underline-2 p-bungle-2">Experience</h3>
+				<p>
+					<span class="resume__title">Front-end Web Developer</span><br>
+					<span>LeadVenture | Oct 2021 - Present</span>
+				</p>
+				<p>
+					<span class="resume__title">Front-end Web Developer</span><br>
+					<span>Dealer Spike | Jul 2021 - Sep 2021</span>
+				</p>
+				<p>
+					<span class="resume__title">Technical Support Specialist II</span><br>
+					<span>Dealer Spike | Aug 2020 - Jul 2021</span>
+				</p>
+
+				<p>Visit my <a href="https://www.linkedin.com/in/imdustin/" class="resume__link p-glitch">linkedin</a> for my full employment history.
+				</p>
 			</div>
 
-			<div class="row resume">
-				<div class="col-sm-12 col-md-6 col-lg-4">
-					<h3>experience</h3>
-					<p>
-						<span class="resume--heading">Dealer Spike <br> Front-end Web Developer </span><br>
-						<span class="">July 2021 - Present</span>
-					</p>
-					<p>
-						<span class="resume--heading">Dealer Spike <br> Technical Support Specialist II </span><br>
-						<span class="">August 2020 - Present</span>
-					</p>
-					<p>
-						<span class="resume--heading">Dealer Spike <br> Technical Support Specialist I </span><br>
-						<span class="">September 2019 - August 2020</span>
-					</p>
-
-					<p>visit my <a href="https://www.linkedin.com/in/imdustin/">linkedin</a> for my full employment history
-					</p>
-				</div>
-
-				<div class="col-sm-12 col-md-6 col-lg-4">
-					<h3>education</h3>
-					<p>
-						<span class="resume--heading">Franklin University</span><br>
-						<span class="">B.S. Web Development ~ 2018 - 2021</span>
-					</p>
-					<p>
-						<span class="resume--heading">Leeward Community College</span><br>
-						<span class="">A.S. Computer Science ~ 2014-2016</span>
-					</p>
-					<p>
-						<span class="resume--heading">Leeward Community College</span><br>
-						<span class="">A.A Liberal Arts ~ 2008 - 2011</span>
-					</p>
-				</div>
-
-				<div class="col-sm-12 col-md-6 col-lg-4">
-					<h3>skills</h3>
-					<p><span class="resume--heading">languages:</span><br>html, css, javascript, less, sass</p>
-					<p><span class="resume--heading">libraries/frameworks:</span><br>jquery, bootstrap, vue</p>
-					<p><span class="resume--heading">software:</span><br>git, photoshop, affinity designer, Mac OS, Windows, Linux
-					<p><span class="resume--heading">other:</span><br>bem methodology</p>
-				</div>
+			<div class="resume__content p-cutout-5">
+				<h3 class="resume__subheading section-subheading p-underline-3">Education</h3>
+				<p>
+					<span class="resume__title">B.S. Web Development</span><br>
+					<span>Franklin University | 2018 - 2021</span>
+				</p>
+				<p>
+					<span class="resume__title">A.S. Computer Science </span><br>
+					<span>Leeward Community College | 2014-2016</span>
+				</p>
+				<p>
+					<span class="resume__title">A.A. Liberal Arts</span><br>
+					<span>Leeward Community College | 2008 - 2011</span>
+				</p>
 			</div>
 		</div>
 	</section>
-	<!-- /skills -->
+	<!-- /resume-->
 
 
 
-	<section class="grid-container" id="contact">
-		<div class="grid">
-			<div class="row">
-				<div class="col-12 hcenter">
-					<div class="section-head">
-						<h2>connect</h2>
-					</div>
-				</div>
+
+
+	<section id="contact" class="contact p-dotted p-cutout-1">
+		<div class="contact__inner">
+			<div class="section-head">
+				<h2 class="contact__heading section-heading p-cursor-underline">Contact</h2>
 			</div>
 
-			<div class="row">
-				<div class="col-sm-4 col-md-2 contact-box vcenter">
-					<a href="mailto:pixel.galaxies@gmail.com">
-						<i class="far fa-envelope"></i>
-						<span class="contact-box--label">email</span>
+			<ul class="contact__list">
+				<li class="contact__item">
+					<a href="mailto:pixel.galaxies@gmail.com" class="btn btn--primary p-btn-3 p-btn-hover-glitch">
+						<i class="far fa-envelope contact__icon"></i>
+						<span class="contact__label">email</span>
 					</a>
-				</div>
-
-				<div class="col-sm-4 col-md-2 contact-box vecenter">
-					<a href="https://github.com/pixelgalaxies">
-						<i class="fab fa-github"></i>
-						<span class="contact-box--label">github</span>
+				</li>
+	
+				<li class="contact__item">
+					<a href="https://github.com/pixelgalaxies" class="btn btn--primary p-btn-3 p-btn-hover-glitch">
+						<i class="fab fa-github contact__icon"></i>
+						<span class="contact__label">github</span>
 					</a>
-				</div>
-
-				<div class="col-sm-4 col-md-2 contact-box vecenter">
-					<a href="https://www.linkedin.com/in/imdustin/">
-						<i class="fab fa-linkedin-in"></i>
-						<span class="contact-box--label">linkedin</span>
+				</li>
+	
+				<li class="contact__item">
+					<a href="https://www.linkedin.com/in/imdustin/" class="btn btn--primary p-btn-3 p-btn-hover-glitch">
+						<i class="fab fa-linkedin-in contact__icon"></i>
+						<span class="contact__label">linkedin</span>
 					</a>
-				</div>
-
-				<div class="col-sm-4 col-md-2 contact-box vecenter">
-					<a href="https://www.instagram.com/pixelgalaxies/">
-						<i class="fab fa-instagram"></i>
-						<span class="contact-box--label">instagram</span>
+				</li>
+	
+				<li class="contact__item">
+					<a href="https://codepen.io/pixelgalaxies/" class="btn btn--primary p-btn-3 p-btn-hover-glitch">
+						<i class="fab fa-codepen contact__icon"></i>
+						<span class="contact__label">codepen</span>
 					</a>
-				</div>
-
-				<div class="col-sm-4 col-md-2 contact-box vecenter">
-					<a href="https://codepen.io/pixelgalaxies/">
-						<i class="fab fa-codepen"></i>
-						<span class="contact-box--label">codepen</span>
-					</a>
-				</div>
-
-				<div class="col-sm-4 col-md-2 contact-box vecenter">
-					<a href="https://www.freecodecamp.com/pixelgalaxies">
-						<i class="fab fa-free-code-camp"></i>
-						<span class="contact-box--label">freecodecamp</span>
-					</a>
-				</div>
-			</div>
+				</li>
+			</ul>
 		</div>
+
+		
 	</section>
 	<!-- /#contact -->
+</main>
+
+
 
 
 
@@ -341,7 +397,41 @@
 		</p>
 	</footer>
 
-	<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/pixelgalaxies/crescendo@master/crescendo.js"></script>
+
+
+
+
+	<div class="contact-icons">
+		<ul class="contact-icons__list">
+			<li class="contact-icons__item">
+				<a href="mailto:pixel.galaxies@gmail.com" class="btn btn--primary p-btn-1">
+					<i class="far fa-envelope contact-icons__icon"></i>
+				</a>
+				<span class="contact-icons__label">email</span>
+			</li>
+
+			<li class="contact-icons__item">
+				<a href="https://github.com/pixelgalaxies" class="btn btn--primary p-btn-1">
+					<i class="fab fa-github contact-icons__icon"></i>
+				</a>
+				<span class="contact-icons__label">github</span>
+			</li>
+
+			<li class="contact-icons__item">
+				<a href="https://www.linkedin.com/in/imdustin/" class="btn btn--primary p-btn-1">
+					<i class="fab fa-linkedin-in contact-icons__icon"></i>
+				</a>
+				<span class="contact-icons__label">linkedin</span>
+			</li>
+
+			<li class="contact-icons__item">
+				<a href="https://codepen.io/pixelgalaxies/" class="btn btn--primary p-btn-1">
+					<i class="fab fa-codepen contact-icons__icon"></i>
+				</a>
+				<span class="contact-icons__label">codepen</span>
+			</li>
+		</ul>
+	</div>
 
 	<script src="assets/js/helper.js"></script>
 </body>

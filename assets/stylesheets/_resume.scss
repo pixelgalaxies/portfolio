@@ -1,0 +1,43 @@
+@use "index" as *;
+
+/*------------------------------*\
+#SKILLS
+\*------------------------------*/
+.resume {
+	&__inner {
+		@include contain;
+		@include grid;
+	}
+
+	&__subheading {
+		@include underline(var(--subheading-line), 56px);
+
+		margin-bottom: 25px;
+	}
+
+	&__content {
+		padding: 50px 30px;
+		background-color: var(--content-bg);
+		grid-column: span 12;
+
+		@media(min-width: 1024px) {
+			grid-column: span 6;
+		}
+	}
+
+	&__link {
+		color: $secondary;
+		display: inline-block;
+	}
+
+	p {
+		padding: 15px;
+		margin: 3px 0;
+		font-size: 14px;
+	}
+
+	&__title {
+		font-size: 18px;
+		text-transform: uppercase;
+	}
+}

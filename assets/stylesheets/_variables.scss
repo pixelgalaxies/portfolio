@@ -1,15 +1,70 @@
-// light mode
-$black: #252525;
-$yellow: #fffa99;
-$white: #F5F2F8;
-$primary: #BBA1CE;
-$primary-lighten: #E2D7EA;
-$primary-darken: #956CB2;
+$gap: 15px;
 
-$dark-black: #0e060d;
-$dark-yellow: #B3B752;
-$dark-white: #eae8ff;
-$dark-primary: #331832;
-$dark-primary-lighten: #452144;
-$dark-primary-darken: #2A1429;
+$tt: 0.25s;
 
+$container-sm: 500px;
+$container-md: 768px;
+$container-lg: 1024px;
+$container-xl: 1280px;
+
+$light: #f1fffc;
+$dark: #010504;
+$gray-dark: #1e2423;
+$gray-light: #e2f0ed;
+$primary: #19ffcf;
+$primary-light: #a1d0c6;
+$secondary: #ff19b1;
+$secondary-light: #ffade4;
+$accent: #fff767;
+
+
+:root {
+	--body-bg: #{$light};
+	--body-color: #{$dark};
+
+	--heading-color: #{$dark};
+	
+	--btn-primary-bg: #{$primary-light};
+	--btn-primary-color: #{$dark};
+	--btn-primary-bg-hover: #{$secondary-light};
+	--btn-primary-color-hover: #{$dark};
+	--btn-secondary-bg: #{$secondary-light};
+	--btn-secondary-color: #{$dark};
+	--btn-secondary-bg-hover: #{$accent};
+	--btn-secondary-color-hover: #{$dark};
+
+	--circle-color: #{$primary-light};
+	
+	--box-border: #{$secondary-light};
+
+	--content-bg: #{$primary-light};
+
+	--subheading-line: #{$dark};
+
+	--skillbox-bg: #{$secondary-light};
+	--skillbox-color: #{$dark};
+
+	--dot-color: #{$dark};
+
+	--settings-bg: #{$dark};
+	--settings-color: #{$light};
+
+	--header-bg: #{$light};
+	--header-icon: #{$dark};
+	--header-list-bg: #{rgba($light, 90%)};
+
+	--hero-content-bg: #{rgba($light, 80%)};
+	--hero-content-color: #{$dark};
+
+	--about-bg: #{$gray-light};
+
+	--projects-bg: #{$gray-light};
+	--project-links: #{$dark};
+	--project-links-hover: #{$secondary};
+
+	--contact-bg: #{$gray-light};
+	--contact-line: #{$dark};
+
+	--footer-bg: #{$secondary-light};
+	--footer-color: #{$dark};
+}

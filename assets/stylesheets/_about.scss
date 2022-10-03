@@ -1,0 +1,64 @@
+@use "index" as *;
+
+/*------------------------------*\
+#ABOUT
+\*------------------------------*/
+.about {
+	@include dotted(var(--dot-color), 5px);
+
+	background-color: var(--about-bg);
+	
+	&__inner {
+		@include contain;
+		@include grid;
+
+		align-items: center;
+	}
+
+	&__image-wrapper {
+		justify-content: center;
+		align-items: center;
+		border-color: var(--box-border);
+		grid-column: span 12;
+		position: relative;
+		@media (min-width: $container-lg) {
+			z-index: 0;
+			grid-area: 2 / 6 / 2 / -1;
+		}
+
+		&:after {
+			content: 'Subject: 063';
+			color: $light;
+			position: absolute;
+			width: 100%;
+			text-align: right;
+			bottom: -16px;
+			right: 15px;
+			font-size: 12px;
+			animation: general-glitch 2s infinite;
+		}
+	}
+
+	&__copy {
+		background-color: var(--content-bg);
+		padding: 50px 30px;
+		grid-column: span 12;
+
+		@media (min-width: $container-lg) {
+			grid-area: 2 / 1 / 2 / 7;
+			position: relative;
+			z-index: 1;
+		}
+	}
+
+	.new-skills {
+		&__heading {
+			margin-top: 35px;
+		}
+
+		&__items {
+			display: flex;
+			flex-wrap: wrap;
+		}
+	}
+}

@@ -1,0 +1,171 @@
+@use "index" as *;
+
+// font-family: 'Libre Barcode 39 Extended Text', cursive;
+// font-family: 'Megrim', cursive;
+// font-family: 'Nova Flat', cursive;
+// font-family: 'JetBrains Mono', monospace;
+
+
+/*------------------------------*\
+#GENERAL
+\*------------------------------*/
+html {
+	scroll-behavior: smooth;
+}
+
+body {
+	font-family: 'JetBrains Mono', monospace;
+  font-weight: 300;
+	color: var(--body-color);
+	background-color: var(--body-bg);
+	font-size: 16px;
+	transition: all $tt linear;
+
+	&.disable-motion {
+		*, *:before, *:after {
+			animation-name: none !important; 
+		}
+	}
+}
+
+section {
+	padding: 75px $gap;
+	transition: all $tt linear;
+}
+
+a {
+	text-decoration: none;
+}
+
+.btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+  width: 125px;
+  text-decoration: none;
+	font-size: 18px;
+
+	@media(min-width: $container-md) {
+		height: 75px;
+		width: 200px;
+		font-size: 20px;
+	}
+}
+
+.btn--primary {
+  @include button-bg(var(--btn-primary-bg), var(--btn-primary-bg-hover));
+  
+	color: var(--btn-primary-color);
+
+	&:hover, &:active, &:focus {
+		color: var(--btn-primary-color-hover);
+	}
+}
+
+.btn--secondary {
+	@include button-bg(var(--btn-secondary-bg), var(--btn-secondary-bg-hover));
+  
+	color: var(--btn-secondary-color);
+
+	&:hover, &:active, &:focus {
+		color: var(--btn-secondary-color-hover);
+	}
+}
+
+.settings {
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+	z-index: 100;
+  
+  &__list {
+    list-style: none;
+    max-height: 300px;
+    transition: all $tt linear;
+    overflow: hidden;
+    
+    &--hide {
+      max-height: 0;
+    }
+  }
+  
+  &__item {
+    width: 150px;
+    display: flex;
+  }
+  
+  .btn-icon {
+    width: 20px;
+  }
+  
+  &__cog {
+    display: block;
+    margin-left: auto;
+  }
+  
+  button {
+    padding: 15px;
+    border: none;
+    background-color: var(--settings-bg);
+    cursor: pointer;
+    color: var(--settings-color);
+    opacity: 0.6;
+    transition: opacity $tt linear;
+    margin-top: 5px;
+    
+    &:hover {
+      opacity: 1;
+    }
+  }
+}
+
+.section-head {
+	width: 40%;
+	grid-column: span 12;
+}
+
+.section-heading {
+	font-size: 36px;
+	text-transform: uppercase;
+	color: var(--heading-color);
+}
+
+.section-subheading {
+	font-family: 'Nova Flat', monospace;
+	font-size: 22px;
+}
+
+@keyframes wobble {
+	0% {
+		transform: rotate(0deg);
+	}
+	25% {
+		transform: rotate(-2deg);
+	}
+
+	50% {
+		transform: rotate(0deg);
+	}
+
+	50% {
+		transform: rotate(2deg);
+	}
+
+	100% {
+		transform: rotate(0deg);
+	}
+}
+
+.skill-box {
+	margin-right: 5px;
+	margin-bottom: 5px;
+	padding: 5px 10px;
+	background-color: var(--skillbox-bg);
+	color: var(--skillbox-color);
+	transform-origin: center;
+
+	&:hover, &:active, &:focus {
+		animation: wobble 0.5s linear;
+	}
+}

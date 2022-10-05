@@ -1720,278 +1720,278 @@ header.p-cutout-5 {
   }
 }
 .circle--1 {
-  -webkit-animation: circle 3.4482758621s linear infinite;
-          animation: circle 3.4482758621s linear infinite;
-  border-width: 34px;
+  -webkit-animation: circle 3.5714285714s linear infinite;
+          animation: circle 3.5714285714s linear infinite;
+  border-width: 26px;
   border-color: transparent var(--circle-color) transparent transparent;
-  height: 93%;
-  opacity: 1.1;
+  height: 74%;
+  opacity: 0.4;
   aspect-ratio: 1/1;
-  transform: rotate(46deg);
+  transform: rotate(61deg);
 }
 
 .circle--2 {
-  -webkit-animation: circle 4.5454545455s linear infinite;
-          animation: circle 4.5454545455s linear infinite;
-  border-width: 12px;
+  -webkit-animation: circle 25s linear infinite;
+          animation: circle 25s linear infinite;
+  border-width: 17px;
   border-color: transparent var(--circle-color) transparent transparent;
-  height: 36%;
-  opacity: 0.2;
+  height: 15%;
+  opacity: 0.4;
   aspect-ratio: 1/1;
-  transform: rotate(267deg);
+  transform: rotate(160deg);
 }
 
 .circle--3 {
-  -webkit-animation: circle 11.1111111111s linear infinite;
-          animation: circle 11.1111111111s linear infinite;
-  border-width: 16px;
+  -webkit-animation: circle 3.8461538462s linear infinite;
+          animation: circle 3.8461538462s linear infinite;
+  border-width: 30px;
   border-color: transparent var(--circle-color) transparent transparent;
-  height: 27%;
-  opacity: 0.8;
+  height: 21%;
+  opacity: 0.5;
   aspect-ratio: 1/1;
-  transform: rotate(275deg);
+  transform: rotate(328deg);
 }
 
 .circle--4 {
-  -webkit-animation: circle 3.4482758621s linear infinite;
-          animation: circle 3.4482758621s linear infinite;
-  border-width: 34px;
+  -webkit-animation: circle 33.3333333333s linear infinite;
+          animation: circle 33.3333333333s linear infinite;
+  border-width: 9px;
   border-color: transparent var(--circle-color) transparent transparent;
-  height: 97%;
-  opacity: 0.9;
+  height: 80%;
+  opacity: 0.3;
   aspect-ratio: 1/1;
-  transform: rotate(70deg);
+  transform: rotate(253deg);
 }
 
 .circle--5 {
-  -webkit-animation: circle 5s linear infinite;
-          animation: circle 5s linear infinite;
-  border-width: 3px;
+  -webkit-animation: circle 20s linear infinite;
+          animation: circle 20s linear infinite;
+  border-width: 24px;
   border-color: transparent var(--circle-color) transparent transparent;
-  height: 56%;
-  opacity: 0.7;
+  height: 24%;
+  opacity: 0.5;
   aspect-ratio: 1/1;
-  transform: rotate(343deg);
+  transform: rotate(177deg);
 }
 
 .circle--6 {
-  -webkit-animation: circle 9.0909090909s linear infinite;
-          animation: circle 9.0909090909s linear infinite;
-  border-width: 12px;
+  -webkit-animation: circle 7.1428571429s linear infinite;
+          animation: circle 7.1428571429s linear infinite;
+  border-width: 29px;
   border-color: transparent var(--circle-color) transparent transparent;
-  height: 103%;
+  height: 57%;
   opacity: 0.5;
   aspect-ratio: 1/1;
-  transform: rotate(267deg);
+  transform: rotate(235deg);
 }
 
 .circle--7 {
-  -webkit-animation: circle 3.5714285714s linear infinite;
-          animation: circle 3.5714285714s linear infinite;
-  border-width: 17px;
+  -webkit-animation: circle 4.7619047619s linear infinite;
+          animation: circle 4.7619047619s linear infinite;
+  border-width: 23px;
   border-color: transparent var(--circle-color) transparent transparent;
-  height: 47%;
-  opacity: 0.2;
+  height: 31%;
+  opacity: 1.1;
   aspect-ratio: 1/1;
-  transform: rotate(116deg);
+  transform: rotate(345deg);
 }
 
 .circle--8 {
-  -webkit-animation: circle 3.3333333333s linear infinite;
-          animation: circle 3.3333333333s linear infinite;
-  border-width: 26px;
+  -webkit-animation: circle 3.8461538462s linear infinite;
+          animation: circle 3.8461538462s linear infinite;
+  border-width: 32px;
   border-color: transparent var(--circle-color) transparent transparent;
-  height: 67%;
-  opacity: 0.2;
+  height: 99%;
+  opacity: 0.9;
   aspect-ratio: 1/1;
-  transform: rotate(234deg);
+  transform: rotate(152deg);
 }
 
 .circle--9 {
   -webkit-animation: circle 4.1666666667s linear infinite;
           animation: circle 4.1666666667s linear infinite;
-  border-width: 3px;
+  border-width: 2px;
   border-color: transparent var(--circle-color) transparent transparent;
-  height: 79%;
+  height: 38%;
   opacity: 1.1;
   aspect-ratio: 1/1;
-  transform: rotate(93deg);
+  transform: rotate(66deg);
 }
 
 .circle--10 {
-  -webkit-animation: circle 12.5s linear infinite;
-          animation: circle 12.5s linear infinite;
-  border-width: 13px;
+  -webkit-animation: circle 20s linear infinite;
+          animation: circle 20s linear infinite;
+  border-width: 29px;
   border-color: transparent var(--circle-color) transparent transparent;
-  height: 52%;
-  opacity: 0.4;
+  height: 84%;
+  opacity: 0.5;
   aspect-ratio: 1/1;
-  transform: rotate(54deg);
+  transform: rotate(254deg);
 }
 
 .circle--11 {
-  -webkit-animation: circle 50s linear infinite;
-          animation: circle 50s linear infinite;
-  border-width: 14px;
+  -webkit-animation: circle 6.25s linear infinite;
+          animation: circle 6.25s linear infinite;
+  border-width: 18px;
   border-color: transparent var(--circle-color) transparent transparent;
-  height: 69%;
-  opacity: 1;
+  height: 101%;
+  opacity: 0.8;
+  aspect-ratio: 1/1;
+  transform: rotate(173deg);
+}
+
+.circle--12 {
+  -webkit-animation: circle 4.5454545455s linear infinite;
+          animation: circle 4.5454545455s linear infinite;
+  border-width: 27px;
+  border-color: transparent var(--circle-color) transparent transparent;
+  height: 40%;
+  opacity: 0.3;
+  aspect-ratio: 1/1;
+  transform: rotate(248deg);
+}
+
+.circle--13 {
+  -webkit-animation: circle 3.8461538462s linear infinite;
+          animation: circle 3.8461538462s linear infinite;
+  border-width: 22px;
+  border-color: transparent var(--circle-color) transparent transparent;
+  height: 83%;
+  opacity: 0.5;
   aspect-ratio: 1/1;
   transform: rotate(194deg);
 }
 
-.circle--12 {
-  -webkit-animation: circle 3.4482758621s linear infinite;
-          animation: circle 3.4482758621s linear infinite;
-  border-width: 33px;
-  border-color: transparent var(--circle-color) transparent transparent;
-  height: 44%;
-  opacity: 0.4;
-  aspect-ratio: 1/1;
-  transform: rotate(313deg);
-}
-
-.circle--13 {
-  -webkit-animation: circle 3.5714285714s linear infinite;
-          animation: circle 3.5714285714s linear infinite;
-  border-width: 1px;
-  border-color: transparent var(--circle-color) transparent transparent;
-  height: 22%;
-  opacity: 1.1;
-  aspect-ratio: 1/1;
-  transform: rotate(93deg);
-}
-
 .circle--14 {
-  -webkit-animation: circle 11.1111111111s linear infinite;
-          animation: circle 11.1111111111s linear infinite;
-  border-width: 1px;
+  -webkit-animation: circle 6.6666666667s linear infinite;
+          animation: circle 6.6666666667s linear infinite;
+  border-width: 28px;
   border-color: transparent var(--circle-color) transparent transparent;
-  height: 53%;
+  height: 15%;
   opacity: 0.8;
   aspect-ratio: 1/1;
-  transform: rotate(278deg);
+  transform: rotate(143deg);
 }
 
 .circle--15 {
-  -webkit-animation: circle 33.3333333333s linear infinite;
-          animation: circle 33.3333333333s linear infinite;
-  border-width: 37px;
-  border-color: transparent var(--circle-color) transparent transparent;
-  height: 99%;
-  opacity: 0.9;
-  aspect-ratio: 1/1;
-  transform: rotate(224deg);
-}
-
-.circle--16 {
-  -webkit-animation: circle 4s linear infinite;
-          animation: circle 4s linear infinite;
-  border-width: 3px;
-  border-color: transparent var(--circle-color) transparent transparent;
-  height: 16%;
-  opacity: 1.1;
-  aspect-ratio: 1/1;
-  transform: rotate(162deg);
-}
-
-.circle--17 {
-  -webkit-animation: circle 4.1666666667s linear infinite;
-          animation: circle 4.1666666667s linear infinite;
-  border-width: 37px;
-  border-color: transparent var(--circle-color) transparent transparent;
-  height: 18%;
-  opacity: 1.1;
-  aspect-ratio: 1/1;
-  transform: rotate(118deg);
-}
-
-.circle--18 {
-  -webkit-animation: circle 12.5s linear infinite;
-          animation: circle 12.5s linear infinite;
+  -webkit-animation: circle 6.25s linear infinite;
+          animation: circle 6.25s linear infinite;
   border-width: 21px;
   border-color: transparent var(--circle-color) transparent transparent;
-  height: 21%;
+  height: 7%;
   opacity: 0.5;
-  aspect-ratio: 1/1;
-  transform: rotate(122deg);
-}
-
-.circle--19 {
-  -webkit-animation: circle 6.6666666667s linear infinite;
-          animation: circle 6.6666666667s linear infinite;
-  border-width: 23px;
-  border-color: transparent var(--circle-color) transparent transparent;
-  height: 72%;
-  opacity: 0.7;
-  aspect-ratio: 1/1;
-  transform: rotate(335deg);
-}
-
-.circle--20 {
-  -webkit-animation: circle 9.0909090909s linear infinite;
-          animation: circle 9.0909090909s linear infinite;
-  border-width: 7px;
-  border-color: transparent var(--circle-color) transparent transparent;
-  height: 16%;
-  opacity: 0.9;
   aspect-ratio: 1/1;
   transform: rotate(244deg);
 }
 
-.circle--21 {
-  -webkit-animation: circle 11.1111111111s linear infinite;
-          animation: circle 11.1111111111s linear infinite;
-  border-width: 9px;
+.circle--16 {
+  -webkit-animation: circle 4.347826087s linear infinite;
+          animation: circle 4.347826087s linear infinite;
+  border-width: 15px;
   border-color: transparent var(--circle-color) transparent transparent;
-  height: 19%;
-  opacity: 0.9;
+  height: 70%;
+  opacity: 0.2;
+  aspect-ratio: 1/1;
+  transform: rotate(251deg);
+}
+
+.circle--17 {
+  -webkit-animation: circle 7.6923076923s linear infinite;
+          animation: circle 7.6923076923s linear infinite;
+  border-width: 11px;
+  border-color: transparent var(--circle-color) transparent transparent;
+  height: 9%;
+  opacity: 0.6;
+  aspect-ratio: 1/1;
+  transform: rotate(43deg);
+}
+
+.circle--18 {
+  -webkit-animation: circle 6.25s linear infinite;
+          animation: circle 6.25s linear infinite;
+  border-width: 14px;
+  border-color: transparent var(--circle-color) transparent transparent;
+  height: 6%;
+  opacity: 0.3;
+  aspect-ratio: 1/1;
+  transform: rotate(127deg);
+}
+
+.circle--19 {
+  -webkit-animation: circle 33.3333333333s linear infinite;
+          animation: circle 33.3333333333s linear infinite;
+  border-width: 39px;
+  border-color: transparent var(--circle-color) transparent transparent;
+  height: 26%;
+  opacity: 1.1;
+  aspect-ratio: 1/1;
+  transform: rotate(128deg);
+}
+
+.circle--20 {
+  -webkit-animation: circle 4.347826087s linear infinite;
+          animation: circle 4.347826087s linear infinite;
+  border-width: 39px;
+  border-color: transparent var(--circle-color) transparent transparent;
+  height: 72%;
+  opacity: 1;
   aspect-ratio: 1/1;
   transform: rotate(310deg);
 }
 
-.circle--22 {
-  -webkit-animation: circle 10s linear infinite;
-          animation: circle 10s linear infinite;
-  border-width: 4px;
+.circle--21 {
+  -webkit-animation: circle 3.8461538462s linear infinite;
+          animation: circle 3.8461538462s linear infinite;
+  border-width: 27px;
   border-color: transparent var(--circle-color) transparent transparent;
-  height: 32%;
-  opacity: 0.8;
+  height: 68%;
+  opacity: 0.9;
   aspect-ratio: 1/1;
-  transform: rotate(113deg);
+  transform: rotate(261deg);
+}
+
+.circle--22 {
+  -webkit-animation: circle 14.2857142857s linear infinite;
+          animation: circle 14.2857142857s linear infinite;
+  border-width: 20px;
+  border-color: transparent var(--circle-color) transparent transparent;
+  height: 61%;
+  opacity: 1.1;
+  aspect-ratio: 1/1;
+  transform: rotate(290deg);
 }
 
 .circle--23 {
-  -webkit-animation: circle 4.347826087s linear infinite;
-          animation: circle 4.347826087s linear infinite;
-  border-width: 33px;
+  -webkit-animation: circle 50s linear infinite;
+          animation: circle 50s linear infinite;
+  border-width: 7px;
   border-color: transparent var(--circle-color) transparent transparent;
-  height: 87%;
-  opacity: 0.3;
+  height: 20%;
+  opacity: 0.6;
   aspect-ratio: 1/1;
-  transform: rotate(138deg);
+  transform: rotate(357deg);
 }
 
 .circle--24 {
-  -webkit-animation: circle 3.8461538462s linear infinite;
-          animation: circle 3.8461538462s linear infinite;
-  border-width: 15px;
+  -webkit-animation: circle 8.3333333333s linear infinite;
+          animation: circle 8.3333333333s linear infinite;
+  border-width: 38px;
   border-color: transparent var(--circle-color) transparent transparent;
-  height: 99%;
-  opacity: 0.4;
+  height: 6%;
+  opacity: 0.2;
   aspect-ratio: 1/1;
-  transform: rotate(124deg);
+  transform: rotate(116deg);
 }
 
 .circle--25 {
-  -webkit-animation: circle 14.2857142857s linear infinite;
-          animation: circle 14.2857142857s linear infinite;
-  border-width: 22px;
+  -webkit-animation: circle 10s linear infinite;
+          animation: circle 10s linear infinite;
+  border-width: 9px;
   border-color: transparent var(--circle-color) transparent transparent;
-  height: 6%;
-  opacity: 0.7;
+  height: 86%;
+  opacity: 1;
   aspect-ratio: 1/1;
-  transform: rotate(101deg);
+  transform: rotate(324deg);
 }
 
 .circle-reverse {

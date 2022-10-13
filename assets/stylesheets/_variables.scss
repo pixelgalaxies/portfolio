@@ -44,7 +44,7 @@ $accent: #fff767;
 	--skillbox-bg: #{$secondary-light};
 	--skillbox-color: #{$dark};
 
-	--dot-color: #{$dark};
+	--dot-color: #{rgba($dark, 20%)};
 
 	--settings-bg: #{$dark};
 	--settings-color: #{$light};
@@ -60,7 +60,7 @@ $accent: #fff767;
 
 	--projects-bg: #{$gray-light};
 	--project-links: #{$dark};
-	--project-links-hover: #{$secondary};
+	--project-links-hover: #{$gray-dark};
 
 	--contact-bg: #{$gray-light};
 	--contact-line: #{$dark};

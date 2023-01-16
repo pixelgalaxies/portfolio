@@ -13,7 +13,7 @@ $gray-dark: #1e2423;
 $gray-light: #e2f0ed;
 $primary: #19ffcf;
 $primary-light: #a1d0c6;
-$secondary: #ff19b1;
+$secondary: #d31995;
 $secondary-light: #ffade4;
 $accent: #fff767;
 
@@ -21,6 +21,10 @@ $accent: #fff767;
 :root {
 	--body-bg: #{$light};
 	--body-color: #{$dark};
+
+  --skip-color: #{$dark};
+  --skip-bg: #{$light};
+  --skip-border: #{$dark};
 
 	--heading-color: #{$dark};
 	

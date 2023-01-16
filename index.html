@@ -7,8 +7,7 @@
 	<meta charset="utf-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-	<meta keywords="front-end, front end, developer, front-end developer, front end developer, html, css, javascript">
-	<meta description="Dustin is a front-end web developer based in Portland, Oregon. He was lost for a long time, but he found myself in his passion, web development. His goal in life is to bring information to people. He loves learning, he loves improving, and he loves problem solving.">
+	<meta name="description" content="Dustin is a front-end web developer based in Portland, Oregon. He was lost for a long time, but he found myself in his passion, web development. His goal in life is to bring information to people. He loves learning, he loves improving, and he loves problem solving.">
 	<title>Dustin Clark | Front-end Web Developer</title>
 
 	<!-- icons -->
@@ -26,11 +25,14 @@
 	<link type="text/css" rel="stylesheet" href="assets/stylesheets/main.css" />
 
 	<!-- favicon -->
-	<link rel="shortcut icon" href="assets/images/gems.png" type="image/x-icon" />
+	<link rel="shortcut icon" href="assets/images/meVector.svg" type="image/x-icon" />
 
 </head>
 
 <body class="dark-mode">
+
+  <a href="#main" class="skip-main p-box-2">Skip to main content</a>
+
 	<div class="settings">
 		<ul class="settings__list settings__list--hide">
 			<li>
@@ -46,7 +48,9 @@
 				</button>
 			</li>
 		</ul>
-		<button class="js-settings settings__cog p-btn-1"><i class="fa fa-cog"></i></button>
+		<button class="js-settings settings__cog p-btn-1" aria-label="Settings">
+      <i class="fa fa-cog"></i>
+    </button>
 	</div>
 
 
@@ -71,7 +75,7 @@
 
 
 
-<main>
+<main id="main">
 	<section id="hero" class="hero">
 		<div class="circles" aria-hidden="true"></div>
 		<div class="hero__inner">
@@ -135,7 +139,7 @@
 
 
 			<div class="skills__copy p-cutout-1">
-				<h4 class="skills__subheading section-subheading p-underline-1">Languages</h4>
+				<h3 class="skills__subheading section-subheading p-underline-1">Languages</h3>
 				<div class="skills__items">
 					<span class="skill-box">html</span>
 					<span class="skill-box">css</span>
@@ -147,7 +151,7 @@
 			</div>
 
 			<div class="skills__copy p-cutout-2">
-				<h4 class="skills__subheading section-subheading p-underline-2">Libraries/Frameworks</h4>
+				<h3 class="skills__subheading section-subheading p-underline-2">Libraries/Frameworks</h3>
 				<div class="skills__items">
 					<span class="skill-box">jquery</span>
 					<span class="skill-box">bootstrap</span>
@@ -156,7 +160,7 @@
 			</div>
 
 			<div class="skills__copy p-cutout-4">
-				<h4 class="skills__subheading section-subheading p-underline-4 p-bungle-4">Software</h4>
+				<h3 class="skills__subheading section-subheading p-underline-4 p-bungle-4">Software</h3>
 				<div class="skills__items">
 					<span class="skill-box">photoshop</span>
 					<span class="skill-box">jira</span>
@@ -170,7 +174,7 @@
 			</div>
 
 			<div class="skills__copy p-cutout-5">
-				<h4 class="skills__subheading section-subheading p-underline-5">Other</h4>
+				<h3 class="skills__subheading section-subheading p-underline-5">Other</h3>
 				<div class="skills__items">
 					<span class="skill-box">bem methodology</span>
 					<span class="skill-box">kanban</span>
@@ -403,28 +407,28 @@
 	<div class="contact-icons">
 		<ul class="contact-icons__list">
 			<li class="contact-icons__item">
-				<a href="mailto:pixel.galaxies@gmail.com" class="btn btn--primary p-btn-1">
+				<a href="mailto:pixel.galaxies@gmail.com" class="btn btn--primary p-btn-1" aria-label="Email">
 					<i class="far fa-envelope contact-icons__icon"></i>
 				</a>
 				<span class="contact-icons__label">email</span>
 			</li>
 
 			<li class="contact-icons__item">
-				<a href="https://github.com/pixelgalaxies" class="btn btn--primary p-btn-1">
+				<a href="https://github.com/pixelgalaxies" class="btn btn--primary p-btn-1" aria-label="GitHub">
 					<i class="fab fa-github contact-icons__icon"></i>
 				</a>
 				<span class="contact-icons__label">github</span>
 			</li>
 
 			<li class="contact-icons__item">
-				<a href="https://www.linkedin.com/in/imdustin/" class="btn btn--primary p-btn-1">
+				<a href="https://www.linkedin.com/in/imdustin/" class="btn btn--primary p-btn-1" aria-label="LinkedIn">
 					<i class="fab fa-linkedin-in contact-icons__icon"></i>
 				</a>
 				<span class="contact-icons__label">linkedin</span>
 			</li>
 
 			<li class="contact-icons__item">
-				<a href="https://codepen.io/pixelgalaxies/" class="btn btn--primary p-btn-1">
+				<a href="https://codepen.io/pixelgalaxies/" class="btn btn--primary p-btn-1" aria-label="CodePen">
 					<i class="fab fa-codepen contact-icons__icon"></i>
 				</a>
 				<span class="contact-icons__label">codepen</span>

@@ -2,6 +2,9 @@
 :root {
   --body-bg: #f1fffc;
   --body-color: #010504;
+  --skip-color: #010504;
+  --skip-bg: #f1fffc;
+  --skip-border: #010504;
   --heading-color: #010504;
   --btn-primary-bg: #a1d0c6;
   --btn-primary-color: #010504;
@@ -1313,6 +1316,24 @@ a {
   text-decoration: none;
 }
 
+.skip-main {
+  color: var(--skip-color);
+  font-size: 24px;
+  position: absolute;
+  top: 15px;
+  left: -500px;
+  padding: 15px;
+  z-index: 200;
+  background-color: var(--skip-bg);
+  border-color: var(--skip-border);
+  opacity: 0;
+  transition: all 0.33s ease-in-out;
+}
+.skip-main:hover, .skip-main:active, .skip-main:focus {
+  opacity: 1;
+  left: 15px;
+}
+
 .btn {
   display: flex;
   justify-content: center;
@@ -1720,278 +1741,278 @@ header.p-cutout-5 {
   }
 }
 .circle--1 {
-  -webkit-animation: circle 8.3333333333s linear infinite;
-          animation: circle 8.3333333333s linear infinite;
-  border-width: 13px;
+  -webkit-animation: circle 3.8461538462s linear infinite;
+          animation: circle 3.8461538462s linear infinite;
+  border-width: 17px;
   border-color: transparent var(--circle-color) transparent transparent;
-  height: 85%;
+  height: 80%;
   opacity: 0.6;
   aspect-ratio: 1/1;
-  transform: rotate(280deg);
+  transform: rotate(314deg);
 }
 
 .circle--2 {
-  -webkit-animation: circle 7.6923076923s linear infinite;
-          animation: circle 7.6923076923s linear infinite;
-  border-width: 5px;
+  -webkit-animation: circle 4.1666666667s linear infinite;
+          animation: circle 4.1666666667s linear infinite;
+  border-width: 25px;
   border-color: transparent var(--circle-color) transparent transparent;
-  height: 24%;
-  opacity: 0.5;
+  height: 47%;
+  opacity: 0.4;
   aspect-ratio: 1/1;
-  transform: rotate(254deg);
+  transform: rotate(178deg);
 }
 
 .circle--3 {
-  -webkit-animation: circle 33.3333333333s linear infinite;
-          animation: circle 33.3333333333s linear infinite;
-  border-width: 10px;
+  -webkit-animation: circle 3.7037037037s linear infinite;
+          animation: circle 3.7037037037s linear infinite;
+  border-width: 11px;
   border-color: transparent var(--circle-color) transparent transparent;
-  height: 13%;
-  opacity: 1.1;
+  height: 16%;
+  opacity: 0.5;
   aspect-ratio: 1/1;
-  transform: rotate(196deg);
+  transform: rotate(85deg);
 }
 
 .circle--4 {
-  -webkit-animation: circle 3.3333333333s linear infinite;
-          animation: circle 3.3333333333s linear infinite;
-  border-width: 1px;
+  -webkit-animation: circle 7.6923076923s linear infinite;
+          animation: circle 7.6923076923s linear infinite;
+  border-width: 10px;
   border-color: transparent var(--circle-color) transparent transparent;
-  height: 63%;
-  opacity: 0.5;
+  height: 104%;
+  opacity: 0.2;
   aspect-ratio: 1/1;
-  transform: rotate(332deg);
+  transform: rotate(203deg);
 }
 
 .circle--5 {
   -webkit-animation: circle 7.1428571429s linear infinite;
           animation: circle 7.1428571429s linear infinite;
-  border-width: 27px;
+  border-width: 31px;
   border-color: transparent var(--circle-color) transparent transparent;
-  height: 44%;
-  opacity: 1;
+  height: 72%;
+  opacity: 0.5;
   aspect-ratio: 1/1;
-  transform: rotate(262deg);
+  transform: rotate(318deg);
 }
 
 .circle--6 {
-  -webkit-animation: circle 3.7037037037s linear infinite;
-          animation: circle 3.7037037037s linear infinite;
-  border-width: 26px;
+  -webkit-animation: circle 3.5714285714s linear infinite;
+          animation: circle 3.5714285714s linear infinite;
+  border-width: 25px;
   border-color: transparent var(--circle-color) transparent transparent;
-  height: 59%;
-  opacity: 0.2;
+  height: 52%;
+  opacity: 0.4;
   aspect-ratio: 1/1;
-  transform: rotate(125deg);
+  transform: rotate(284deg);
 }
 
 .circle--7 {
-  -webkit-animation: circle 14.2857142857s linear infinite;
-          animation: circle 14.2857142857s linear infinite;
-  border-width: 29px;
+  -webkit-animation: circle 3.3333333333s linear infinite;
+          animation: circle 3.3333333333s linear infinite;
+  border-width: 20px;
   border-color: transparent var(--circle-color) transparent transparent;
-  height: 111%;
-  opacity: 0.5;
+  height: 73%;
+  opacity: 0.2;
   aspect-ratio: 1/1;
-  transform: rotate(179deg);
+  transform: rotate(200deg);
 }
 
 .circle--8 {
-  -webkit-animation: circle 4s linear infinite;
-          animation: circle 4s linear infinite;
-  border-width: 19px;
+  -webkit-animation: circle 5s linear infinite;
+          animation: circle 5s linear infinite;
+  border-width: 15px;
   border-color: transparent var(--circle-color) transparent transparent;
-  height: 109%;
-  opacity: 0.9;
+  height: 27%;
+  opacity: 1;
   aspect-ratio: 1/1;
-  transform: rotate(326deg);
+  transform: rotate(6deg);
 }
 
 .circle--9 {
-  -webkit-animation: circle 11.1111111111s linear infinite;
-          animation: circle 11.1111111111s linear infinite;
-  border-width: 2px;
+  -webkit-animation: circle 10s linear infinite;
+          animation: circle 10s linear infinite;
+  border-width: 37px;
   border-color: transparent var(--circle-color) transparent transparent;
-  height: 103%;
-  opacity: 0.6;
+  height: 92%;
+  opacity: 0.4;
   aspect-ratio: 1/1;
-  transform: rotate(260deg);
+  transform: rotate(320deg);
 }
 
 .circle--10 {
-  -webkit-animation: circle 4s linear infinite;
-          animation: circle 4s linear infinite;
-  border-width: 10px;
+  -webkit-animation: circle 5.5555555556s linear infinite;
+          animation: circle 5.5555555556s linear infinite;
+  border-width: 29px;
   border-color: transparent var(--circle-color) transparent transparent;
-  height: 23%;
-  opacity: 1;
+  height: 100%;
+  opacity: 0.4;
   aspect-ratio: 1/1;
-  transform: rotate(94deg);
+  transform: rotate(77deg);
 }
 
 .circle--11 {
   -webkit-animation: circle 16.6666666667s linear infinite;
           animation: circle 16.6666666667s linear infinite;
-  border-width: 6px;
+  border-width: 14px;
   border-color: transparent var(--circle-color) transparent transparent;
-  height: 13%;
-  opacity: 0.4;
+  height: 68%;
+  opacity: 0.8;
   aspect-ratio: 1/1;
-  transform: rotate(62deg);
+  transform: rotate(108deg);
 }
 
 .circle--12 {
-  -webkit-animation: circle 6.6666666667s linear infinite;
-          animation: circle 6.6666666667s linear infinite;
-  border-width: 39px;
+  -webkit-animation: circle 8.3333333333s linear infinite;
+          animation: circle 8.3333333333s linear infinite;
+  border-width: 5px;
   border-color: transparent var(--circle-color) transparent transparent;
-  height: 103%;
-  opacity: 0.5;
+  height: 75%;
+  opacity: 1;
   aspect-ratio: 1/1;
-  transform: rotate(24deg);
+  transform: rotate(308deg);
 }
 
 .circle--13 {
-  -webkit-animation: circle 5.2631578947s linear infinite;
-          animation: circle 5.2631578947s linear infinite;
-  border-width: 5px;
+  -webkit-animation: circle 16.6666666667s linear infinite;
+          animation: circle 16.6666666667s linear infinite;
+  border-width: 33px;
   border-color: transparent var(--circle-color) transparent transparent;
-  height: 6%;
-  opacity: 1;
+  height: 101%;
+  opacity: 0.6;
   aspect-ratio: 1/1;
-  transform: rotate(224deg);
+  transform: rotate(59deg);
 }
 
 .circle--14 {
-  -webkit-animation: circle 4.5454545455s linear infinite;
-          animation: circle 4.5454545455s linear infinite;
-  border-width: 38px;
+  -webkit-animation: circle 3.3333333333s linear infinite;
+          animation: circle 3.3333333333s linear infinite;
+  border-width: 28px;
   border-color: transparent var(--circle-color) transparent transparent;
-  height: 61%;
-  opacity: 0.8;
+  height: 58%;
+  opacity: 0.9;
   aspect-ratio: 1/1;
-  transform: rotate(286deg);
+  transform: rotate(347deg);
 }
 
 .circle--15 {
-  -webkit-animation: circle 14.2857142857s linear infinite;
-          animation: circle 14.2857142857s linear infinite;
-  border-width: 33px;
+  -webkit-animation: circle 7.1428571429s linear infinite;
+          animation: circle 7.1428571429s linear infinite;
+  border-width: 28px;
   border-color: transparent var(--circle-color) transparent transparent;
-  height: 32%;
-  opacity: 1.1;
+  height: 60%;
+  opacity: 0.2;
   aspect-ratio: 1/1;
-  transform: rotate(81deg);
+  transform: rotate(214deg);
 }
 
 .circle--16 {
-  -webkit-animation: circle 50s linear infinite;
-          animation: circle 50s linear infinite;
-  border-width: 7px;
+  -webkit-animation: circle 11.1111111111s linear infinite;
+          animation: circle 11.1111111111s linear infinite;
+  border-width: 37px;
   border-color: transparent var(--circle-color) transparent transparent;
-  height: 79%;
-  opacity: 1.1;
+  height: 80%;
+  opacity: 0.9;
   aspect-ratio: 1/1;
-  transform: rotate(88deg);
+  transform: rotate(335deg);
 }
 
 .circle--17 {
-  -webkit-animation: circle 12.5s linear infinite;
-          animation: circle 12.5s linear infinite;
-  border-width: 31px;
+  -webkit-animation: circle 5s linear infinite;
+          animation: circle 5s linear infinite;
+  border-width: 6px;
   border-color: transparent var(--circle-color) transparent transparent;
-  height: 87%;
-  opacity: 1;
+  height: 110%;
+  opacity: 0.4;
   aspect-ratio: 1/1;
-  transform: rotate(298deg);
+  transform: rotate(123deg);
 }
 
 .circle--18 {
-  -webkit-animation: circle 6.25s linear infinite;
-          animation: circle 6.25s linear infinite;
-  border-width: 34px;
+  -webkit-animation: circle 20s linear infinite;
+          animation: circle 20s linear infinite;
+  border-width: 14px;
   border-color: transparent var(--circle-color) transparent transparent;
-  height: 11%;
-  opacity: 0.5;
+  height: 61%;
+  opacity: 0.2;
   aspect-ratio: 1/1;
-  transform: rotate(67deg);
+  transform: rotate(355deg);
 }
 
 .circle--19 {
-  -webkit-animation: circle 16.6666666667s linear infinite;
-          animation: circle 16.6666666667s linear infinite;
-  border-width: 26px;
+  -webkit-animation: circle 8.3333333333s linear infinite;
+          animation: circle 8.3333333333s linear infinite;
+  border-width: 20px;
   border-color: transparent var(--circle-color) transparent transparent;
-  height: 45%;
-  opacity: 0.3;
+  height: 73%;
+  opacity: 0.9;
   aspect-ratio: 1/1;
-  transform: rotate(246deg);
+  transform: rotate(260deg);
 }
 
 .circle--20 {
-  -webkit-animation: circle 3.3333333333s linear infinite;
-          animation: circle 3.3333333333s linear infinite;
-  border-width: 1px;
+  -webkit-animation: circle 100s linear infinite;
+          animation: circle 100s linear infinite;
+  border-width: 36px;
   border-color: transparent var(--circle-color) transparent transparent;
-  height: 10%;
-  opacity: 0.9;
+  height: 44%;
+  opacity: 0.3;
   aspect-ratio: 1/1;
-  transform: rotate(171deg);
+  transform: rotate(356deg);
 }
 
 .circle--21 {
-  -webkit-animation: circle 4.5454545455s linear infinite;
-          animation: circle 4.5454545455s linear infinite;
-  border-width: 24px;
+  -webkit-animation: circle 3.5714285714s linear infinite;
+          animation: circle 3.5714285714s linear infinite;
+  border-width: 33px;
   border-color: transparent var(--circle-color) transparent transparent;
-  height: 24%;
-  opacity: 0.5;
+  height: 4%;
+  opacity: 0.3;
   aspect-ratio: 1/1;
-  transform: rotate(121deg);
+  transform: rotate(180deg);
 }
 
 .circle--22 {
-  -webkit-animation: circle 25s linear infinite;
-          animation: circle 25s linear infinite;
-  border-width: 25px;
+  -webkit-animation: circle 10s linear infinite;
+          animation: circle 10s linear infinite;
+  border-width: 40px;
   border-color: transparent var(--circle-color) transparent transparent;
   height: 77%;
-  opacity: 0.3;
+  opacity: 0.5;
   aspect-ratio: 1/1;
-  transform: rotate(166deg);
+  transform: rotate(195deg);
 }
 
 .circle--23 {
-  -webkit-animation: circle 4.5454545455s linear infinite;
-          animation: circle 4.5454545455s linear infinite;
-  border-width: 36px;
+  -webkit-animation: circle 16.6666666667s linear infinite;
+          animation: circle 16.6666666667s linear infinite;
+  border-width: 27px;
   border-color: transparent var(--circle-color) transparent transparent;
-  height: 77%;
-  opacity: 0.7;
+  height: 74%;
+  opacity: 1.1;
   aspect-ratio: 1/1;
-  transform: rotate(127deg);
+  transform: rotate(354deg);
 }
 
 .circle--24 {
-  -webkit-animation: circle 3.5714285714s linear infinite;
-          animation: circle 3.5714285714s linear infinite;
-  border-width: 39px;
+  -webkit-animation: circle 100s linear infinite;
+          animation: circle 100s linear infinite;
+  border-width: 9px;
   border-color: transparent var(--circle-color) transparent transparent;
-  height: 61%;
-  opacity: 1.1;
+  height: 14%;
+  opacity: 0.3;
   aspect-ratio: 1/1;
-  transform: rotate(239deg);
+  transform: rotate(168deg);
 }
 
 .circle--25 {
-  -webkit-animation: circle 100s linear infinite;
-          animation: circle 100s linear infinite;
-  border-width: 35px;
+  -webkit-animation: circle 10s linear infinite;
+          animation: circle 10s linear infinite;
+  border-width: 3px;
   border-color: transparent var(--circle-color) transparent transparent;
-  height: 35%;
-  opacity: 0.9;
+  height: 42%;
+  opacity: 0.3;
   aspect-ratio: 1/1;
-  transform: rotate(327deg);
+  transform: rotate(248deg);
 }
 
 .circle-reverse {
@@ -2244,7 +2265,7 @@ header.p-cutout-5 {
   }
 }
 .resume__link {
-  color: #ff19b1;
+  color: #d31995;
   display: inline-block;
 }
 .resume p {
@@ -2446,20 +2467,23 @@ footer {
 .dark-mode {
   --body-bg: #010504;
   --body-color: #010504;
+  --skip-color: #fff767;
+  --skip-bg: #010504;
+  --skip-border: #fff767;
   --heading-color: #f1fffc;
   --btn-primary-bg: #19ffcf;
   --btn-primary-color: #010504;
-  --btn-primary-bg-hover: #ff19b1;
+  --btn-primary-bg-hover: #d31995;
   --btn-primary-color-hover: #f1fffc;
-  --btn-secondary-bg: #ff19b1;
+  --btn-secondary-bg: #d31995;
   --btn-secondary-color: #f1fffc;
   --btn-secondary-bg-hover: #fff767;
   --btn-secondary-color-hover: #010504;
   --circle-color: #19ffcf;
-  --box-border: #ff19b1;
+  --box-border: #d31995;
   --content-bg: #19ffcf;
   --subheading-line: #010504;
-  --skillbox-bg: #ff19b1;
+  --skillbox-bg: #d31995;
   --skillbox-color: #f1fffc;
   --dot-color: rgba(241, 255, 252, 0.1);
   --settings-bg: #fff767;
@@ -2472,10 +2496,10 @@ footer {
   --about-bg: #1e2423;
   --projects-bg: #1e2423;
   --project-links: #010504;
-  --project-links-hover: #ff19b1;
+  --project-links-hover: #d31995;
   --contact-bg: #1e2423;
   --contact-line: #19ffcf;
-  --footer-bg: #ff19b1;
+  --footer-bg: #d31995;
   --footer-color: #f1fffc;
 }
 

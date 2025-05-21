@@ -1,0 +1,96 @@
+@use "index" as *;
+
+/*------------------------------*\
+#PROJECTS
+\*------------------------------*/
+.projects {
+	&__inner {
+		@include contain;
+		@include grid;
+	}
+
+	.project {
+		grid-column: span 12;
+		position: relative;
+		display: grid;
+		gap: $gap;
+		grid-template-columns: repeat(12, 1fr);
+		align-items: center;
+
+		&:not(:last-of-type) {
+			margin-bottom: 64px;
+		}
+
+		&__subheading {
+			margin-bottom: 16px;
+		}
+
+		&__copy {
+      @include content;
+			padding: 48px 28px;
+			grid-area: 2 / 1 / 2 / -1;
+
+			@media (min-width: $breakpoint-lg) {
+				grid-area: 1 / 1 / 1 / 7;
+				position: relative;
+				z-index: 1;
+			}
+		}
+
+		&__skills {
+			margin-block: $gap;
+			display: flex;
+			flex-wrap: wrap;
+		}
+
+		&__image {
+			position: relative;
+			grid-area: 1 / 1 / 1 / -1;
+
+			@media (min-width: $breakpoint-lg) {
+				grid-area: 1 / 6 / 1 / -1;
+				z-index: 0;
+			}
+
+      a {
+        transition: filter $transtime linear;
+        filter: grayscale(1);
+        
+        &:hover, &:active, &:focus {
+          filter: grayscale(0);
+        }
+      }
+		}
+
+		&:nth-child(odd) {
+			@media(min-width: $breakpoint-lg) {
+				.project__copy {
+					grid-area: 1 / 7 / 1 / -1;
+				}
+		
+				.project__image {
+					grid-area: 1 / 1 / 1 / 8;
+				}
+			}
+		}
+
+		&__links {
+			margin-top: 5px;
+			display: flex;
+			a {
+				color: var(--project-links);
+				transition: all $transtime ease-in-out;
+				margin-right: $gap;
+        text-shadow: none;
+
+				&:hover, &:active, &:focus {
+					color: var(--project-links-hover);
+				}
+			}
+
+			i {
+				font-size: 24px;
+			}
+		}
+	}
+}

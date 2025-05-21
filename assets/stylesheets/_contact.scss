@@ -1,0 +1,114 @@
+@use "index" as *;
+
+/*------------------------------*\
+#CONTACT
+\*------------------------------*/
+.contact {
+	&__inner {
+		@include contain;
+		@include grid;
+	}
+  
+  &__list {
+    list-style: none;
+		grid-column: span 12;
+    display: flex;
+		gap: $gap;
+    flex-wrap: wrap;
+
+		@media(min-width: $breakpoint-sm) {
+			justify-content: center;
+		}
+  }
+
+	&__item {
+    width: 100%;
+
+    @media(min-width: $breakpoint-sm) {
+      width: calc(50% - $gap);
+		}
+
+    @media(min-width: $breakpoint-lg) {
+      width: calc(25% - $gap);
+		}
+
+		.btn {
+			width: 100%;
+			height: 100px;
+		}
+	}
+  
+  &__icon {
+    font-size: 48px;
+		margin-right: 10px;
+		width: 50px;
+		text-align: center;
+  }
+}
+
+.contact-icons {
+	display: none;
+  visibility: hidden;
+	@media(min-width: 1500px) {
+		display: block;
+    visibility: visible;
+	}
+
+	&__list {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+		gap: $gap;
+		position: fixed;
+		z-index: 1000;
+		bottom: 0;
+		left: 25px;
+      
+		&:after {
+			position: relative;
+			content: '';
+			height: 150px;
+			width: 1px;
+			background-color: var(--contact-line);
+			margin-top: 10px;
+			left: 18px;
+		}
+  }
+
+	&__item {
+		display: flex;
+		align-items: center;
+		justify-content: flex-start;
+		&:hover, &:active, &:focus{
+			.contact-icons__label {
+				opacity: 1;
+				max-width: 100px;
+			}   
+		}
+
+		.btn {
+			width: auto;
+			height: auto;
+			padding: 7px;
+			margin-right: 5px;
+			transition: all $transtime linear;
+			padding: 10px
+		}
+	}
+  
+  &__icon {
+		width: 20px;
+		text-align: center;
+  }
+  
+  &__label {
+		opacity: 0;
+		max-width: 0;
+		color: var(--btn-primary-color-hover);
+		background-color: var(--btn-primary-bg-hover);
+		padding: 3px;
+		transition: all $transtime linear;
+		overflow: hidden;
+  }
+}

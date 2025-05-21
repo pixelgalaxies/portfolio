@@ -1,0 +1,58 @@
+@use "index" as *;
+
+/*------------------------------*\
+#ABOUT
+\*------------------------------*/
+.about {	
+	&__inner {
+		@include contain;
+		@include grid;
+
+		align-items: center;
+	}
+
+	&__copy {
+    @include content;
+		padding: 48px 28px;
+		grid-column: span 12;
+
+		@media (min-width: $breakpoint-lg) {
+			grid-area: 2 / 1 / 2 / 7;
+			position: relative;
+			z-index: 1;
+		}
+	}
+
+	.new-skills {
+		&__heading {
+			margin-top: 36px;
+		}
+
+		&__items {
+			display: flex;
+			flex-wrap: wrap;
+		}
+	}
+
+  &__image-wrapper {
+		position: relative;
+		justify-content: center;
+		align-items: center;
+		grid-column: span 12;
+		@media (min-width: $breakpoint-lg) {
+			z-index: 0;
+			grid-area: 2 / 6 / 2 / -1;
+		}
+
+    &:after {
+      content: '';
+      inset: 0;
+      position: absolute;
+      background-color: var(--about-hue);
+    }
+	}
+
+  &__me {
+    filter: grayscale(100%);
+  }
+}

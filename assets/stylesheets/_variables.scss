@@ -1,0 +1,69 @@
+$gap: 16px;
+
+$transtime: 0.25s;
+
+$breakpoint-sm: 500px;
+$breakpoint-md: 768px;
+$breakpoint-lg: 1024px;
+$breakpoint-xl: 1280px;
+
+$light: #f1f4f9;
+$dark: #090410;
+$primary: #4fffd3;
+$primary-light: #a1d0c6;
+$secondary: #f03c69;
+$secondary-light: #d1a9c3;
+$accent: #fff767;
+$accent-light: #6a6402;
+
+
+
+// use css custom properties to dynamically switch between light and dark theme
+// sass compiles server side making colors not dynamic and custom properties compile client side
+:root {
+	--body-color: #{$primary};
+  --body-bg: #{$dark};
+	
+	--btn-primary-bg: #{$primary};
+	--btn-primary-color: #{$dark};
+	--btn-primary-bg-hover: #{$accent};
+	--btn-primary-color-hover: #{$dark};
+	--btn-secondary-bg: #{$secondary};
+	--btn-secondary-color: #{$light};
+	--btn-secondary-bg-hover: #{$accent};
+	--btn-secondary-color-hover: #{$dark};
+	
+  --box-content-bg: #{rgba($dark, 60%)};
+	--border-box-shadow: #{rgba($primary, 70%)};
+	--border-box-color: #{$primary};
+
+  --settings-bg: #{$accent};
+	--settings-color: #{$dark};
+
+  --skillbox-bg: #{$secondary};
+	--skillbox-color: #{$light};
+
+  // SECTIONS
+
+  --header-bg: #{$dark};
+  --header-icon: #{$primary};
+  --header-list-bg: #{rgba($dark, 90%)};
+
+  --hypertext-color-1: #{$primary};
+  --hypertext-color-2: #{$secondary};
+  --hypertext-color-3: #{$accent};
+  --circle-color: #{$secondary};
+
+  --about-hue: #{rgba($secondary, 50%)};
+
+	--project-links: #{$accent};
+	--project-links-hover: #{$secondary};
+
+	--resume-links: #{$secondary};
+	--resume-links-hover: #{$accent};
+
+	--contact-line: #{$primary};
+
+	--footer-bg: #{$secondary};
+	--footer-color: #{$light};
+}

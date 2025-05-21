@@ -1,0 +1,62 @@
+@use "index" as *;
+
+.project-page {
+	header {
+		position: unset;
+	}
+}
+
+.dashboard {
+	&__inner {
+		@include grid;
+		
+		width: 100%;
+		max-width: 1500px;
+		margin-inline: auto;
+	}
+
+	&__left {
+		@include grid;
+		grid-column: span 12;
+
+		@media(min-width: $breakpoint-lg) {
+			grid-column: span 6;
+		}
+		@media(min-width: $breakpoint-xl) {
+			grid-column: span 7;
+		}
+	}
+
+	&__heading {
+		grid-column: span 12;
+	}
+
+	&__main-image {
+		grid-column: span 12;
+	}
+
+	&__gallery {
+		@include grid;
+
+		grid-column: span 6;
+		img {
+			grid-column: span 6;
+		}
+	}
+
+	&__description {
+		grid-column: span 6;
+	}
+
+
+	&__right {
+		grid-column: span 12;
+
+		@media(min-width: $breakpoint-lg) {
+			grid-column: span 6;
+		}
+		@media(min-width: $breakpoint-xl) {
+			grid-column: span 5;
+		}
+	}
+}

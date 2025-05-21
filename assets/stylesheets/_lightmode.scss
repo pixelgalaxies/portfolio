@@ -1,0 +1,53 @@
+@use "index" as *;
+
+.light-mode {
+  --body-color: #{$dark};
+  --body-bg: #{$light};
+	
+	--btn-primary-bg: #{$primary-light};
+	--btn-primary-color: #{$dark};
+	--btn-primary-bg-hover: #{$accent-light};
+	--btn-primary-color-hover: #{$light};
+	--btn-secondary-bg: #{$secondary-light};
+	--btn-secondary-color: #{$dark};
+	--btn-secondary-bg-hover: #{$accent-light};
+	--btn-secondary-color-hover: #{$light};
+	
+  --box-content-bg: #{rgba($light, 60%)};
+	--border-box-shadow: #{rgba($primary-light, 70%)};
+	--border-box-color: #{$primary-light};
+
+  --settings-bg: #{$accent-light};
+	--settings-color: #{$light};
+
+  --skillbox-bg: #{$secondary-light};
+	--skillbox-color: #{$dark};
+
+  // SECTIONS
+
+  --header-bg: #{$light};
+  --header-icon: #{$dark};
+  --header-list-bg: #{rgba($light, 90%)};
+
+  --hypertext-color-1: #{$primary-light};
+  --hypertext-color-2: #{$secondary-light};
+  --hypertext-color-3: #{$accent-light};
+  --circle-color: #{$secondary-light};
+
+  --about-hue: #{rgba($secondary-light, 50%)};
+
+	--project-links: #{$accent-light};
+	--project-links-hover: #{$secondary-light};
+
+  --resume-links: #{$secondary-light};
+	--resume-links-hover: #{$accent-light};
+
+	--contact-line: #{$primary-light};
+
+	--footer-bg: #{$secondary-light};
+	--footer-color: #{$dark};
+
+  p, h2, h3 {
+    text-shadow: none;
+  }
+}

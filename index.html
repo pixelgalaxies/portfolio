@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<!-- PORTFOLIO www.dustinclark.ninja -->
+<html lang="en">
+
+<head>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+	<meta name="description" content="Dustin is a front-end web developer based in Portland, Oregon. He was lost for a long time, but he found myself in his passion, web development. His goal in life is to bring information to people. He loves learning, he loves improving, and he loves problem solving.">
+	<title>Dustin Clark | Front-end Web Developer</title>
+
+	<!-- icons -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+
+	<!-- fonts -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@100;300;400;700&family=Libre+Barcode+39+Extended+Text&family=Megrim&family=Nova+Flat&display=swap" rel="stylesheet">
+
+	<!-- resets -->
+	<link type="text/css" rel="stylesheet" href="https://yarn.pm/normalize.css" />
+
+	<!-- main styles -->
+	<link type="text/css" rel="stylesheet" href="assets/stylesheets/main.css" />
+
+	<!-- favicon -->
+	<link rel="shortcut icon" href="assets/images/meVector.svg" type="image/x-icon" />
+
+</head>
+
+<body>
+
+  <a href="#main" class="skip-main p-box-2">Skip to main content</a>
+
+	<div class="settings">
+		<ul class="settings__list settings__list--hide">
+			<li>
+				<button class="js-mode settings__item p-btn-2">
+					<span class="btn-icon"><i class="fa fa-sun"></i></span>
+					<span class="btn-text">Light Mode</span>
+				</button>
+			</li>
+			<li>
+				<button class="js-motion settings__item p-btn-2">
+					<span class="btn-icon"><i class="fa fa-stop"></i></span>
+					<span class="btn-text">Disable Motion</span>
+				</button>
+			</li>
+		</ul>
+		<button class="js-settings settings__cog p-btn-1" aria-label="Settings">
+      <i class="fa fa-cog"></i>
+    </button>
+	</div>
+
+
+
+	<header>
+		<nav class="nav">
+			<a href="#" class="nav__logo"><img src="assets/images/meVector.svg" alt="A vector image of me" /></a>
+			<div role="button" class="nav__icon">
+				<span></span>
+			</div>
+			<ul class="nav__list">
+				<li><a class="btn btn--primary p-btn-2 p-btn-hover-glitch" href="#about">About</a></li>
+				<li><a class="btn btn--primary p-btn-2 p-btn-hover-glitch" href="#skills">Skills</a></li>
+				<li><a class="btn btn--primary p-btn-2 p-btn-hover-glitch" href="#projects">Projects</a></li>
+				<li><a class="btn btn--primary p-btn-2 p-btn-hover-glitch" href="#resume">Resume</a></li>
+				<li><a class="btn btn--secondary p-btn-2 p-btn-hover-glitch" href="#contact">Contact</a></li>
+			</ul>
+		</nav>
+	</header>
+
+
+
+
+
+<main id="main">
+	<section id="hero" class="hero">
+		<div class="circles" aria-hidden="true"></div>
+		<div class="hero__inner">
+			<div class="hero__content p-box-1">
+				<h1 class="hero__heading p-hypertext" data-hypertext="Dustin Clark">
+          Dustin Clark
+        </h1>
+				<h2 class="hero__subheading">Knowledge is power.</h2>
+        <p class="hero__copy">
+          Front-end developer here to terminate bad code and build the next generation of digital experiences. 
+        </p>
+			</div>
+			<div class="hero__buttons">
+				<a class="btn btn--secondary p-btn-2 p-btn-hover-glitch" href="#projects">Projects</a>
+				<a class="btn btn--primary p-btn-2 p-btn-hover-glitch" href="#contact">Contact</a>
+			</div>
+		</div>
+	</section>
+	<!-- /hero -->
+
+
+
+
+
+	<section id="about" class="grid-container about">
+		<div class="about__inner">
+			<div class="section-head p-box-2">
+				<h2 class="about__heading section-heading p-cursor-underline">About</h2>
+			</div>
+			
+			<div class="p-box-3 about__copy">
+				<p>
+					Hello! I'm Dustin. I was lost for a long time, but I found
+					myself in my passion, web development. My goal in life is to bring information to people. I love learning, I love improving, and I love problem solving.
+				</p>
+				<h3 class="new-skills__heading">What I'm currently learning:</h3>
+				<div class="new-skills__items">
+					<span class="skill-box">css-animations</span>
+					<span class="skill-box">css grid module</span>
+				</div>
+				
+				<h3 class="new-skills__heading">What I want to learn next:</h3>
+				<div class="new-skills__items">
+					<span class="skill-box">react</span>
+					<span class="skill-box">svelte</span>
+				</div>
+			</div>
+
+			<div class="about__image-wrapper p-box-4">
+				<img class="about__me" src="assets/images/about.jpg" alt="A photo of Dustin Clark" />
+			</div>
+		</div>
+	</section>
+	<!-- /about -->
+
+
+
+
+
+	<section id="skills" class="grid-container skills">
+		<div class="skills__inner">
+			<div class="section-head p-box-5">
+				<h2 class="skills__heading section-heading p-cursor-underline">Skills</h2>
+			</div>
+
+
+			<div class="skills__copy p-box-1">
+				<h3 class="skills__subheading section-subheading">Languages</h3>
+				<div class="skills__items">
+					<span class="skill-box">html</span>
+					<span class="skill-box">css</span>
+					<span class="skill-box">less</span>
+					<span class="skill-box">sass</span>
+					<span class="skill-box">javascript</span>
+					<span class="skill-box">typescript</span>
+				</div>
+			</div>
+
+			<div class="skills__copy p-box-2">
+				<h3 class="skills__subheading section-subheading">Libraries/Frameworks</h3>
+				<div class="skills__items">
+					<span class="skill-box">jquery</span>
+					<span class="skill-box">bootstrap</span>
+					<span class="skill-box">vue.js</span>
+				</div>
+			</div>
+
+			<div class="skills__copy p-box-3">
+				<h3 class="skills__subheading section-subheading">Software</h3>
+				<div class="skills__items">
+					<span class="skill-box">photoshop</span>
+					<span class="skill-box">affinity designer</span>
+					<span class="skill-box">mac os</span>
+					<span class="skill-box">windows</span>
+					<span class="skill-box">linux</span>
+					<span class="skill-box">github</span>
+					<span class="skill-box">jira</span>
+					<span class="skill-box">bitbucket</span>
+					<span class="skill-box">confluence</span>
+					<span class="skill-box">miro</span>
+				</div>
+			</div>
+
+			<div class="skills__copy p-box-4">
+				<h3 class="skills__subheading section-subheading">Other</h3>
+				<div class="skills__items">
+					<span class="skill-box">bem methodology</span>
+					<span class="skill-box">kanban</span>
+					<span class="skill-box">agile</span>
+					<span class="skill-box">sprints</span>
+					<span class="skill-box">git</span>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!--  /skills -->
+
+
+
+
+
+	<section id="projects" class="projects">
+		<div class="projects__inner">
+			<div class="section-head p-box-1">
+				<h2 class="projects__heading section-heading p-cursor-underline">Projects</h2>
+			</div>
+
+			<!-- <div class="project">
+				<div class="project__copy p-cutout-1">
+					<h3 class="project__subheading section-subheading p-underline-1">Tales of Kavaya</h3>
+
+					<p>Tales of Kavaya is a web comic about a magical land and its new rulers. I am currently in the process of rebuilding the existing site using Vue.js and making it a single page application.</p>
+
+					<div class="project__skills">
+						<span class="skill-box">html</span>
+						<span class="skill-box">scss</span>
+						<span class="skill-box">javascript</span>
+					</div>
+
+					<div class="project__links">
+						<a target="_blank" class="p-glitch-hover"  href="https://github.com/pixelgalaxies/kavaya/tree/gh-pages">
+							<i class="fab fa-github"></i> GitHub
+						</a>
+						<a target="_blank" class="p-glitch-hover" href="http://www.talesofkavaya.com">
+							<i class="fas fa-external-link-alt"></i> Demo
+						</a>
+						<a target="_blank" class="p-glitch-hover" href="/projects/kavaya.html">
+							<i class="fas fa-circle-info"></i> More Info
+						</a>
+					</div>
+				</div>
+			
+				<div class="project__image project__image--rebuild p-box-5">
+					<a target="_blank" href="http://www.talesofkavaya.com">
+						<img src="assets/images/projectPics/kavaya-1.png" alt="Project: Kavaya" />
+					</a>
+				</div>
+			</div> -->
+
+			<div class="project">
+				<div class="project__copy p-box-3">
+					<h3 class="project__subheading section-subheading">Proxima</h3>
+
+					<p>Proxima is a SCSS library that will let you cyberpunkify your site. It all runs from a single SCSS file. Just use the Proxima classes and their associated mixins and watch as your site comes alive with cyberpunk flair.</p>
+
+					<div class="project__skills">
+						<span class="skill-box">html</span>
+						<span class="skill-box">scss</span>
+					</div>
+
+					<div class="project__links">
+						<a target="_blank" class="p-glitch-hover" href="https://github.com/pixelgalaxies/proxima/tree/gh-pages">
+							<i class="fab fa-github"></i> GitHub
+						</a>
+						<a target="_blank" class="p-glitch-hover" href="http://www.pixelgalaxies.com/proxima">
+							<i class="fas fa-external-link-alt"></i> Demo
+						</a>
+						<!-- <a target="_blank" class="p-glitch-hover" href="/projects/proxima.html">
+							<i class="fas fa-circle-info"></i> More Info
+						</a> -->
+					</div>
+				</div>
+
+				<div class="project__image p-box-2">
+					<a target="_blank" href="http://www.pixelgalaxies.com/proxima">
+						<img src="assets/images/projectPics/proxima-1.png" alt="Project: Proxima" />
+					</a>
+				</div>
+			</div>
+
+			<div class="project">
+				<div class="project__copy p-box-5">
+					<h3 class="project__subheading section-subheading">Virtuoso</h3>
+
+					<p>Virtuoso is a CSS library that makes it easy to layout content in grids. It uses the CSS Grid Module. It's a no frills library made strictly for arranging content.</p>
+
+					<div class="project__skills">
+						<span class="skill-box">html</span>
+						<span class="skill-box">scss</span>
+					</div>
+
+					<div class="project__links">
+						<a target="_blank" class="p-glitch-hover" href="https://github.com/pixelgalaxies/virtuoso/tree/gh-pages">
+							<i class="fab fa-github"></i> GitHub
+						</a>
+						<a target="_blank" class="p-glitch-hover" href="http://www.pixelgalaxies.com/virtuoso">
+							<i class="fas fa-external-link-alt"></i> Demo
+						</a>
+						<!-- <a target="_blank" class="p-glitch-hover" href="/projects/virtuoso.html">
+							<i class="fas fa-circle-info"></i> More Info
+						</a> -->
+					</div>
+				</div>
+
+				<div class="project__image p-box-1">
+					<a target="_blank" href="http://www.pixelgalaxies.com/virtuoso">
+						<img src="assets/images/projectPics/virtuoso-1.png" alt="Project: Virtuoso" />
+					</a>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- /projects -->
+
+
+
+
+
+	<section id="resume" class="resume">
+		<div class="resume__inner">
+			<div class="section-head p-box-2">
+				<h2 class="resume__heading section-heading p-cursor-underline">Resume</h2>
+			</div>
+				
+			<div class="resume__content p-box-3">
+				<h3 class="resume__subheading section-subheading">Experience</h3>
+				<p>
+					<span class="resume__title">Front-end Web Developer</span><br>
+					<span>LeadVenture | Oct 2021 - Present</span>
+				</p>
+				<p>
+					<span class="resume__title">Front-end Web Developer</span><br>
+					<span>Dealer Spike | Jul 2021 - Sep 2021</span>
+				</p>
+				<p>
+					<span class="resume__title">Technical Support Specialist II</span><br>
+					<span>Dealer Spike | Aug 2020 - Jul 2021</span>
+				</p>
+
+				<p>Visit my <a href="https://www.linkedin.com/in/imdustin/" class="resume__link p-glitch-hover">linkedin</a> for my full employment history.
+				</p>
+			</div>
+
+			<div class="resume__content p-box-5">
+				<h3 class="resume__subheading section-subheading">Education</h3>
+				<p>
+					<span class="resume__title">B.S. Web Development</span><br>
+					<span>Franklin University | 2018 - 2021</span>
+				</p>
+				<p>
+					<span class="resume__title">A.S. Computer Science </span><br>
+					<span>Leeward Community College | 2014-2016</span>
+				</p>
+				<p>
+					<span class="resume__title">A.A. Liberal Arts</span><br>
+					<span>Leeward Community College | 2008 - 2011</span>
+				</p>
+			</div>
+		</div>
+	</section>
+	<!-- /resume-->
+
+
+
+
+
+	<section id="contact" class="contact">
+		<div class="contact__inner">
+			<div class="section-head p-box-1">
+				<h2 class="contact__heading section-heading p-cursor-underline">Contact</h2>
+			</div>
+
+			<ul class="contact__list">
+				<li class="contact__item">
+					<a href="mailto:dustin063+jobs@protonmail.com" class="btn btn--primary p-btn-3 p-btn-hover-glitch">
+						<i class="far fa-envelope contact__icon"></i>
+						<span class="contact__label">email</span>
+					</a>
+				</li>
+	
+				<li class="contact__item">
+					<a href="https://github.com/pixelgalaxies" class="btn btn--primary p-btn-3 p-btn-hover-glitch">
+						<i class="fab fa-github contact__icon"></i>
+						<span class="contact__label">github</span>
+					</a>
+				</li>
+	
+				<li class="contact__item">
+					<a href="https://www.linkedin.com/in/imdustin/" class="btn btn--primary p-btn-3 p-btn-hover-glitch">
+						<i class="fab fa-linkedin-in contact__icon"></i>
+						<span class="contact__label">linkedin</span>
+					</a>
+				</li>
+	
+				<li class="contact__item">
+					<a href="https://codepen.io/pixelgalaxies/" class="btn btn--primary p-btn-3 p-btn-hover-glitch">
+						<i class="fab fa-codepen contact__icon"></i>
+						<span class="contact__label">codepen</span>
+					</a>
+				</li>
+			</ul>
+		</div>
+
+		
+	</section>
+	<!-- /#contact -->
+</main>
+
+
+
+
+
+	<footer>
+		<span>
+			Dustin Clark &copy;2016 -
+			<script>
+				let d = new Date();
+				document.write(d.getFullYear());
+			</script>
+		</span>
+	</footer>
+
+
+
+
+
+	<div class="contact-icons">
+		<ul class="contact-icons__list">
+			<li class="contact-icons__item">
+				<a href="mailto:dustin063+job@protonmail.com" class="btn btn--primary p-btn-1" aria-label="Email">
+					<i class="far fa-envelope contact-icons__icon"></i>
+				</a>
+				<span class="contact-icons__label">email</span>
+			</li>
+
+			<li class="contact-icons__item">
+				<a href="https://github.com/pixelgalaxies" class="btn btn--primary p-btn-1" aria-label="GitHub">
+					<i class="fab fa-github contact-icons__icon"></i>
+				</a>
+				<span class="contact-icons__label">github</span>
+			</li>
+
+			<li class="contact-icons__item">
+				<a href="https://www.linkedin.com/in/imdustin/" class="btn btn--primary p-btn-1" aria-label="LinkedIn">
+					<i class="fab fa-linkedin-in contact-icons__icon"></i>
+				</a>
+				<span class="contact-icons__label">linkedin</span>
+			</li>
+
+			<li class="contact-icons__item">
+				<a href="https://codepen.io/pixelgalaxies/" class="btn btn--primary p-btn-1" aria-label="CodePen">
+					<i class="fab fa-codepen contact-icons__icon"></i>
+				</a>
+				<span class="contact-icons__label">codepen</span>
+			</li>
+		</ul>
+	</div>
+
+	<script src="assets/js/helper.js"></script>
+</body>
+
+</html>

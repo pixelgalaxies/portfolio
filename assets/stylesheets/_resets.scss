@@ -1,0 +1,131 @@
+*, 
+*:before,
+*:after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  // correct font disparities among browsers
+  font-family:
+		system-ui,
+		'Segoe UI',
+		Roboto,
+		Helvetica,
+		Arial,
+		sans-serif,
+		'Apple Color Emoji',
+		'Segoe UI Emoji';
+  // prevents font size shifts after oritentation changes in ios
+	-webkit-text-size-adjust: 100%;
+  // readable tab sizes, subjective
+	tab-size: 4;
+  
+}
+
+body {
+  // accessible line-height
+  line-height: 1.5;
+  // improve text rendering
+  -webkit-font-smoothing: antialiased;
+}
+
+img, 
+picture, 
+video, 
+canvas, 
+svg {
+  // improve media default behaviors
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+img {
+  // style alt text for broken images
+  font-style: italic;
+}
+
+p
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  // avoiding text overflows
+  overflow-wrap: break-word;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  // balances out headings to make line breaks even widths
+  text-wrap: balance;
+}
+
+p,
+li,
+figcaption {
+  // prevents orphans
+  text-wrap: pretty;
+  // prevents long running text
+  max-width: 65ch;
+}
+
+input, 
+button, 
+textarea, 
+select {
+  font: inherit;
+}
+
+button {
+  background-color: transparent;
+  border: none;
+}
+
+b, 
+strong {
+  // corrects font-weight differences in chrome and safari
+  font-weight: bolder;
+}
+
+code,
+kbd,
+samp,
+pre {
+	font-family:
+		ui-monospace,
+		SFMono-Regular,
+		Consolas,
+		'Liberation Mono',
+		Menlo,
+		monospace; /* 1 */
+	font-size: 1em; /* 2 */
+}
+
+progress {
+  // corrects vertical alignment in chrome and firefox.
+	vertical-align: baseline;
+}
+
+summary {
+  // correct the display in chrome and safari
+  display: list-item;
+}
+
+
+// container queries?
+header, 
+footer, 
+main, 
+section,
+article {
+  container-type: inline-size;
+}
+

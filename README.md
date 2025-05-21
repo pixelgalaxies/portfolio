@@ -1,1 +1,3 @@
-All files are in gh-pages branch.
+# www.dustinclark.ninja
+
+This is simply a portfolio site.

@@ -105,8 +105,8 @@
   &__label {
 		opacity: 0;
 		max-width: 0;
-		color: $dark;
-		background-color: $accent;
+		color: var(--btn-primary-color-hover);
+		background-color: var(--btn-primary-bg-hover);
 		padding: 3px;
 		transition: all $transtime linear;
 		overflow: hidden;

@@ -1,74 +1,69 @@
-$gap: 15px;
+$gap: 16px;
 
-$tt: 0.25s;
+$transtime: 0.25s;
 
-$container-sm: 500px;
-$container-md: 768px;
-$container-lg: 1024px;
-$container-xl: 1280px;
+$breakpoint-sm: 500px;
+$breakpoint-md: 768px;
+$breakpoint-lg: 1024px;
+$breakpoint-xl: 1280px;
 
-$light: #f1fffc;
-$dark: #010504;
-$gray-dark: #1e2423;
-$gray-light: #e2f0ed;
-$primary: #19ffcf;
+$light: #f1f4f9;
+$dark: #090410;
+$primary: #4fffd3;
 $primary-light: #a1d0c6;
-$secondary: #d31995;
-$secondary-light: #ffade4;
+$secondary: #f03c69;
+$secondary-light: #d1a9c3;
 $accent: #fff767;
+$accent-light: #6a6402;
 
 
+
+// use css custom properties to dynamically switch between light and dark theme
+// sass compiles server side making colors not dynamic and custom properties compile client side
 :root {
-	--body-bg: #{$light};
-	--body-color: #{$dark};
-
-  --skip-color: #{$dark};
-  --skip-bg: #{$light};
-  --skip-border: #{$dark};
-
-	--heading-color: #{$dark};
+	--body-color: #{$primary};
+  --body-bg: #{$dark};
 	
-	--btn-primary-bg: #{$primary-light};
+	--btn-primary-bg: #{$primary};
 	--btn-primary-color: #{$dark};
-	--btn-primary-bg-hover: #{$secondary-light};
+	--btn-primary-bg-hover: #{$accent};
 	--btn-primary-color-hover: #{$dark};
-	--btn-secondary-bg: #{$secondary-light};
-	--btn-secondary-color: #{$dark};
+	--btn-secondary-bg: #{$secondary};
+	--btn-secondary-color: #{$light};
 	--btn-secondary-bg-hover: #{$accent};
 	--btn-secondary-color-hover: #{$dark};
-
-	--circle-color: #{$primary-light};
 	
-	--box-border: #{$secondary-light};
+  --box-content-bg: #{rgba($dark, 60%)};
+	--border-box-shadow: #{rgba($primary, 70%)};
+	--border-box-color: #{$primary};
 
-	--content-bg: #{$primary-light};
+  --settings-bg: #{$accent};
+	--settings-color: #{$dark};
 
-	--subheading-line: #{$dark};
+  --skillbox-bg: #{$secondary};
+	--skillbox-color: #{$light};
 
-	--skillbox-bg: #{$secondary-light};
-	--skillbox-color: #{$dark};
+  // SECTIONS
 
-	--dot-color: #{rgba($dark, 20%)};
+  --header-bg: #{$dark};
+  --header-icon: #{$primary};
+  --header-list-bg: #{rgba($dark, 90%)};
 
-	--settings-bg: #{$dark};
-	--settings-color: #{$light};
+  --hypertext-color-1: #{$primary};
+  --hypertext-color-2: #{$secondary};
+  --hypertext-color-3: #{$accent};
+  --circle-color: #{$secondary};
 
-	--header-bg: #{$light};
-	--header-icon: #{$dark};
-	--header-list-bg: #{rgba($light, 90%)};
+  --about-hue: #{rgba($secondary, 50%)};
 
-	--hero-content-bg: #{rgba($light, 80%)};
-	--hero-content-color: #{$dark};
+	--project-links: #{$accent};
+	--project-links-hover: #{$secondary};
 
-	--about-bg: #{$gray-light};
+	--resume-links: #{$secondary};
+	--resume-links-hover: #{$accent};
 
-	--projects-bg: #{$gray-light};
-	--project-links: #{$dark};
-	--project-links-hover: #{$gray-dark};
+	--contact-line: #{$primary};
 
-	--contact-bg: #{$gray-light};
-	--contact-line: #{$dark};
-
-	--footer-bg: #{$secondary-light};
-	--footer-color: #{$dark};
+	--footer-bg: #{$secondary};
+	--footer-color: #{$light};
 }

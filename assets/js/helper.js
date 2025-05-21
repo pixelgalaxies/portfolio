@@ -9,14 +9,14 @@ document.querySelector(".js-settings").addEventListener("click", function() {
 
 // mode
 document.querySelector(".js-mode").addEventListener("click", function() {
-	if(document.querySelector("body").classList.contains("dark-mode")) {
-		document.querySelector(".js-mode .btn-text").innerHTML = "Dark Mode";
-	} else {
-		document.querySelector(".js-mode .btn-text").innerHTML = "Light Mode";
-	}
+	if(document.querySelector("body").classList.contains("light-mode")) {
+    document.querySelector(".js-mode .btn-text").innerHTML = "Light Mode";
+  } else {
+    document.querySelector(".js-mode .btn-text").innerHTML = "Dark Mode";
+  }
 	document.querySelector(".js-mode .btn-icon i").classList.toggle("fa-sun");
 	document.querySelector(".js-mode .btn-icon i").classList.toggle("fa-moon");
-	document.querySelector("body").classList.toggle("dark-mode");
+	document.querySelector("body").classList.toggle("light-mode");
 })
 
 // motion
@@ -49,15 +49,6 @@ window.addEventListener("scroll", function () {
 		document.querySelector("header").classList.add("fixed");
 	} else {
 		document.querySelector("header").classList.remove("fixed");
-	}
-})
-
-// remove cutout on header
-window.addEventListener('resize', function() {
-	if(window.innerWidth > 1024) {
-		document.querySelector("header").classList.add("p-cutout-5");
-	} else {
-		document.querySelector("header").classList.remove("p-cutout-5");
 	}
 })
 

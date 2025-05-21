@@ -4,10 +4,6 @@
 #CONTACT
 \*------------------------------*/
 .contact {
-	@include dotted(var(--dot-color), 5px);
-
-	background-color: var(--projects-bg);
-	
 	&__inner {
 		@include contain;
 		@include grid;
@@ -17,23 +13,25 @@
     list-style: none;
 		grid-column: span 12;
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-between;
 		gap: $gap;
+    flex-wrap: wrap;
 
-		@media(min-width: 768px) {
-			flex-direction: row;
-			flex-wrap: wrap;
+		@media(min-width: $breakpoint-sm) {
 			justify-content: center;
 		}
   }
 
 	&__item {
-		width: 50%;
-		@media(min-width: $container-lg) {
-			flex: 1;
+    width: 100%;
+
+    @media(min-width: $breakpoint-sm) {
+      width: calc(50% - $gap);
 		}
+
+    @media(min-width: $breakpoint-lg) {
+      width: calc(25% - $gap);
+		}
+
 		.btn {
 			width: 100%;
 			height: 100px;
@@ -49,9 +47,11 @@
 }
 
 .contact-icons {
-	display: none; 
+	display: none;
+  visibility: hidden;
 	@media(min-width: 1500px) {
 		display: block;
+    visibility: visible;
 	}
 
 	&__list {
@@ -80,7 +80,7 @@
 		display: flex;
 		align-items: center;
 		justify-content: flex-start;
-		&:hover {
+		&:hover, &:active, &:focus{
 			.contact-icons__label {
 				opacity: 1;
 				max-width: 100px;
@@ -92,7 +92,7 @@
 			height: auto;
 			padding: 7px;
 			margin-right: 5px;
-			transition: all $tt linear;
+			transition: all $transtime linear;
 			padding: 10px
 		}
 	}
@@ -106,9 +106,9 @@
 		opacity: 0;
 		max-width: 0;
 		color: $dark;
-		background-color: $light;
+		background-color: $accent;
 		padding: 3px;
-		transition: all $tt linear;
+		transition: all $transtime linear;
 		overflow: hidden;
   }
 }

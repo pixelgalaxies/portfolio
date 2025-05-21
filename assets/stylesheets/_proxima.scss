@@ -821,11 +821,11 @@ $trim-bottom: polygon(
 }
 
 @keyframes btn-glitch-before {
-  0%, 10% {
+  10% {
     display: none;
     top: 0px;
   }
-  11%, 49% {
+  49% {
     display: block;
     top: 3%;
     left: calc(0px - 0px - 4px);

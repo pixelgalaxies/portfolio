@@ -29,20 +29,20 @@
 
 </head>
 
-<body class="dark-mode">
+<body>
 
   <a href="#main" class="skip-main p-box-2">Skip to main content</a>
 
 	<div class="settings">
 		<ul class="settings__list settings__list--hide">
 			<li>
-				<button class="js-mode settings__item p-btn-1">
+				<button class="js-mode settings__item p-btn-2">
 					<span class="btn-icon"><i class="fa fa-sun"></i></span>
 					<span class="btn-text">Light Mode</span>
 				</button>
 			</li>
 			<li>
-				<button class="js-motion settings__item p-btn-1">
+				<button class="js-motion settings__item p-btn-2">
 					<span class="btn-icon"><i class="fa fa-stop"></i></span>
 					<span class="btn-text">Disable Motion</span>
 				</button>
@@ -57,16 +57,16 @@
 
 	<header>
 		<nav class="nav">
-			<a href="#" class="nav__logo"><img src="assets/images/meVector.svg" alt="a vector image of me" /></a>
+			<a href="#" class="nav__logo"><img src="assets/images/meVector.svg" alt="A vector image of me" /></a>
 			<div role="button" class="nav__icon">
 				<span></span>
 			</div>
 			<ul class="nav__list">
-				<li><a class="btn btn--primary p-btn-3 p-btn-hover-glitch" href="#about">About</a></li>
-				<li><a class="btn btn--primary p-btn-3 p-btn-hover-glitch" href="#skills">Skills</a></li>
-				<li><a class="btn btn--primary p-btn-3 p-btn-hover-glitch" href="#projects">Projects</a></li>
-				<li><a class="btn btn--primary p-btn-3 p-btn-hover-glitch" href="#resume">Resume</a></li>
-				<li><a class="btn btn--secondary p-btn-3 p-btn-hover-glitch" href="#contact">Contact</a></li>
+				<li><a class="btn btn--primary p-btn-2 p-btn-hover-glitch" href="#about">About</a></li>
+				<li><a class="btn btn--primary p-btn-2 p-btn-hover-glitch" href="#skills">Skills</a></li>
+				<li><a class="btn btn--primary p-btn-2 p-btn-hover-glitch" href="#projects">Projects</a></li>
+				<li><a class="btn btn--primary p-btn-2 p-btn-hover-glitch" href="#resume">Resume</a></li>
+				<li><a class="btn btn--secondary p-btn-2 p-btn-hover-glitch" href="#contact">Contact</a></li>
 			</ul>
 		</nav>
 	</header>
@@ -79,13 +79,18 @@
 	<section id="hero" class="hero">
 		<div class="circles" aria-hidden="true"></div>
 		<div class="hero__inner">
-			<div class="hero__copy p-box-1 p-dotted">
-				<h1 class="hero__heading p-hypertext">Knowledge is power.</h1>
-				<h2 class="hero__subheading">Dustin Clark</h2>
+			<div class="hero__content p-box-1">
+				<h1 class="hero__heading p-hypertext" data-hypertext="Dustin Clark">
+          Dustin Clark
+        </h1>
+				<h2 class="hero__subheading">Knowledge is power.</h2>
+        <p class="hero__copy">
+          Front-end developer here to terminate bad code and build the next generation of digital experiences. 
+        </p>
 			</div>
 			<div class="hero__buttons">
-				<a class="btn btn--secondary p-btn-3 p-btn-hover-glitch" href="#projects">Projects</a>
-				<a class="btn btn--primary p-btn-3 p-btn-hover-glitch" href="#contact">Contact</a>
+				<a class="btn btn--secondary p-btn-2 p-btn-hover-glitch" href="#projects">Projects</a>
+				<a class="btn btn--primary p-btn-2 p-btn-hover-glitch" href="#contact">Contact</a>
 			</div>
 		</div>
 	</section>
@@ -95,21 +100,20 @@
 
 
 
-	<section id="about" class="grid-container about p-dotted p-cutout-1">
+	<section id="about" class="grid-container about">
 		<div class="about__inner">
-			<div class="section-head">
+			<div class="section-head p-box-2">
 				<h2 class="about__heading section-heading p-cursor-underline">About</h2>
 			</div>
 			
-			<div class="p-cutout-4 about__copy">
+			<div class="p-box-3 about__copy">
 				<p>
-					Hi! I'm Dustin. I was lost for a long time, but I found
-					myself in my passion, web development. My goal in life is to bring information to people. I love learning, I
-					love improving, and I love problem solving.
+					Hello! I'm Dustin. I was lost for a long time, but I found
+					myself in my passion, web development. My goal in life is to bring information to people. I love learning, I love improving, and I love problem solving.
 				</p>
 				<h3 class="new-skills__heading">What I'm currently learning:</h3>
 				<div class="new-skills__items">
-					<span class="skill-box">css animations</span>
+					<span class="skill-box">css-animations</span>
 					<span class="skill-box">css grid module</span>
 				</div>
 				
@@ -120,8 +124,8 @@
 				</div>
 			</div>
 
-			<div class="about__image-wrapper p-box-3">
-				<img class="about__me" src="assets/images/me-pink.jpg" alt="A photo of Dustin Clark" />
+			<div class="about__image-wrapper p-box-4">
+				<img class="about__me" src="assets/images/about.jpg" alt="A photo of Dustin Clark" />
 			</div>
 		</div>
 	</section>
@@ -133,25 +137,25 @@
 
 	<section id="skills" class="grid-container skills">
 		<div class="skills__inner">
-			<div class="section-head">
+			<div class="section-head p-box-5">
 				<h2 class="skills__heading section-heading p-cursor-underline">Skills</h2>
 			</div>
 
 
-			<div class="skills__copy p-cutout-1">
-				<h3 class="skills__subheading section-subheading p-underline-1">Languages</h3>
+			<div class="skills__copy p-box-1">
+				<h3 class="skills__subheading section-subheading">Languages</h3>
 				<div class="skills__items">
 					<span class="skill-box">html</span>
 					<span class="skill-box">css</span>
-					<span class="skill-box">javascript</span>
 					<span class="skill-box">less</span>
 					<span class="skill-box">sass</span>
+					<span class="skill-box">javascript</span>
 					<span class="skill-box">typescript</span>
 				</div>
 			</div>
 
-			<div class="skills__copy p-cutout-2">
-				<h3 class="skills__subheading section-subheading p-underline-2">Libraries/Frameworks</h3>
+			<div class="skills__copy p-box-2">
+				<h3 class="skills__subheading section-subheading">Libraries/Frameworks</h3>
 				<div class="skills__items">
 					<span class="skill-box">jquery</span>
 					<span class="skill-box">bootstrap</span>
@@ -159,25 +163,29 @@
 				</div>
 			</div>
 
-			<div class="skills__copy p-cutout-4">
-				<h3 class="skills__subheading section-subheading p-underline-4 p-bungle-4">Software</h3>
+			<div class="skills__copy p-box-3">
+				<h3 class="skills__subheading section-subheading">Software</h3>
 				<div class="skills__items">
 					<span class="skill-box">photoshop</span>
-					<span class="skill-box">jira</span>
 					<span class="skill-box">affinity designer</span>
 					<span class="skill-box">mac os</span>
 					<span class="skill-box">windows</span>
 					<span class="skill-box">linux</span>
 					<span class="skill-box">github</span>
+					<span class="skill-box">jira</span>
 					<span class="skill-box">bitbucket</span>
+					<span class="skill-box">confluence</span>
+					<span class="skill-box">miro</span>
 				</div>
 			</div>
 
-			<div class="skills__copy p-cutout-5">
-				<h3 class="skills__subheading section-subheading p-underline-5">Other</h3>
+			<div class="skills__copy p-box-4">
+				<h3 class="skills__subheading section-subheading">Other</h3>
 				<div class="skills__items">
 					<span class="skill-box">bem methodology</span>
 					<span class="skill-box">kanban</span>
+					<span class="skill-box">agile</span>
+					<span class="skill-box">sprints</span>
 					<span class="skill-box">git</span>
 				</div>
 			</div>
@@ -189,9 +197,9 @@
 
 
 
-	<section id="projects" class="projects p-dotted p-cutout-3">
+	<section id="projects" class="projects">
 		<div class="projects__inner">
-			<div class="section-head">
+			<div class="section-head p-box-1">
 				<h2 class="projects__heading section-heading p-cursor-underline">Projects</h2>
 			</div>
 
@@ -228,8 +236,8 @@
 			</div> -->
 
 			<div class="project">
-				<div class="project__copy p-cutout-3">
-					<h3 class="project__subheading section-subheading p-underline-2 p-flip">Proxima</h3>
+				<div class="project__copy p-box-3">
+					<h3 class="project__subheading section-subheading">Proxima</h3>
 
 					<p>Proxima is a SCSS library that will let you cyberpunkify your site. It all runs from a single SCSS file. Just use the Proxima classes and their associated mixins and watch as your site comes alive with cyberpunk flair.</p>
 
@@ -251,7 +259,7 @@
 					</div>
 				</div>
 
-				<div class="project__image p-box-1">
+				<div class="project__image p-box-2">
 					<a target="_blank" href="http://www.pixelgalaxies.com/proxima">
 						<img src="assets/images/projectPics/proxima-1.png" alt="Project: Proxima" />
 					</a>
@@ -259,8 +267,8 @@
 			</div>
 
 			<div class="project">
-				<div class="project__copy p-cutout-5">
-					<h3 class="project__subheading section-subheading p-underline-5">Virtuoso</h3>
+				<div class="project__copy p-box-5">
+					<h3 class="project__subheading section-subheading">Virtuoso</h3>
 
 					<p>Virtuoso is a CSS library that makes it easy to layout content in grids. It uses the CSS Grid Module. It's a no frills library made strictly for arranging content.</p>
 
@@ -282,7 +290,7 @@
 					</div>
 				</div>
 
-				<div class="project__image p-box-3">
+				<div class="project__image p-box-1">
 					<a target="_blank" href="http://www.pixelgalaxies.com/virtuoso">
 						<img src="assets/images/projectPics/virtuoso-1.png" alt="Project: Virtuoso" />
 					</a>
@@ -298,12 +306,12 @@
 
 	<section id="resume" class="resume">
 		<div class="resume__inner">
-			<div class="section-head">
+			<div class="section-head p-box-2">
 				<h2 class="resume__heading section-heading p-cursor-underline">Resume</h2>
 			</div>
 				
-			<div class="resume__content p-cutout-3">
-				<h3 class="resume__subheading section-subheading p-underline-2 p-bungle-2">Experience</h3>
+			<div class="resume__content p-box-3">
+				<h3 class="resume__subheading section-subheading">Experience</h3>
 				<p>
 					<span class="resume__title">Front-end Web Developer</span><br>
 					<span>LeadVenture | Oct 2021 - Present</span>
@@ -317,12 +325,12 @@
 					<span>Dealer Spike | Aug 2020 - Jul 2021</span>
 				</p>
 
-				<p>Visit my <a href="https://www.linkedin.com/in/imdustin/" class="resume__link p-glitch">linkedin</a> for my full employment history.
+				<p>Visit my <a href="https://www.linkedin.com/in/imdustin/" class="resume__link p-glitch-hover">linkedin</a> for my full employment history.
 				</p>
 			</div>
 
-			<div class="resume__content p-cutout-5">
-				<h3 class="resume__subheading section-subheading p-underline-3">Education</h3>
+			<div class="resume__content p-box-5">
+				<h3 class="resume__subheading section-subheading">Education</h3>
 				<p>
 					<span class="resume__title">B.S. Web Development</span><br>
 					<span>Franklin University | 2018 - 2021</span>
@@ -344,15 +352,15 @@
 
 
 
-	<section id="contact" class="contact p-dotted p-cutout-1">
+	<section id="contact" class="contact">
 		<div class="contact__inner">
-			<div class="section-head">
+			<div class="section-head p-box-1">
 				<h2 class="contact__heading section-heading p-cursor-underline">Contact</h2>
 			</div>
 
 			<ul class="contact__list">
 				<li class="contact__item">
-					<a href="mailto:pixel.galaxies@gmail.com" class="btn btn--primary p-btn-3 p-btn-hover-glitch">
+					<a href="mailto:dustin063+jobs@protonmail.com" class="btn btn--primary p-btn-3 p-btn-hover-glitch">
 						<i class="far fa-envelope contact__icon"></i>
 						<span class="contact__label">email</span>
 					</a>
@@ -391,13 +399,13 @@
 
 
 	<footer>
-		<p>
-			dustin clark &copy;2016 -
+		<span>
+			Dustin Clark &copy;2016 -
 			<script>
 				let d = new Date();
 				document.write(d.getFullYear());
 			</script>
-		</p>
+		</span>
 	</footer>
 
 
@@ -407,7 +415,7 @@
 	<div class="contact-icons">
 		<ul class="contact-icons__list">
 			<li class="contact-icons__item">
-				<a href="mailto:pixel.galaxies@gmail.com" class="btn btn--primary p-btn-1" aria-label="Email">
+				<a href="mailto:dustin063+job@protonmail.com" class="btn btn--primary p-btn-1" aria-label="Email">
 					<i class="far fa-envelope contact-icons__icon"></i>
 				</a>
 				<span class="contact-icons__label">email</span>

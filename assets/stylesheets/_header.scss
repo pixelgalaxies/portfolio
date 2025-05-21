@@ -13,11 +13,6 @@ header {
 		background-color: var(--header-bg);
 		
 	}
-
-	&.p-cutout-5 {
-		margin-top: -10px;
-		padding-block: calc($gap + 10px);
-	}
 }
 
 .nav {
@@ -44,7 +39,7 @@ header {
 		position: relative;
 		cursor: pointer;
 
-		@media(min-width: $container-md) {
+		@media(min-width: $breakpoint-md) {
 			display: none;
 		}
 
@@ -80,7 +75,7 @@ header {
 		justify-content: center;
 		align-items: center;
 		
-		@media(max-width: $container-md) {
+		@media(max-width: $breakpoint-md) {
 			width: 100%;
 			position: absolute;
 			left: 0;
@@ -92,12 +87,12 @@ header {
 		}
 
 		li {
-			@media (max-width: $container-md) {
+			@media (max-width: $breakpoint-md) {
 				padding-block: $gap;
 			}
 
 			&:not(:last-child) {
-				@media (min-width: $container-md) {
+				@media (min-width: $breakpoint-md) {
 					margin-right: $gap;
 				}
 			}
@@ -124,7 +119,7 @@ header {
 
 	.btn {
 		height: 40px;
-		width: 125px;
+		width: 124px;
 		font-size: 14px;
 	}
 }

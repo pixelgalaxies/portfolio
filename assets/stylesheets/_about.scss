@@ -3,11 +3,7 @@
 /*------------------------------*\
 #ABOUT
 \*------------------------------*/
-.about {
-	@include dotted(var(--dot-color), 5px);
-
-	background-color: var(--about-bg);
-	
+.about {	
 	&__inner {
 		@include contain;
 		@include grid;
@@ -15,36 +11,12 @@
 		align-items: center;
 	}
 
-	&__image-wrapper {
-		justify-content: center;
-		align-items: center;
-		border-color: var(--box-border);
-		grid-column: span 12;
-		position: relative;
-		@media (min-width: $container-lg) {
-			z-index: 0;
-			grid-area: 2 / 6 / 2 / -1;
-		}
-
-		&:after {
-			content: 'Subject: 063';
-			color: $light;
-			position: absolute;
-			width: 100%;
-			text-align: right;
-			bottom: -16px;
-			right: 15px;
-			font-size: 12px;
-			animation: general-glitch 2s infinite;
-		}
-	}
-
 	&__copy {
-		background-color: var(--content-bg);
-		padding: 50px 30px;
+    @include content;
+		padding: 48px 28px;
 		grid-column: span 12;
 
-		@media (min-width: $container-lg) {
+		@media (min-width: $breakpoint-lg) {
 			grid-area: 2 / 1 / 2 / 7;
 			position: relative;
 			z-index: 1;
@@ -53,7 +25,7 @@
 
 	.new-skills {
 		&__heading {
-			margin-top: 35px;
+			margin-top: 36px;
 		}
 
 		&__items {
@@ -61,4 +33,26 @@
 			flex-wrap: wrap;
 		}
 	}
+
+  &__image-wrapper {
+		position: relative;
+		justify-content: center;
+		align-items: center;
+		grid-column: span 12;
+		@media (min-width: $breakpoint-lg) {
+			z-index: 0;
+			grid-area: 2 / 6 / 2 / -1;
+		}
+
+    &:after {
+      content: '';
+      inset: 0;
+      position: absolute;
+      background-color: var(--about-hue);
+    }
+	}
+
+  &__me {
+    filter: grayscale(100%);
+  }
 }

@@ -19,10 +19,10 @@
 		@include grid;
 		grid-column: span 12;
 
-		@media(min-width: $container-lg) {
+		@media(min-width: $breakpoint-lg) {
 			grid-column: span 6;
 		}
-		@media(min-width: $container-xl) {
+		@media(min-width: $breakpoint-xl) {
 			grid-column: span 7;
 		}
 	}
@@ -52,10 +52,10 @@
 	&__right {
 		grid-column: span 12;
 
-		@media(min-width: $container-lg) {
+		@media(min-width: $breakpoint-lg) {
 			grid-column: span 6;
 		}
-		@media(min-width: $container-xl) {
+		@media(min-width: $breakpoint-xl) {
 			grid-column: span 5;
 		}
 	}
